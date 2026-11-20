@@ -23,7 +23,7 @@ Three generated files are distributed as GitHub Release assets rather than Git b
 - the supplementary Excel workbook;
 - the full pilot-parameter table.
 
-Their filenames and SHA-256 hashes are recorded in `publication/RELEASE_ASSETS.md`.
+Their reassembly instructions are in `publication/RELEASE_ASSETS.md`; all piece and output hashes are recorded in `data/release_assets_manifest.json`.
 
 ## What is not included
 
