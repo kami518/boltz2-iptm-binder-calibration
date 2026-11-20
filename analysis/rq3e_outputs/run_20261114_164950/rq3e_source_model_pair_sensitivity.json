@@ -1,0 +1,26 @@
+{
+  "model": "unpenalized weighted logistic; six target intercepts and one common logit-ipTM slope",
+  "levels": [
+    "aah-i",
+    "human-vegf110",
+    "nipah-glycoprotein-g",
+    "pd-l1",
+    "sars-cov-2-rbd",
+    "trem2"
+  ],
+  "alpha": [
+    -2.6278937622587133,
+    0.011046756518261657,
+    -2.999882871445474,
+    -0.20905819243566348,
+    1.4900902907121272,
+    -1.3633466076279726
+  ],
+  "beta_common": 0.4021135699453238,
+  "transport_intercept": -1.5542044048523835,
+  "transport_reference": 0.35892514395393477,
+  "fit_status": "evaluable",
+  "gradient_max_abs": 1.7423822258107508e-09,
+  "source_rows": 2084,
+  "external_labels_used": false
+}

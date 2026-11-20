@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "qc": "passed",
+  "run_dir": "E:\\diyipian\\analysis\\rq3e_if_outputs\\run_20261114_174403",
+  "analysis_role": "post_hoc_exploratory_external_IF",
+  "external_pairs": 720,
+  "outer_folds": 40
+}

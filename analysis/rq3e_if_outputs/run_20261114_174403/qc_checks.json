@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "analysis_role": "post_hoc_exploratory_external_IF",
+  "protocol_sha256": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
+  "external_pairs": 720,
+  "unique_pairs": 720,
+  "targets": 8,
+  "outer_folds": 40,
+  "lambda_candidate_rows": 240,
+  "inner_prediction_rows": 17280,
+  "all_U_I_F_probabilities_finite": true,
+  "outer_group_leakage_detected": false,
+  "outer_test_labels_used_for_fitting_or_selection": false,
+  "U_refit": false,
+  "Pinc_or_ML_run": false,
+  "failed_items": 0,
+  "master_sha256_after": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+  "result_driven_model_changes": false,
+  "calibration_SE_definition": "inverse unnormalised Hessian X'WX"
+}

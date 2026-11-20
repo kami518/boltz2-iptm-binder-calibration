@@ -1,0 +1,90 @@
+{
+  "status": "accepted_toolchain_deviation_official_R",
+  "finished_at": "2026-11-11T08:40:58.489575+08:00",
+  "run_dir": "E:\\diyipian\\analysis\\pinc_batch\\run_20261110_181500",
+  "extension_rows": 2084,
+  "unique_pairs": 2084,
+  "status_counts": {
+    "success": 2074,
+    "missing_input": 10
+  },
+  "target_counts": {
+    "aah-i": {
+      "rows": 133,
+      "success": 133,
+      "missing_input": 0,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    },
+    "human-vegf110": {
+      "rows": 268,
+      "success": 268,
+      "missing_input": 0,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    },
+    "nipah-glycoprotein-g": {
+      "rows": 1028,
+      "success": 1028,
+      "missing_input": 0,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    },
+    "pd-l1": {
+      "rows": 277,
+      "success": 267,
+      "missing_input": 10,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    },
+    "sars-cov-2-rbd": {
+      "rows": 268,
+      "success": 268,
+      "missing_input": 0,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    },
+    "trem2": {
+      "rows": 110,
+      "success": 110,
+      "missing_input": 0,
+      "download_failed": 0,
+      "qc_failed": 0,
+      "pinc_failed": 0
+    }
+  },
+  "toolchain": {
+    "implementation": "R",
+    "pinc_r_sha256": "caf054ea54198a28013173422cdd057caf7e9488132842cff06494a1c7a94687",
+    "r_version": "4.6.2",
+    "jsonlite_version": "2.0.0",
+    "official_commit": "57afb08e29fe97379db5b155da5fb78c4c8715d1"
+  },
+  "forced_nipah_spotcheck": {
+    "pair_id": "amber-bat-vine|nipah-glycoprotein-g",
+    "status": "checked",
+    "batch_pinc": 0.8588,
+    "rerun_pinc": 0.8588,
+    "match": true,
+    "pae_shape": [
+      681,
+      681
+    ],
+    "pae_all_finite": true,
+    "chain_order": "B|A",
+    "design_chain": "B",
+    "target_chain": "A",
+    "total_residue_tokens": 681,
+    "rerun_pinc_sha256": "b3d31b4b1bc9240d2cb0ec689be334321801325d1e3678a6cda3304e9390cdf0"
+  },
+  "master_sha256_after": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+  "master_unchanged": true,
+  "repo_clean": true,
+  "commit_unchanged": true,
+  "batch_qc_passed": true
+}

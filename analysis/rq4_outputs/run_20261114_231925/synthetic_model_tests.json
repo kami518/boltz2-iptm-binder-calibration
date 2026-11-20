@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "cases": 3,
+  "lambda": 0.1,
+  "F_delta_optimizer_guard": [
+    -12,
+    11
+  ]
+}

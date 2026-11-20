@@ -1,0 +1,25 @@
+{
+  "status": "complete",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ6_execution_2026-11-15\\run_20261115_151147",
+  "formal_result": "RQ6_results.md",
+  "pair_wide": "rq6_pair_scores_wide.csv",
+  "pair_long": "rq6_pair_scores_long.csv",
+  "metrics": "rq6_metrics_by_target.csv",
+  "bootstrap": "rq6_bootstrap_intervals.csv",
+  "target_equal_summary": "rq6_target_equal_summary.csv",
+  "figures": [
+    "RQ6_figure1_score_shift.png",
+    "RQ6_figure1_score_shift.svg",
+    "RQ6_figure2_discrimination_error.png",
+    "RQ6_figure2_discrimination_error.svg"
+  ],
+  "key_counts": {
+    "designs": 720,
+    "targets": 8,
+    "predictors": 10,
+    "weak_plus_positives": 287,
+    "medium_plus_positives": 254,
+    "bootstrap_replicates_per_target": 2000
+  },
+  "protected_inputs_unchanged": true
+}

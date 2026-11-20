@@ -1,0 +1,13 @@
+{
+  "stage": "stage_a_same_sample_diagnostics",
+  "target_metric_rows": 34,
+  "bootstrap_comparison_rows": 51,
+  "bootstrap_replicates_each_pair": 2000,
+  "reliability_rows_including_empty_bins": 238,
+  "macro_rows": 42,
+  "pair_summary_rows": 6,
+  "figures": [
+    "RQ5_score_discrimination.png",
+    "RQ5_raw_reliability.png"
+  ]
+}

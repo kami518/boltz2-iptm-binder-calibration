@@ -1,0 +1,5 @@
+{
+  "reason": "Report-only finalization: clarify empty-selection recall=0 and append accepted sensitivity/verification summaries. No source data, selected sets, hit counts, model parameters, intervals, figures, or executed-code snapshot changed.",
+  "previous_manifest_sha256": "809beb36242b6bd28e15d58988dd3cf7252d9ca64c7feecf79aff4c4584ee646",
+  "run_status": "complete"
+}

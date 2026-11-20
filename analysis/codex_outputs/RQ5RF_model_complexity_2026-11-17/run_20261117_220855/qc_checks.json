@@ -1,0 +1,126 @@
+{
+  "all_checks_passed": true,
+  "checks": [
+    {
+      "check": "unit_tests_all_pass",
+      "passed": true,
+      "tests": 16
+    },
+    {
+      "check": "stage0_preflight_complete",
+      "passed": true
+    },
+    {
+      "check": "stage1_shared_rows_complete",
+      "passed": true
+    },
+    {
+      "check": "stage2_u_models_complete",
+      "passed": true
+    },
+    {
+      "check": "stage3_adaptation_complete",
+      "passed": true
+    },
+    {
+      "check": "stage4_metrics_complete",
+      "passed": true
+    },
+    {
+      "check": "analysis_set_sample_counts",
+      "passed": true
+    },
+    {
+      "check": "outer_checkpoint_count",
+      "passed": true,
+      "observed": 34
+    },
+    {
+      "check": "source_parameter_rows",
+      "passed": true,
+      "observed": 136
+    },
+    {
+      "check": "inner_fit_record_rows",
+      "passed": true,
+      "observed": 4800
+    },
+    {
+      "check": "inner_selection_rows",
+      "passed": true,
+      "observed": 1020
+    },
+    {
+      "check": "final_candidate_audit_rows",
+      "passed": true,
+      "observed": 680
+    },
+    {
+      "check": "rf_fit_count",
+      "passed": true,
+      "inner": 2880,
+      "final": 612,
+      "total": 3492
+    },
+    {
+      "check": "u_prediction_rows",
+      "passed": true,
+      "observed": 48712
+    },
+    {
+      "check": "target_pair_prediction_rows",
+      "passed": true,
+      "observed": 48712
+    },
+    {
+      "check": "target_metric_rows",
+      "passed": true,
+      "observed": 408
+    },
+    {
+      "check": "macro_metric_rows",
+      "passed": true,
+      "observed": 72
+    },
+    {
+      "check": "pair_metric_rows",
+      "passed": true,
+      "observed": 72
+    },
+    {
+      "check": "complete_sample_macro_gate",
+      "passed": true
+    },
+    {
+      "check": "complete_sample_pair_gate",
+      "passed": true
+    },
+    {
+      "check": "pairwise_pair_set_gate",
+      "passed": true
+    },
+    {
+      "check": "adaptation_fit_status",
+      "passed": true
+    },
+    {
+      "check": "target_oof_coverage",
+      "passed": true
+    },
+    {
+      "check": "figure_count_and_readability_proxy",
+      "passed": true,
+      "observed": 4
+    },
+    {
+      "check": "independent_verification_all_pass",
+      "passed": true
+    },
+    {
+      "check": "unresolved_failure_ledger_items",
+      "passed": true,
+      "unresolved_count": 0,
+      "total_failure_rows": 61
+    }
+  ]
+}

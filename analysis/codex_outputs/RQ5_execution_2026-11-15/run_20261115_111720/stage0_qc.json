@@ -1,0 +1,145 @@
+{
+  "overall_status": "passed",
+  "checks": [
+    {
+      "check": "master_rows",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "master_unique_pair_ids",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "joined_rows",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "loto_manifest_rows",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    },
+    {
+      "check": "target_cv5_manifest_rows",
+      "passed": true,
+      "observed": 220,
+      "expected": 220
+    },
+    {
+      "check": "loto_manifest_qc",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    },
+    {
+      "check": "cv5_manifest_qc",
+      "passed": true,
+      "observed": 220,
+      "expected": 220
+    },
+    {
+      "check": "analysis_rows_match_manifest_primary_six",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "analysis_rows_match_manifest_primary_five",
+      "passed": true,
+      "observed": 1951,
+      "expected": 1951
+    },
+    {
+      "check": "exclusions_accounted",
+      "passed": true,
+      "observed": 364,
+      "expected": 364
+    },
+    {
+      "check": "loto_isolation",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "cv5_isolation",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    }
+  ],
+  "set_counts": {
+    "primary_six": {
+      "n": 2074,
+      "positives": 740,
+      "targets": {
+        "aah-i": 133,
+        "human-vegf110": 268,
+        "nipah-glycoprotein-g": 1028,
+        "pd-l1": 267,
+        "sars-cov-2-rbd": 268,
+        "trem2": 110
+      }
+    },
+    "primary_five": {
+      "n": 1941,
+      "positives": 721,
+      "targets": {
+        "human-vegf110": 268,
+        "nipah-glycoprotein-g": 1028,
+        "pd-l1": 267,
+        "sars-cov-2-rbd": 268,
+        "trem2": 110
+      }
+    },
+    "strict_six": {
+      "n": 2074,
+      "positives": 674,
+      "targets": {
+        "aah-i": 133,
+        "human-vegf110": 268,
+        "nipah-glycoprotein-g": 1028,
+        "pd-l1": 267,
+        "sars-cov-2-rbd": 268,
+        "trem2": 110
+      }
+    }
+  },
+  "pinc_status_counts": {
+    "success": 2074,
+    "missing_input": 10
+  },
+  "pinc_missing": {
+    "n": 10,
+    "targets": [
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1",
+      "pd-l1"
+    ],
+    "primary_positive": 8,
+    "strict_positive": 4,
+    "imputation_performed": false
+  },
+  "pd_l1_complete_case": {
+    "n": 267,
+    "primary_positive": 190
+  },
+  "fold_rows": {
+    "loto": 89036,
+    "target_cv5": 80700,
+    "cross_target_exclusions": 364
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "handoff_id": "RQ5_EXECUTION_2026-11-15",
+  "status": "complete",
+  "analysis_scope": "exploratory_incremental_only",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720",
+  "input_acceptance": {
+    "complete_case": 2074,
+    "primary_positives": 740,
+    "primary_five_n": 1941,
+    "strict_positives": 674,
+    "pinc_missing": 10,
+    "pinc_missing_target": "pd-l1"
+  },
+  "stage_a_primary_six_macro": {
+    "Pinc_roc_auc": 0.6365918485764023,
+    "Pinc_ap": 0.5533388475744462,
+    "Pinc_brier": 0.3834321916501549,
+    "Pinc_log_loss": 1.0749628173000445,
+    "Pinc_bss_target_constant": -1.733213047446373,
+    "Pinc_calibration_intercept": -1.979069690622387,
+    "Pinc_calibration_slope": 0.964325822225958,
+    "ipTM_roc_auc": 0.6770074496457604,
+    "ipTM_ap": 0.6131717429274565,
+    "ipTM_brier": 0.4154129858691919,
+    "ipTM_log_loss": 1.2223734538538722,
+    "ipTM_bss_target_constant": -2.0568772366404624,
+    "ipTM_calibration_intercept": -3.849276703310167,
+    "ipTM_calibration_slope": 1.507131565365171
+  },
+  "stage_b_U_primary_six_target_equal_macro": {
+    "Pinc_only_roc_auc": 0.6365918485764023,
+    "Pinc_only_ap": 0.5533388475744462,
+    "Pinc_only_brier": 0.3143758939507171,
+    "Pinc_only_log_loss": 0.8694814434235094,
+    "Pinc_only_bss_transport": -0.1038419481470315,
+    "Pinc_only_bss_target_oracle": -1.1112591933067075,
+    "Pinc_only_bss_adaptation_train": null,
+    "Pinc_only_calibration_intercept": -0.7429474728226841,
+    "Pinc_only_calibration_slope": 2.223076969150906,
+    "ipTM_only_roc_auc": 0.6770074496457604,
+    "ipTM_only_ap": 0.6131717429274565,
+    "ipTM_only_brier": 0.3138532323911978,
+    "ipTM_only_log_loss": 0.920358103803141,
+    "ipTM_only_bss_transport": -0.0991489306530268,
+    "ipTM_only_bss_target_oracle": -1.156082031115072,
+    "ipTM_only_bss_adaptation_train": null,
+    "ipTM_only_calibration_intercept": -1.1707809001542788,
+    "ipTM_only_calibration_slope": 3.061320930350149,
+    "ipTM_plus_Pinc_roc_auc": 0.6662428178441377,
+    "ipTM_plus_Pinc_ap": 0.5902507578988992,
+    "ipTM_plus_Pinc_brier": 0.2949301045117232,
+    "ipTM_plus_Pinc_log_loss": 0.7859397499923109,
+    "ipTM_plus_Pinc_bss_transport": -0.0380783436821504,
+    "ipTM_plus_Pinc_bss_target_oracle": -0.9987760274883762,
+    "ipTM_plus_Pinc_bss_adaptation_train": null,
+    "ipTM_plus_Pinc_calibration_intercept": 4.227126681365271,
+    "ipTM_plus_Pinc_calibration_slope": 3.435558587396069
+  },
+  "key_U_contrasts_primary_six_target_equal": [
+    {
+      "comparison": "Pinc_only_minus_ipTM_only",
+      "metric": "brier",
+      "macro_difference": 0.0005226615595192,
+      "min_target_difference": -0.0531998725801709,
+      "max_target_difference": 0.0279091625831461,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "Pinc_only_minus_ipTM_only",
+      "metric": "log_loss",
+      "macro_difference": -0.0508766603796315,
+      "min_target_difference": -0.3193975371623931,
+      "max_target_difference": 0.0569110414423319,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "Pinc_only_minus_ipTM_only",
+      "metric": "roc_auc",
+      "macro_difference": -0.0404156010693581,
+      "min_target_difference": -0.100184672206833,
+      "max_target_difference": 0.0170143227915025,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "Pinc_only_minus_ipTM_only",
+      "metric": "ap",
+      "macro_difference": -0.0598328953530104,
+      "min_target_difference": -0.1832114367463288,
+      "max_target_difference": 0.0069831173747253,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "Pinc_only_minus_ipTM_only",
+      "metric": "bss_transport",
+      "macro_difference": -0.0046930174940047,
+      "min_target_difference": -0.1018516748639405,
+      "max_target_difference": 0.1868560059572094,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_ipTM_only",
+      "metric": "brier",
+      "macro_difference": -0.0189231278794746,
+      "min_target_difference": -0.1161076547611498,
+      "max_target_difference": 0.0963144515775897,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_ipTM_only",
+      "metric": "log_loss",
+      "macro_difference": -0.1344183538108301,
+      "min_target_difference": -0.780470159665961,
+      "max_target_difference": 0.1965583473012966,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_ipTM_only",
+      "metric": "roc_auc",
+      "macro_difference": -0.0107646318016227,
+      "min_target_difference": -0.0281929347826086,
+      "max_target_difference": 0.0107234024373311,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_ipTM_only",
+      "metric": "ap",
+      "macro_difference": -0.0229209850285573,
+      "min_target_difference": -0.0558955722345072,
+      "max_target_difference": 0.0025362372479837,
+      "targets_left_better": 2.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_ipTM_only",
+      "metric": "bss_transport",
+      "macro_difference": 0.0610705869708764,
+      "min_target_difference": -0.3311950212167189,
+      "max_target_difference": 0.3460434558360399,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_Pinc_only",
+      "metric": "brier",
+      "macro_difference": -0.0194457894389939,
+      "min_target_difference": -0.1096106524186809,
+      "max_target_difference": 0.0843959667952939,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_Pinc_only",
+      "metric": "log_loss",
+      "macro_difference": -0.0835416934311985,
+      "min_target_difference": -0.4610726225035678,
+      "max_target_difference": 0.1715010315914698,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_Pinc_only",
+      "metric": "roc_auc",
+      "macro_difference": 0.0296509692677353,
+      "min_target_difference": -0.0063211125158028,
+      "max_target_difference": 0.0831024930747924,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_Pinc_only",
+      "metric": "ap",
+      "macro_difference": 0.0369119103244531,
+      "min_target_difference": -0.0044468801267415,
+      "max_target_difference": 0.1273158645118215,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    },
+    {
+      "comparison": "ipTM_plus_Pinc_minus_Pinc_only",
+      "metric": "bss_transport",
+      "macro_difference": 0.0657636044648811,
+      "min_target_difference": -0.2902111111628507,
+      "max_target_difference": 0.3266800026013003,
+      "targets_left_better": 4.0,
+      "target_count": 6.0
+    }
+  ],
+  "key_adaptation_contrasts_primary_six_target_equal": [
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1452943622845578,
+      "min_target_difference": -0.3619870880992183,
+      "max_target_difference": -0.0115011413937559,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.4079578256874199,
+      "min_target_difference": -1.2828645129528748,
+      "max_target_difference": -0.0251284574292879,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.0008666055867627,
+      "min_target_difference": -0.0067934782608695,
+      "max_target_difference": 0.002770083102493,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": 0.0063057403698161,
+      "min_target_difference": -0.0101392545019631,
+      "max_target_difference": 0.0502069014277926,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1525732934895754,
+      "min_target_difference": -0.3781585796581813,
+      "max_target_difference": -0.0087959717564351,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.4381846912409622,
+      "min_target_difference": -1.347891355457863,
+      "max_target_difference": -0.0138403750558782,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.0175787995204615,
+      "min_target_difference": -0.0529891304347824,
+      "max_target_difference": 0.0003738237901461,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": -0.0217526343743512,
+      "min_target_difference": -0.0961883274553179,
+      "max_target_difference": 0.0033541002642472,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "brier",
+      "macro_difference": -0.0072789312050176,
+      "min_target_difference": -0.042201588693011,
+      "max_target_difference": 0.0134917123672445,
+      "targets_left_better": 3.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "log_loss",
+      "macro_difference": -0.0302268655535423,
+      "min_target_difference": -0.1515677413220251,
+      "max_target_difference": 0.031990174357643,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "roc_auc",
+      "macro_difference": -0.0167121939336987,
+      "min_target_difference": -0.0461956521739129,
+      "max_target_difference": 0.0004485885481753,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "ipTM_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "ap",
+      "macro_difference": -0.0280583747441674,
+      "min_target_difference": -0.0860490729533547,
+      "max_target_difference": 0.0035662625006334,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1442121074521518,
+      "min_target_difference": -0.3695866853948669,
+      "max_target_difference": -0.0221223545986034,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.3571128878822842,
+      "min_target_difference": -1.023337134339488,
+      "max_target_difference": -0.0466516259447449,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.0062449640951485,
+      "min_target_difference": -0.0191597414589103,
+      "max_target_difference": 0.00031605562579,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": -0.001370253878841,
+      "min_target_difference": -0.0155302184198851,
+      "max_target_difference": 0.0103395167570396,
+      "targets_left_better": 3.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1461202770868089,
+      "min_target_difference": -0.371081874335146,
+      "max_target_difference": -0.0220281387092592,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.3675813057487913,
+      "min_target_difference": -1.027541659473172,
+      "max_target_difference": -0.046471139578771,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.014951376833549,
+      "min_target_difference": -0.0478297513695745,
+      "max_target_difference": -0.0023923444976076,
+      "targets_left_better": 0.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": -0.0156116173548025,
+      "min_target_difference": -0.0318996945870752,
+      "max_target_difference": -0.0001408080659741,
+      "targets_left_better": 0.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "brier",
+      "macro_difference": -0.0019081696346571,
+      "min_target_difference": -0.0139582409728467,
+      "max_target_difference": 0.0031122202003081,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "log_loss",
+      "macro_difference": -0.010468417866507,
+      "min_target_difference": -0.068090234529014,
+      "max_target_difference": 0.0072548315992304,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "roc_auc",
+      "macro_difference": -0.0087064127384004,
+      "min_target_difference": -0.0481458069953646,
+      "max_target_difference": 0.0161588180978762,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "Pinc_only",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "ap",
+      "macro_difference": -0.0142413634759615,
+      "min_target_difference": -0.0306078647216692,
+      "max_target_difference": 0.0002562007258648,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1229422942381315,
+      "min_target_difference": -0.2631445767994783,
+      "max_target_difference": -0.0007560853921253,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.2666282953886301,
+      "min_target_difference": -0.5680490216862062,
+      "max_target_difference": -0.0015378367586562,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.1051399710767763,
+      "min_target_difference": -0.3601108033240998,
+      "max_target_difference": -0.0050568900126423,
+      "targets_left_better": 0.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_I_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": -0.0774637457125147,
+      "min_target_difference": -0.2991451894102965,
+      "max_target_difference": 0.0012242851424297,
+      "targets_left_better": 1.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "brier",
+      "macro_difference": -0.1229495843062321,
+      "min_target_difference": -0.2630633276607941,
+      "max_target_difference": -0.0007831923381768,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "log_loss",
+      "macro_difference": -0.2669601279435765,
+      "min_target_difference": -0.5695852247400333,
+      "max_target_difference": -0.0015934893513875,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "roc_auc",
+      "macro_difference": -0.1098317878982288,
+      "min_target_difference": -0.3522622345337027,
+      "max_target_difference": -0.0370838600927098,
+      "targets_left_better": 0.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_U_transport_zero_label",
+      "metric": "ap",
+      "macro_difference": -0.0809086193630605,
+      "min_target_difference": -0.2893974960607891,
+      "max_target_difference": -0.0065292085073249,
+      "targets_left_better": 0.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "brier",
+      "macro_difference": -7.290068100555362e-06,
+      "min_target_difference": -9.73691476894578e-05,
+      "max_target_difference": 8.12491386841252e-05,
+      "targets_left_better": 5.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "log_loss",
+      "macro_difference": -0.0003318325549463,
+      "min_target_difference": -0.0015362030538271,
+      "max_target_difference": -3.3328866955173453e-07,
+      "targets_left_better": 6.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "roc_auc",
+      "macro_difference": -0.0046918168214524,
+      "min_target_difference": -0.0320269700800674,
+      "max_target_difference": 0.007848568790397,
+      "targets_left_better": 2.0
+    },
+    {
+      "exposure": "ipTM_plus_Pinc",
+      "comparison": "predictive_F_minus_predictive_I",
+      "metric": "ap",
+      "macro_difference": -0.0034448736505457,
+      "min_target_difference": -0.0171962639054938,
+      "max_target_difference": 0.0097476933495074,
+      "targets_left_better": 1.0
+    }
+  ],
+  "qc": {
+    "unit_tests_passed": true,
+    "independent_verification_passed": true,
+    "same_outer_test_rows_passed": true,
+    "failure_ledger_rows": 12,
+    "unresolved_failures": 0,
+    "figures_manually_opened": true
+  },
+  "interpretation_limits": [
+    "All RQ5 results are exploratory incremental analyses.",
+    "Raw ipTM and Pinc scores are not automatically calibrated probabilities.",
+    "Six targets do not support a claim of uncertainty for future targets.",
+    "Target adaptation uses labels from frozen adaptation-training folds and is not a zero-label result.",
+    "AAH-I remains visible and primary_five is reported separately.",
+    "RQ5 does not rewrite the accepted RQ3 conclusions."
+  ],
+  "outputs": [
+    "COMMANDS.md",
+    "RQ5_U_transport.png",
+    "RQ5_adaptation_increment.png",
+    "RQ5_raw_reliability.png",
+    "RQ5_score_discrimination.png",
+    "RUN_STATUS.json",
+    "START_HERE_CODEX.copy.md",
+    "environment.json",
+    "failed_item_ledger.csv",
+    "final_input_hashes.csv",
+    "handoff_result.json.tmp",
+    "independent_verification.json",
+    "independent_verification.log",
+    "independent_verification.py",
+    "qc_checks.json",
+    "rq3_execution_config.accepted.json",
+    "rq5_adaptation_fold_metrics.csv",
+    "rq5_adaptation_inner_assignments.csv",
+    "rq5_adaptation_lambda_selection.csv",
+    "rq5_adaptation_macro_summary.csv",
+    "rq5_adaptation_pair_predictions.csv",
+    "rq5_adaptation_pair_summary.csv",
+    "rq5_adaptation_parameters.csv",
+    "rq5_adaptation_reliability.csv",
+    "rq5_adaptation_target_metrics.csv",
+    "rq5_combo_lambda_inner_metrics.csv",
+    "rq5_combo_lambda_selection.csv",
+    "rq5_common.py",
+    "rq5_pairwise_comparisons.csv",
+    "rq5_same_outer_test_rows.csv",
+    "rq5_score_bootstrap_comparisons.csv",
+    "rq5_score_macro_summary.csv",
+    "rq5_score_pair_summary.csv",
+    "rq5_score_reliability.csv",
+    "rq5_sensitivity_summary.csv",
+    "rq5_source_model_parameters.csv",
+    "rq5_target_pairwise_differences.csv",
+    "rq5_target_score_metrics.csv",
+    "rq5_u_fold_metrics.csv",
+    "rq5_u_macro_summary.csv",
+    "rq5_u_pair_predictions.csv",
+    "rq5_u_pair_summary.csv",
+    "rq5_u_reliability.csv",
+    "rq5_u_target_metrics.csv",
+    "rq5_unit_tests.json",
+    "run_config.snapshot.json",
+    "stage0_qc.json",
+    "stage_0.log",
+    "stage_0_preflight.py",
+    "stage_a.log",
+    "stage_a_bootstrap_audit.json",
+    "stage_a_diagnostics.py",
+    "stage_a_summary.json",
+    "stage_b.log",
+    "stage_b_summary.json",
+    "stage_b_transport_adaptation.py",
+    "stage_c.log",
+    "stage_c_unit_tests.py",
+    "stage_d.log",
+    "stage_d_finalize.py"
+  ]
+}

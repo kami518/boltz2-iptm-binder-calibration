@@ -1,0 +1,75 @@
+{
+  "stage": "stage_0_preflight",
+  "created_at": "2026-11-17T22:12:00+08:00",
+  "status": "complete",
+  "scikit_learn": "1.9.0",
+  "protocol_sha256": "d9db1c3a09d1264580ca56b797922d55fce0e563c04ecb9dab76ac4744a25e28",
+  "analysis_sets": [
+    {
+      "analysis_set": "primary_six",
+      "outcome": "primary_outcome",
+      "excluded_target": null,
+      "rows": 2074,
+      "positives": 740,
+      "targets": 6,
+      "unique_pair_ids": 2074,
+      "iptm_min": 0.090169608592987,
+      "iptm_max": 0.9775866270065308,
+      "pinc_min": 0.0826,
+      "pinc_max": 0.9599,
+      "status": "pass"
+    },
+    {
+      "analysis_set": "primary_five",
+      "outcome": "primary_outcome",
+      "excluded_target": "aah-i",
+      "rows": 1941,
+      "positives": 721,
+      "targets": 5,
+      "unique_pair_ids": 1941,
+      "iptm_min": 0.090169608592987,
+      "iptm_max": 0.9775866270065308,
+      "pinc_min": 0.0826,
+      "pinc_max": 0.9599,
+      "status": "pass"
+    },
+    {
+      "analysis_set": "strict_six",
+      "outcome": "strict_outcome",
+      "excluded_target": null,
+      "rows": 2074,
+      "positives": 674,
+      "targets": 6,
+      "unique_pair_ids": 2074,
+      "iptm_min": 0.090169608592987,
+      "iptm_max": 0.9775866270065308,
+      "pinc_min": 0.0826,
+      "pinc_max": 0.9599,
+      "status": "pass"
+    }
+  ],
+  "frozen_loto90_tasks": 17,
+  "frozen_target_cv5_90_folds": 85,
+  "core_input_rows": {
+    "pair_master": 2084,
+    "pinc_extension": 2084,
+    "sequence_clusters": 2084
+  },
+  "representative_resource_probe": {
+    "status": "complete",
+    "n_rows": 1600,
+    "n_trees": 500,
+    "n_jobs": 1,
+    "elapsed_seconds": 0.29930719999993016,
+    "rss_before_bytes": 218640384,
+    "rss_after_bytes": 219009024,
+    "process_peak_working_set_bytes": 244015104,
+    "process_peak_pagefile_bytes": 1787756544,
+    "rss_delta_bytes": 368640,
+    "note": "Representative resource probe only; not a result fit."
+  },
+  "all_input_hash_checks_passed": true,
+  "all_sample_and_fold_checks_passed": true,
+  "network_access_used": false,
+  "dependency_install_or_upgrade_performed": false
+}

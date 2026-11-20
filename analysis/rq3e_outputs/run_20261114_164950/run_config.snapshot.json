@@ -1,0 +1,191 @@
+{
+  "protocol_path": "E:\\diyipian\\analysis\\RQ3E_external_transport_frozen_protocol_2026-11-14.md",
+  "protocol_sha256": "113c5f4f75e4b9448aeeb93e1e41a808dd253291e3017574bd169ada587537d6",
+  "execution_script_sha256": "5d5edc7bf7b947d0c79238ac30e817bedff6cf1b94a2245c50ab84409411b1ae",
+  "frozen_common_sha256": "276f46ad6d068ecead50a9236d1dcf6953428e415eef79da2424ad850c471f3e",
+  "original_weight_rule_reference": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\phase_ab.py",
+  "original_weight_rule_sha256": "ae398dc573e409ed413201412590f2517980eebe9c11589838229f568510cf3a",
+  "upstream_target_equal_model": "E:\\diyipian\\analysis\\rq3e_outputs\\run_20261114_162656\\rq3e_source_model.json",
+  "upstream_target_equal_model_sha256": "c3a22f05199729828d9b96051ea8759a64d9f4c632a6558ed6ae84f0f902aabd",
+  "target_equal_model_reused_without_refit": true,
+  "scope": "8-target / 720-pair external primary analysis plus prespecified sensitivities",
+  "primary_config": {
+    "config_id": "primary_target_equal_weak_plus_best_ipsae",
+    "analysis_role": "primary",
+    "outcome": "adaptyv_weak_plus",
+    "score": "best_ipsae_seed",
+    "source_weighting": "target_equal"
+  },
+  "configurations": [
+    {
+      "config_id": "primary_target_equal_weak_plus_best_ipsae",
+      "analysis_role": "primary",
+      "outcome": "adaptyv_weak_plus",
+      "score": "best_ipsae_seed",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "outcome_medium_plus",
+      "analysis_role": "outcome_sensitivity",
+      "outcome": "adaptyv_medium_plus",
+      "score": "best_ipsae_seed",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "outcome_integrated",
+      "analysis_role": "outcome_sensitivity",
+      "outcome": "integrated",
+      "score": "best_ipsae_seed",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "outcome_twist_qc",
+      "analysis_role": "outcome_sensitivity",
+      "outcome": "twist_qc",
+      "score": "best_ipsae_seed",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "outcome_twist_permissive",
+      "analysis_role": "outcome_sensitivity",
+      "outcome": "twist_permissive",
+      "score": "best_ipsae_seed",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "score_seed_mean",
+      "analysis_role": "score_sensitivity",
+      "outcome": "adaptyv_weak_plus",
+      "score": "seed_mean",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "score_seed_median",
+      "analysis_role": "score_sensitivity",
+      "outcome": "adaptyv_weak_plus",
+      "score": "seed_median",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "score_seed0",
+      "analysis_role": "score_sensitivity",
+      "outcome": "adaptyv_weak_plus",
+      "score": "seed0",
+      "source_weighting": "target_equal"
+    },
+    {
+      "config_id": "source_pair_weight",
+      "analysis_role": "source_weight_sensitivity",
+      "outcome": "adaptyv_weak_plus",
+      "score": "best_ipsae_seed",
+      "source_weighting": "pair"
+    }
+  ],
+  "models": {
+    "target_equal": {
+      "intercept": -1.1392902184390412,
+      "beta": 0.51054235484669,
+      "reference": 0.46782087553585977,
+      "fit_status": "evaluable",
+      "external_labels_used": false
+    },
+    "pair": {
+      "intercept": -1.5542044048523835,
+      "beta": 0.4021135699453238,
+      "reference": 0.35892514395393477,
+      "fit_status": "evaluable",
+      "external_labels_used": false
+    }
+  },
+  "targets": [
+    "BHRF1",
+    "IL-7Ra",
+    "RBX1",
+    "TrkA",
+    "Nipah-G",
+    "PD-L1",
+    "TREM2",
+    "VEGF-A"
+  ],
+  "new_targets": [
+    "BHRF1",
+    "IL-7Ra",
+    "RBX1",
+    "TrkA"
+  ],
+  "same_target_campaigns": [
+    "Nipah-G",
+    "PD-L1",
+    "TREM2",
+    "VEGF-A"
+  ],
+  "outcomes": {
+    "adaptyv_weak_plus": {
+      "valid_column": "adaptyv_valid",
+      "positive_column": "adaptyv_main_positive",
+      "expected_n": 720,
+      "expected_positives": 287
+    },
+    "adaptyv_medium_plus": {
+      "valid_column": "adaptyv_valid",
+      "positive_column": "adaptyv_strict_positive",
+      "expected_n": 720,
+      "expected_positives": 254
+    },
+    "integrated": {
+      "valid_column": "integrated_valid",
+      "positive_column": "integrated_positive",
+      "expected_n": 720,
+      "expected_positives": 304
+    },
+    "twist_qc": {
+      "valid_column": "twist_valid",
+      "positive_column": "twist_qc_positive",
+      "expected_n": 718,
+      "expected_positives": 247
+    },
+    "twist_permissive": {
+      "valid_column": "twist_valid",
+      "positive_column": "twist_permissive_positive",
+      "expected_n": 718,
+      "expected_positives": 289
+    }
+  },
+  "score_columns": {
+    "best_ipsae_seed": "boltz2_iptm_ipsae_best_seed",
+    "seed_mean": "boltz2_iptm_seed_mean",
+    "seed_median": "boltz2_iptm_seed_median",
+    "seed0": "boltz2_iptm_seed0"
+  },
+  "reliability_edges": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "probability_clip": 1e-06,
+  "input_hashes": {
+    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "E:\\diyipian\\analysis\\codex_tasks\\RQ3_EXECUTION_CODEX_HANDOFF_2026-11-13\\rq3_execution_config.json": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51",
+    "E:\\diyipian\\analysis\\codex_outputs\\RQ3_execution_2026-11-13\\run_20261113_175022\\rq3_common.py": "276f46ad6d068ecead50a9236d1dcf6953428e415eef79da2424ad850c471f3e",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_design_summary.parquet": "3e796869b8dc0c90d7ab0e12daf25308c0cf272d04c6a5e27281f903ecd18744",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_wetlab_summary.parquet": "f80c3cfce67cb7da53576a020d476c5b74efed44e61c6fceaec9ee7de5722f88",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_cofold_predictions.parquet": "ba48010610daa9b9d184aa1ddb419beebdf728ccf745f5a8f3b48e4041e1a87d",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_audited_pair_table.csv": "1f2a4ceab9de06cb75f4aae9a889fc5164e144232101417653944d03ee33d0c6",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_target_qualification.csv": "bb3ac9e2a0f3bc253d7b500dcc4909f1aa2291026e56d2960f028f8911e50579",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_audit_summary.json": "df377fc5b755e41a5c2585b14d87f5bf73325b0c8b2d8f94c17381b59c066b81",
+    "E:\\diyipian\\data\\external_target_audit_2026-11-13\\anthropic_sequence_independence_summary.json": "8549f59b535357dbe0003a9aa1fa7ffcdadee423bed6de3d9dcf18d0beaf1316"
+  },
+  "external_labels_used_for_fitting_tuning_or_selection": false,
+  "software": {
+    "python": "3.12.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "matplotlib": "3.10.9"
+  }
+}

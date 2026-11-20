@@ -1,0 +1,14 @@
+{
+  "stage": "stage_2_oracle_I_and_descriptive_F",
+  "expected_model_evaluations": 176,
+  "observed_model_evaluations": 176,
+  "evaluable_model_evaluations": 176,
+  "failed_model_evaluations": 0,
+  "pair_rows": 32280,
+  "oracle_mean_intercept": 0.3356068674360286,
+  "descriptive_mean_gamma": 2.903692003837492,
+  "labels": {
+    "oracle_I": "oracle_base_rate_scenario",
+    "descriptive_F": "descriptive_in_sample_adaptation"
+  }
+}

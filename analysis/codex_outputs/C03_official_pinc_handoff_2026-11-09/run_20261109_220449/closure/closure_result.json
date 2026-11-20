@@ -1,0 +1,86 @@
+{
+  "handoff": "C03_official_pinc_handoff_2026-11-09",
+  "run_id": "run_20261109_220449",
+  "status": "c_r_closed_pae_headline_closed_chain_interpretation_open",
+  "batch_entered": false,
+  "c04_started": false,
+  "c_crosscheck": {
+    "status": "passed",
+    "official_source": "E:\\diyipian\\external\\Pinc_official\\src\\pinc.c",
+    "official_commit": "57afb08e29fe97379db5b155da5fb78c4c8715d1",
+    "source_sha256": "8d618e74cdd4d2fa3b2221145594dda51512e53ebfb6847c72bd3b4e45bba1be",
+    "compiler": "TinyCC 0.9.27 (x86_64 Windows)",
+    "compiler_download": "https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip",
+    "compiler_zip_sha256": "34a721949a2583fdff725312da092fa0f5f1f284b702e6f811c6954714faabb2",
+    "tcc_exe_sha256": "e9cb3e89e20a9efead83cc9e6b100314275634c2f705056da71f424ea9b0cdf0",
+    "compiled_exe": "E:\\diyipian\\analysis\\codex_outputs\\C03_official_pinc_handoff_2026-11-09\\run_20261109_220449\\closure\\pinc_c_crosscheck\\Pinc_tcc.exe",
+    "compiled_exe_sha256": "3cbdc8f15127f4197667e3a61af3c2ce65c3af1bc2373078ada7b1eb917cd36f",
+    "outputs": {
+      "pinc_csv": {
+        "r_sha256": "558e044044727f29deb836c18f78b124a8d1228cdfa62418c1ae01b8e892c9cc",
+        "c_sha256": "558e044044727f29deb836c18f78b124a8d1228cdfa62418c1ae01b8e892c9cc",
+        "byte_identical": true
+      },
+      "pairlist_csv": {
+        "r_sha256": "1456e0d2a2a276ff38fdbfabb83749499cd7ff3630456d3ef0c9e2f3a39117a8",
+        "c_sha256": "1456e0d2a2a276ff38fdbfabb83749499cd7ff3630456d3ef0c9e2f3a39117a8",
+        "byte_identical": true
+      },
+      "contact_probability": {
+        "shape": [169, 169],
+        "max_abs_diff": 9.7853e-06,
+        "reason": "R output is rounded to 4 decimals; C output uses full precision."
+      }
+    },
+    "result": {
+      "chain1": "B",
+      "chain2": "A",
+      "Pinc1": 0.9359,
+      "Pinc2": 0.9352,
+      "Pinc": 0.9356
+    },
+    "note": "TinyCC is not the vendor-recommended GCC toolchain, but it compiled the unmodified official src/pinc.c and produced output matching the official R implementation."
+  },
+  "pae_conversion_source": {
+    "status": "not_found_in_public_materials",
+    "checked_sources": [
+      "https://proteinbase.com/download (Schema & Field Guide)",
+      "HuggingFace dataset card adaptyvbio/proteinbase via hf-mirror.com",
+      "20 Proteinbase frontend _next/static/chunks/*.js bundles",
+      "Boltz official writer.py source"
+    ],
+    "findings": [
+      "Proteinbase public docs describe the CSV and evaluations array but not the PAE JSON npz-to-JSON conversion, matrix orientation, or token metadata.",
+      "HuggingFace dataset card lists only README and parquet data; no conversion code.",
+      "Frontend bundles contain no predicted_aligned_error, pae_file, npz, or conversion logic.",
+      "Cached PAE JSON contains only predicted_aligned_error and max_predicted_aligned_error, with no token_chain_ids or token_res_ids."
+    ],
+    "transpose_invariance": {
+      "status": "headline_pinc_invariant",
+      "original": {"Pinc1": 0.9359, "Pinc2": 0.9352, "Pinc": 0.9356},
+      "transposed": {"Pinc1": 0.9352, "Pinc2": 0.9359, "Pinc": 0.9356},
+      "conclusion": "Pinc is invariant to PAE transpose; Pinc1 and Pinc2 swap.",
+      "evidence_file": "E:\\diyipian\\analysis\\codex_outputs\\C03_official_pinc_handoff_2026-11-09\\run_20261109_220449\\closure\\PAE_TRANSPOSE_TEST.md"
+    },
+    "closed": [
+      "Headline symmetrised Pinc is unaffected by PAE orientation for this sample.",
+      "CIF chain/residue order and PAE dimension are consistent.",
+      "Boltz writer source writes CIF and PAE from the same structure/prediction order."
+    ],
+    "open": [
+      "Proteinbase npz-to-JSON conversion source was not found.",
+      "Chain-specific Pinc1/Pinc2 interpretation remains orientation-dependent."
+    ]
+  },
+  "frozen_master": {
+    "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+    "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "unchanged": true
+  },
+  "recommendation": {
+    "batch": "Do not start batch until main-line authorization.",
+    "headline_pinc": "Existing evidence supports using the symmetrised Pinc as the main score.",
+    "chain_specific": "Do not make Pinc1/Pinc2 chain-specific claims until orientation is resolved by conversion source or token metadata.",
+    "c04": "Do not start C04 until C03 closure is accepted and batch is authorized."
+  }
+}

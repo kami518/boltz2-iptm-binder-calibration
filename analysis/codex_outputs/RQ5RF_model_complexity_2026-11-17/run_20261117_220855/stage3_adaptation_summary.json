@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "pair_prediction_rows": 48712,
+  "fold_metric_rows": 2040,
+  "parameter_rows": 1360,
+  "lambda_candidate_rows": 4080,
+  "inner_assignment_rows": 73068,
+  "shared_adaptation_outer_folds": 85,
+  "coverage_failures": 0,
+  "all_each_target_model_oof_unique": true,
+  "inner_assignment_hashes_shared": true,
+  "F_selected_all_evaluable": true,
+  "I_all_evaluable": true,
+  "F_all_evaluable": true
+}

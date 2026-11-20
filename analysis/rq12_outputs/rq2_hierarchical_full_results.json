@@ -1,0 +1,356 @@
+{
+  "models": {
+    "primary_six": {
+      "model_type": "random_intercept_and_slope",
+      "fallback_reason": null,
+      "converged": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 911.759485465777,
+      "quadrature_nodes": 9,
+      "information_positive_definite": true,
+      "information_min_eigenvalue": 0.6377935810008966,
+      "hyperparameters": {
+        "mu_intercept": -2.0132853527956067,
+        "mu_slope": 0.8850365351298854,
+        "tau_intercept": 3.021158742070379,
+        "tau_slope": 0.8243032843565721,
+        "mu_intercept_se": 1.249229867986203,
+        "mu_slope_se": 0.3700370786328302,
+        "log_tau_intercept_se": 0.30629360083608076,
+        "log_tau_slope_se": 0.3692969849344324
+      },
+      "targets": [
+        {
+          "alpha_partial": -7.887572253850225,
+          "beta_partial": 2.605036357241902,
+          "alpha_posterior_sd": 1.1938740769374532,
+          "beta_posterior_sd": 0.4545673113313194,
+          "alpha_beta_posterior_correlation": -0.9720655841221899
+        },
+        {
+          "alpha_partial": -0.08861812596492515,
+          "beta_partial": 0.5162021960880837,
+          "alpha_posterior_sd": 0.2024252605431941,
+          "beta_posterior_sd": 0.1841915816337887,
+          "alpha_beta_posterior_correlation": -0.781356199278181
+        },
+        {
+          "alpha_partial": -3.1291078418669707,
+          "beta_partial": 0.46026708265291477,
+          "alpha_posterior_sd": 0.30378775034962574,
+          "beta_posterior_sd": 0.13535262223455832,
+          "alpha_beta_posterior_correlation": -0.9374665872720283
+        },
+        {
+          "alpha_partial": 0.3973343062111252,
+          "beta_partial": 0.18502407962727202,
+          "alpha_posterior_sd": 0.4155398452227184,
+          "beta_posterior_sd": 0.14021527410769602,
+          "alpha_beta_posterior_correlation": -0.946669133023665
+        },
+        {
+          "alpha_partial": 1.5181988998536704,
+          "beta_partial": 0.29323322357306053,
+          "alpha_posterior_sd": 0.17418795938369372,
+          "beta_posterior_sd": 0.10117800709621166,
+          "alpha_beta_posterior_correlation": -0.16910436507022794
+        },
+        {
+          "alpha_partial": -3.6249057728022978,
+          "beta_partial": 1.2745207572635238,
+          "alpha_posterior_sd": 0.9973376374866184,
+          "beta_posterior_sd": 0.37580692590533993,
+          "alpha_beta_posterior_correlation": -0.9792414335386884
+        }
+      ],
+      "parameters": [
+        -2.0132853527956067,
+        0.8850365351298854,
+        1.105640447224091,
+        -0.1932167532519047
+      ]
+    },
+    "primary_five": {
+      "model_type": "random_intercept_and_slope",
+      "fallback_reason": null,
+      "converged": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 868.9153322656429,
+      "quadrature_nodes": 9,
+      "information_positive_definite": true,
+      "information_min_eigenvalue": 1.4655718452151094,
+      "hyperparameters": {
+        "mu_intercept": -0.568449158972124,
+        "mu_slope": 0.37954211780433117,
+        "tau_intercept": 1.820072859785872,
+        "tau_slope": 0.16682921052339358,
+        "mu_intercept_se": 0.8216969590184902,
+        "mu_slope_se": 0.11051658244556103,
+        "log_tau_intercept_se": 0.34762001005076054,
+        "log_tau_slope_se": 0.6299581352154343
+      },
+      "targets": [
+        {
+          "alpha_partial": -0.013636007251907929,
+          "beta_partial": 0.42959587795327475,
+          "alpha_posterior_sd": 0.16450415310265296,
+          "beta_posterior_sd": 0.12395801400235353,
+          "alpha_beta_posterior_correlation": -0.6465868005503167
+        },
+        {
+          "alpha_partial": -3.0040085472016904,
+          "beta_partial": 0.4045594180487518,
+          "alpha_posterior_sd": 0.2374423860114227,
+          "beta_posterior_sd": 0.102894371613314,
+          "alpha_beta_posterior_correlation": -0.896687900599984
+        },
+        {
+          "alpha_partial": 0.2034539137279834,
+          "beta_partial": 0.2541756494935073,
+          "alpha_posterior_sd": 0.32533510147049977,
+          "beta_posterior_sd": 0.1065770721108639,
+          "alpha_beta_posterior_correlation": -0.9113074902468745
+        },
+        {
+          "alpha_partial": 1.5039267182792728,
+          "beta_partial": 0.30978482655884515,
+          "alpha_posterior_sd": 0.1723072709342622,
+          "beta_posterior_sd": 0.08715042739277878,
+          "alpha_beta_posterior_correlation": -0.1323500648027184
+        },
+        {
+          "alpha_partial": -1.607275368721837,
+          "beta_partial": 0.500016928381848,
+          "alpha_posterior_sd": 0.4318029095717465,
+          "beta_posterior_sd": 0.15116836523385987,
+          "alpha_beta_posterior_correlation": -0.892999731803204
+        }
+      ],
+      "parameters": [
+        -0.568449158972124,
+        0.37954211780433117,
+        0.598876533136791,
+        -1.7907846813478125
+      ]
+    },
+    "strict_six": {
+      "model_type": "random_intercept_and_slope",
+      "fallback_reason": null,
+      "converged": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 959.7475539618836,
+      "quadrature_nodes": 9,
+      "information_positive_definite": true,
+      "information_min_eigenvalue": 0.71994640246937,
+      "hyperparameters": {
+        "mu_intercept": -2.3347371373362846,
+        "mu_slope": 0.9082879646818879,
+        "tau_intercept": 2.807486709977409,
+        "tau_slope": 0.7999590218567718,
+        "mu_intercept_se": 1.1745024654554488,
+        "mu_slope_se": 0.36200458610912234,
+        "log_tau_intercept_se": 0.3154157005604156,
+        "log_tau_slope_se": 0.3760023323970226
+      },
+      "targets": [
+        {
+          "alpha_partial": -7.741172839342471,
+          "beta_partial": 2.5496278629997318,
+          "alpha_posterior_sd": 1.1575075539170878,
+          "beta_posterior_sd": 0.44182100864689355,
+          "alpha_beta_posterior_correlation": -0.9705878749208209
+        },
+        {
+          "alpha_partial": -0.12981320659209883,
+          "beta_partial": 0.5073389374171275,
+          "alpha_posterior_sd": 0.20225249294970635,
+          "beta_posterior_sd": 0.18335465704857715,
+          "alpha_beta_posterior_correlation": -0.7831871059268168
+        },
+        {
+          "alpha_partial": -3.1509317047430883,
+          "beta_partial": 0.46519217010249686,
+          "alpha_posterior_sd": 0.3059439067236934,
+          "beta_posterior_sd": 0.136204017504136,
+          "alpha_beta_posterior_correlation": -0.9378006503286596
+        },
+        {
+          "alpha_partial": -0.737553090961092,
+          "beta_partial": 0.36197354244303825,
+          "alpha_posterior_sd": 0.439693817491118,
+          "beta_posterior_sd": 0.1470371671504442,
+          "alpha_beta_posterior_correlation": -0.9599531060956632
+        },
+        {
+          "alpha_partial": 0.9802520087933784,
+          "beta_partial": 0.2637579665699838,
+          "alpha_posterior_sd": 0.1519542057384678,
+          "beta_posterior_sd": 0.08488520135726732,
+          "alpha_beta_posterior_correlation": -0.2673488299353439
+        },
+        {
+          "alpha_partial": -3.9654121609214132,
+          "beta_partial": 1.3250772491311025,
+          "alpha_posterior_sd": 1.0108593405744934,
+          "beta_posterior_sd": 0.37746537418916765,
+          "alpha_beta_posterior_correlation": -0.9789517414921443
+        }
+      ],
+      "parameters": [
+        -2.3347371373362846,
+        0.9082879646818879,
+        1.0322896738623233,
+        -0.22319477530517118
+      ]
+    },
+    "strict_five": {
+      "model_type": "random_intercept_and_slope",
+      "fallback_reason": null,
+      "converged": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 916.8091198475454,
+      "quadrature_nodes": 9,
+      "information_positive_definite": true,
+      "information_min_eigenvalue": 1.7126577276336452,
+      "hyperparameters": {
+        "mu_intercept": -0.9215459737842322,
+        "mu_slope": 0.4026936990956287,
+        "tau_intercept": 1.6536151847253757,
+        "tau_slope": 0.15578270778017694,
+        "mu_intercept_se": 0.7536474311359884,
+        "mu_slope_se": 0.10735140643603892,
+        "log_tau_intercept_se": 0.35542219785292206,
+        "log_tau_slope_se": 0.620182295877388
+      },
+      "targets": [
+        {
+          "alpha_partial": -0.068429087262178,
+          "beta_partial": 0.4356258979734182,
+          "alpha_posterior_sd": 0.161710005337044,
+          "beta_posterior_sd": 0.1191305432482208,
+          "alpha_beta_posterior_correlation": -0.63475718537522
+        },
+        {
+          "alpha_partial": -3.0325288642945813,
+          "beta_partial": 0.41319966981185013,
+          "alpha_posterior_sd": 0.2336666655697467,
+          "beta_posterior_sd": 0.10058911820281191,
+          "alpha_beta_posterior_correlation": -0.8922299373648437
+        },
+        {
+          "alpha_partial": -0.7408519928436627,
+          "beta_partial": 0.36413668409340866,
+          "alpha_posterior_sd": 0.32776291264270063,
+          "beta_posterior_sd": 0.10633201691365525,
+          "alpha_beta_posterior_correlation": -0.92701082012069
+        },
+        {
+          "alpha_partial": 0.9608697658995607,
+          "beta_partial": 0.29058932077746263,
+          "alpha_posterior_sd": 0.14994958818289847,
+          "beta_posterior_sd": 0.07525272691205853,
+          "alpha_beta_posterior_correlation": -0.22009699531074955
+        },
+        {
+          "alpha_partial": -1.827594872657331,
+          "beta_partial": 0.5103080833847852,
+          "alpha_posterior_sd": 0.41429235155434824,
+          "beta_posterior_sd": 0.14253474925308549,
+          "alpha_beta_posterior_correlation": -0.8785751478377619
+        }
+      ],
+      "parameters": [
+        -0.9215459737842322,
+        0.4026936990956287,
+        0.5029639121718612,
+        -1.8592931415629768
+      ]
+    }
+  },
+  "primary_six_stability": {
+    "status": "complete",
+    "base_nodes": 9,
+    "check_nodes": 11,
+    "same_model_type": true,
+    "check_converged": true,
+    "check_information_positive_definite": true,
+    "hyperparameter_absolute_differences": {
+      "mu_intercept": 1.7817521036356254e-05,
+      "mu_slope": 1.5959402143161938e-06,
+      "tau_intercept": 5.844966405099683e-06,
+      "tau_slope": 7.994540335287681e-07
+    },
+    "max_target_estimate_absolute_difference": 2.714280835647287e-06,
+    "tolerance": 0.02,
+    "stable_result": {
+      "model_type": "random_intercept_and_slope",
+      "fallback_reason": null,
+      "converged": true,
+      "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "objective": 911.7594837939009,
+      "quadrature_nodes": 11,
+      "information_positive_definite": true,
+      "information_min_eigenvalue": 0.6378005617227108,
+      "hyperparameters": {
+        "mu_intercept": -2.0132675352745704,
+        "mu_slope": 0.8850381310700998,
+        "tau_intercept": 3.0211645870367843,
+        "tau_slope": 0.8243024849025385,
+        "mu_intercept_se": 1.2492231226162918,
+        "mu_slope_se": 0.3700369191535134,
+        "log_tau_intercept_se": 0.30629429061154595,
+        "log_tau_slope_se": 0.36929704634789107
+      },
+      "targets": [
+        {
+          "alpha_partial": -7.887569539569389,
+          "beta_partial": 2.6050352800164873,
+          "alpha_posterior_sd": 1.1938787602825933,
+          "beta_posterior_sd": 0.4545687820340953,
+          "alpha_beta_posterior_correlation": -0.9720657340524764
+        },
+        {
+          "alpha_partial": -0.08861811239886787,
+          "beta_partial": 0.5162022322083145,
+          "alpha_posterior_sd": 0.20242525999036842,
+          "beta_posterior_sd": 0.18419158029733465,
+          "alpha_beta_posterior_correlation": -0.781356180676296
+        },
+        {
+          "alpha_partial": -3.129107436390851,
+          "beta_partial": 0.4602669079208714,
+          "alpha_posterior_sd": 0.30379392280880363,
+          "beta_posterior_sd": 0.1353550185111105,
+          "alpha_beta_posterior_correlation": -0.9374688565725154
+        },
+        {
+          "alpha_partial": 0.39733481884420596,
+          "beta_partial": 0.1850239250280271,
+          "alpha_posterior_sd": 0.41554108490343794,
+          "beta_posterior_sd": 0.1402156455694105,
+          "alpha_beta_posterior_correlation": -0.946669417388767
+        },
+        {
+          "alpha_partial": 1.5181990753501695,
+          "beta_partial": 0.29323334203525914,
+          "alpha_posterior_sd": 0.1741881375927954,
+          "beta_posterior_sd": 0.1011783694731568,
+          "alpha_beta_posterior_correlation": -0.16910228621175644
+        },
+        {
+          "alpha_partial": -3.624905016534713,
+          "beta_partial": 1.2745204846902525,
+          "alpha_posterior_sd": 0.9973378825106523,
+          "beta_posterior_sd": 0.37580700813061874,
+          "alpha_beta_posterior_correlation": -0.9792414432809062
+        }
+      ],
+      "parameters": [
+        -2.0132675352745704,
+        0.8850381310700998,
+        1.1056423818992438,
+        -0.1932177231066127
+      ]
+    }
+  }
+}

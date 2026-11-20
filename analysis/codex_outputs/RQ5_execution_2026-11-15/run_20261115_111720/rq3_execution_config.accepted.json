@@ -1,0 +1,206 @@
+{
+  "handoff_id": "RQ3_EXECUTION_2026-11-13",
+  "config_frozen_before_any_rq3_result": true,
+  "frozen_at_local_date": "2026-11-13",
+  "workspace": "<REPRODUCTION_ROOT>",
+  "protocol": {
+    "path": "<REPRODUCTION_ROOT>/Proteinbase校准研究_实验流程_v3_2026-11-06.md",
+    "sha256": "36dc1503e86960b5f05d0eb273d3b68091eb2072975fb51e5556ee821e73cfd8",
+    "section": "6. RQ3：零标签迁移与适配分解"
+  },
+  "output_root": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_execution_2026-11-13",
+  "run_directory_pattern": "run_YYYYMMDD_HHMMSS",
+  "inputs": {
+    "pair_master": {
+      "path": "<REPRODUCTION_ROOT>/analysis/v3_outputs/pair_master_v3.csv",
+      "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+      "expected_rows": 2084
+    },
+    "sequence_clusters": {
+      "path": "<REPRODUCTION_ROOT>/analysis/rq12_outputs/sequence_clusters_rq12.csv",
+      "sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+      "expected_rows": 2084
+    },
+    "loto_assignments": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_pair_assignments.csv",
+      "sha256": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
+      "expected_folds": 44
+    },
+    "loto_manifest": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_fold_manifest.csv",
+      "sha256": "281a1775edb6d45af635c273e83591c60fa5aa75467afa07d8d2b4cc6869bfd9",
+      "expected_rows": 44
+    },
+    "target_cv5_assignments": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_pair_assignments.csv",
+      "sha256": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796",
+      "expected_fold_rows": 220
+    },
+    "target_cv5_manifest": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_fold_manifest.csv",
+      "sha256": "964e65aa8e05c73e4f8b070f5d8bba887d593f366c6ed1781dd5f351a795f0ed",
+      "expected_rows": 220
+    },
+    "cross_target_exclusions": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/cross_target_cluster_exclusions.csv",
+      "sha256": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
+    },
+    "fold_qc": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/fold_qc.json",
+      "sha256": "80dd46e56ac2d1ad4c8eaea3c95aa05d951ef42f132836c78ab7829bbe407cc2"
+    }
+  },
+  "analysis_sets": {
+    "primary_six": {"outcome": "primary_outcome", "exclude_target": null},
+    "primary_five": {"outcome": "primary_outcome", "exclude_target": "aah-i"},
+    "strict_six": {"outcome": "strict_outcome", "exclude_target": null},
+    "strict_five": {"outcome": "strict_outcome", "exclude_target": "aah-i"}
+  },
+  "primary_analysis": {
+    "analysis_set": "primary_six",
+    "cluster_rule": "sequence_cluster90",
+    "source_weighting": "target_equal",
+    "model_form": "linear",
+    "evaluation": "held_out_target_metrics_then_unweighted_mean_over_targets"
+  },
+  "prespecified_sensitivity_dimensions": [
+    "primary_five_excluding_aah_i",
+    "strict_outcome",
+    "sequence_cluster80",
+    "pair_source_weighting",
+    "restricted_cubic_spline"
+  ],
+  "probability_clip": 1e-06,
+  "x_transform": "x = logit(clip(boltz2_iptm, 1e-6, 1-1e-6)); the same clip is used only for log loss and calibration logit, while Brier uses the unclipped predicted probability",
+  "reliability_bin_edges": [0.0, 0.2, 0.4, 0.6, 0.8, 0.9, 0.95, 1.0],
+  "reliability_bin_rule": "np.digitize(p, edges[1:-1], right=False); report every bin including empty bins",
+  "source_models": {
+    "estimator": "unpenalized weighted maximum likelihood logistic regression implemented with existing numpy/scipy; no dependency installation",
+    "linear_design": "one intercept indicator per source target with no global intercept, plus one common x slope",
+    "target_equal_weight_column": "weight_target_equal",
+    "pair_weight_column": "weight_pair",
+    "fit_rows": "split_status == train only, after the frozen cross-target-cluster exclusions",
+    "convergence": "stable logaddexp likelihood and analytic gradient; L-BFGS-B with multiple deterministic starts if needed; maxiter>=1000, ftol<=1e-12, gtol<=1e-8",
+    "parameter_bounds": "all linear predictor coefficients bounded to [-40,40] solely as a numerical failure guard; hitting a bound is a QC failure, not an estimable result",
+    "failure_rule": "record nonconvergence, singular/unidentifiable information, nonfinite values, or bound-hitting as unevaluable; do not silently add ridge, drop targets, change weights, or use test labels",
+    "target_equal_transport_intercept": "unweighted arithmetic mean of the fitted source-target intercepts",
+    "pair_transport_intercept": "sum(n_j*alpha_j)/sum(n_j), where n_j is the post-exclusion training pair count for source target j",
+    "common_slope_transport": "the fitted common slope is transferred unchanged",
+    "transport_prediction": "p_U = expit(alpha_bar + beta_common*x_test), or the corresponding common RCS basis coefficients for spline sensitivity"
+  },
+  "restricted_cubic_spline": {
+    "status": "prespecified_sensitivity_only",
+    "knot_quantiles": [0.1, 0.5, 0.9],
+    "knot_estimation_rows": "current LOTO source training rows only, after cross-target exclusions; never the held-out target",
+    "weighted_quantile": "sort x ascending with the current source weights; c=(cumsum(w)-0.5*w)/sum(w); np.interp(q,c,x,left=min(x),right=max(x)); target_equal uses weight_target_equal_raw, pair uses weight_pair",
+    "basis_count": 2,
+    "basis_formula": "k1<k2<k3; B1(x)=x; B2(x)=((max(x-k1,0))^3 - ((k3-k1)/(k3-k2))*(max(x-k2,0))^3 + ((k2-k1)/(k3-k2))*(max(x-k3,0))^3)/(k3-k1)^2",
+    "design": "source-target intercept indicators plus common B1 and B2 coefficients",
+    "test_transform": "reuse the training knots and formula unchanged; do not recompute knots or truncate test x to the training range",
+    "tie_or_convergence_rule": "if knots are not strictly increasing or fit fails QC, mark the spline fold unevaluable; do not alter quantiles or substitute another spline",
+    "unit_test_required": "verify B2 and its first and second derivatives are zero below k1, and the second derivative is zero above k3; verify linear extrapolation beyond outer knots"
+  },
+  "bss_references": {
+    "transport_target_equal": "constant p = unweighted mean of the post-exclusion source-target prevalences",
+    "transport_pair": "constant p = total post-exclusion source positives / total post-exclusion source pairs",
+    "target_oracle": "constant p = actual held-out-target prevalence; diagnostic only, never a deployable zero-label reference",
+    "adaptation_train": "for predictive I/F, constant p = current outer adaptation-training prevalence, evaluated on the corresponding outer test rows",
+    "formula": "BSS = 1 - mean((p_model-y)^2)/mean((p_reference-y)^2); preserve the reference predictions row by row"
+  },
+  "metrics": {
+    "required_per_held_out_target": ["n", "positives", "brier", "log_loss", "bss_transport", "bss_target_oracle", "calibration_intercept", "calibration_slope", "calibration_intercept_se", "calibration_slope_se", "convergence_flags"],
+    "calibration_diagnostic": "unpenalized logistic y ~ intercept + slope*logit(clip(predicted_probability)); fitted only for evaluation after predictions are fixed; do not call it training",
+    "macro_summary": "unweighted arithmetic mean of per-held-out-target metrics; also report target count, signs, min and max; no pooling hidden inside macro Brier or BSS",
+    "pair_summary": "pool row-level predictions across held-out targets and compute pair-weighted metrics; keep this separate from macro results",
+    "reliability": "per held-out target and model layer using frozen common bins; report n, positives, mean prediction, observed rate and Wilson 95% interval",
+    "bootstrap": "not required in this execution; do not claim population uncertainty over future targets from six targets"
+  },
+  "oracle_and_descriptive_layers": {
+    "oracle_I": "for each LOTO target, use all target labels only after U is fixed; solve a so mean(expit(a+eta_U)) equals full-target prevalence; label oracle_base_rate_scenario and never zero-label",
+    "descriptive_F": "for each LOTO target, fit unpenalized eta_F=a+gamma*eta_U on all target rows after U is fixed; label descriptive_in_sample_adaptation, never predictive improvement",
+    "scope": "linear U only, both source weighting schemes and all analysis-set/cluster-rule combinations",
+    "metrics": "report Brier, log loss, BSS-target-oracle and calibration diagnostics; descriptive F is not required to improve Brier"
+  },
+  "predictive_adaptation": {
+    "scope": "linear U only, both source weighting schemes and all analysis-set/cluster-rule combinations",
+    "outer_cv": {
+      "reuse_existing_assignments": true,
+      "algorithm_already_frozen": "StratifiedGroupKFold",
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 20261112,
+      "regenerate_or_change_allowed": false
+    },
+    "base_prediction": "eta_U is fixed from the corresponding LOTO source model before target-internal adaptation; never refit the source model using target adaptation labels",
+    "I_model": "eta_I=a+eta_U; fit only intercept a on each outer adaptation-training set by weighted-free maximum likelihood/root solving; all adaptation pairs have equal weight",
+    "F_model": "eta_F=a+gamma*eta_U=a+eta_U+delta*eta_U, where gamma=1+delta",
+    "F_penalty": "minimize mean negative log-likelihood on the adaptation-training rows + 0.5*lambda*delta^2; intercept a is unpenalized and delta=0 corresponds exactly to unchanged U slope",
+    "lambda_grid": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+    "lambda_zero_allowed": false,
+    "adaptation_training_weight": "1 per pair for both source-weighting variants; source weighting affects only the fixed U base model",
+    "inner_cv": {
+      "algorithm": "sklearn.model_selection.StratifiedGroupKFold",
+      "n_splits": 3,
+      "shuffle": true,
+      "random_state": 20261113,
+      "fit_input": "each outer adaptation-training set only",
+      "groups": "current cluster_rule sequence_cluster_value",
+      "stratify_by": "current analysis-set outcome",
+      "reuse_rows_across_lambdas": true,
+      "save_assignments": true,
+      "fallback_allowed": false
+    },
+    "lambda_selection": "for each lambda, fit F on every inner-training split and concatenate all inner-validation predictions; choose the lambda with minimum pooled inner-validation log loss using probability_clip; if values tie within 1e-12, choose the larger lambda; Brier is not the selection metric",
+    "final_outer_fit": "refit a and delta with selected lambda on the full outer adaptation-training set and predict its untouched outer test split",
+    "failure_rule": "if inner folds cannot be formed, an inner-training set has one class, a candidate fails QC, or the final fit fails, record the affected lambda/fold as unevaluable; if all lambdas fail, predictive F is unevaluable; never use outer test labels to repair or select",
+    "required_comparisons": "on identical outer-test rows compare U, predictive I and predictive F; include Brier, log loss, BSS-adaptation-train, BSS-target-oracle and the same target's original BSS-transport",
+    "aggregation": "save outer-fold metrics and concatenate each target's five outer-test prediction sets for target-level out-of-fold metrics; adaptation-train baselines remain fold-specific row by row"
+  },
+  "execution_stages": [
+    "stage_0_input_and_fold_qc",
+    "stage_1_U_linear_and_RCS_with_predictions_metrics_reliability",
+    "stage_2_oracle_I_and_descriptive_F",
+    "stage_3_predictive_I_F_with_nested_inner_cv",
+    "stage_4_figures_tables_qc_and_handoff"
+  ],
+  "required_outputs": [
+    "RUN_STATUS.json",
+    "run_config.snapshot.json",
+    "rq3_source_model_parameters.csv",
+    "rq3_u_pair_predictions.csv",
+    "rq3_loto_metrics.csv",
+    "rq3_loto_reliability.csv",
+    "rq3_descriptive_pair_predictions.csv",
+    "rq3_adaptation_inner_assignments.csv",
+    "rq3_lambda_selection.csv",
+    "rq3_adaptation_fold_metrics.csv",
+    "rq3_adaptation_pair_predictions.csv",
+    "rq3_target_adaptation_metrics.csv",
+    "rq3_overall_metrics.csv",
+    "RQ3_U_LOTO.png",
+    "RQ3_adaptation.png",
+    "qc_checks.json",
+    "HANDOFF_RESULT.md",
+    "handoff_result.json",
+    "final_hash_manifest.csv",
+    "complete scripts commands logs and failed-item ledger"
+  ],
+  "figure_requirements": {
+    "primary_story": "U-layer held-out-target Brier and both BSS values, with log loss and reliability support; distinguish target-equal macro from pair summaries",
+    "adaptation_story": "U, predictive I and predictive F on identical outer-test rows; oracle I and descriptive F visually or textually separated as nondeployable diagnostics",
+    "aah_i": "must remain visible as a separate target; five-target sensitivity must not be hidden",
+    "no_result_driven_changes": true
+  },
+  "forbidden": [
+    "modify_v1_v2_v3_or_existing_accepted_results",
+    "modify_or_regenerate_frozen_inputs_master_clusters_outer_folds",
+    "install_or_upgrade_dependencies",
+    "use_held_out_target_labels_for_U_training_knots_binning_or_model_selection",
+    "use_outer_test_labels_for_inner_folds_lambda_selection_or_adaptation_fitting",
+    "select_methods_based_on_outer_results",
+    "add_Pinc_random_forest_other_ML_or_start_RQ4_RQ5_RQ6",
+    "claim_oracle_or_descriptive_results_are_zero_label_or_predictive",
+    "claim_success_because_calibration_slope_CI_contains_1",
+    "overwrite_prior_codex_runs"
+  ]
+}

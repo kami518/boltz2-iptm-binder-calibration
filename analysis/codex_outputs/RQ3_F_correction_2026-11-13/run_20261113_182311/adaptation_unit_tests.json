@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "checks": {
+    "delta_zero_exactly_reproduces_U": true,
+    "abs_delta_non_increasing_with_lambda": true,
+    "all_synthetic_fits_evaluable": true,
+    "saved_objective_reconstructs_from_parameters": true,
+    "saved_gamma_equals_one_plus_delta": true,
+    "saved_solution_gradient_near_zero": true,
+    "analytic_gradient_matches_central_finite_difference": true,
+    "lambda_zero_matches_independent_gamma_fit": true,
+    "large_lambda_compresses_delta_toward_zero": true
+  },
+  "lambda_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "abs_delta_by_lambda": [
+    0.5635379178887863,
+    0.5254705178613532,
+    0.33121217974704126,
+    0.08095401825948186,
+    0.009755826694552137,
+    0.0009970302920685626
+  ],
+  "fit_statuses": [
+    "evaluable",
+    "evaluable",
+    "evaluable",
+    "evaluable",
+    "evaluable",
+    "evaluable"
+  ],
+  "numerical_diagnostics": {
+    "max_objective_reconstruction_error": 0.0,
+    "max_gamma_identity_error": 0.0,
+    "max_saved_gradient": 5.353786216716339e-07,
+    "max_finite_difference_gradient_error": 3.268789405819206e-11,
+    "lambda_zero_max_probability_error": 1.7390755502333377e-11,
+    "large_lambda": 100000000.0,
+    "large_lambda_abs_delta": 9.994922831335968e-10,
+    "large_lambda_note": "finite-lambda compression check only; exact equality with I is not required"
+  },
+  "tolerances": {
+    "objective_reconstruction_abs": 1e-10,
+    "gamma_identity_abs": 0.0,
+    "saved_gradient_max_abs": 1e-05,
+    "finite_difference_gradient_max_abs": 1e-06,
+    "lambda_zero_probability_max_abs": 1e-09,
+    "large_lambda_abs_delta": 1e-05
+  },
+  "synthetic_seed": 20261113
+}

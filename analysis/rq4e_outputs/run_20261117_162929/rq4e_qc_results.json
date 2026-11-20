@@ -1,0 +1,846 @@
+{
+  "analysis": "RQ4E_intercept_addressable_post_hoc_diagnostic",
+  "checked_at": "2026-11-17T16:29:29.513279+08:00",
+  "all_passed": true,
+  "n_checks": 92,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "original_rq3_all_qc_passed",
+      "passed": true,
+      "observed": {
+        "all_passed": true,
+        "n_failed": 0
+      },
+      "expected": {
+        "all_passed": true,
+        "n_failed": 0
+      }
+    },
+    {
+      "check": "original_rq3_input_hash_gate_passed",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_selected_row_count",
+      "passed": true,
+      "observed": 18,
+      "expected": 18
+    },
+    {
+      "check": "primary_six_target_count",
+      "passed": true,
+      "observed": 6,
+      "expected": 6
+    },
+    {
+      "check": "primary_six_complete_layer_coverage",
+      "passed": true,
+      "observed": {
+        "aah-i": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "human-vegf110": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "nipah-glycoprotein-g": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "pd-l1": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "sars-cov-2-rbd": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "trem2": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ]
+      },
+      "expected": "U/I/F for every target"
+    },
+    {
+      "check": "primary_six_aah_i_membership",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_U_n_total",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "primary_six_U_positives_total",
+      "passed": true,
+      "observed": 748,
+      "expected": 748
+    },
+    {
+      "check": "primary_six_I_n_total",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "primary_six_I_positives_total",
+      "passed": true,
+      "observed": 748,
+      "expected": 748
+    },
+    {
+      "check": "primary_six_F_n_total",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "primary_six_F_positives_total",
+      "passed": true,
+      "observed": 748,
+      "expected": 748
+    },
+    {
+      "check": "primary_six_aah-i_same_n",
+      "passed": true,
+      "observed": [
+        "133"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_aah-i_same_positives",
+      "passed": true,
+      "observed": [
+        "19"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_aah-i_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.14285714285714285
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_aah-i_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_aah-i_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_human-vegf110_same_n",
+      "passed": true,
+      "observed": [
+        "268"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_human-vegf110_same_positives",
+      "passed": true,
+      "observed": [
+        "158"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_human-vegf110_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.5895522388059702
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_human-vegf110_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_human-vegf110_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_same_n",
+      "passed": true,
+      "observed": [
+        "1028"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_same_positives",
+      "passed": true,
+      "observed": [
+        "101"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.09824902723735408
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_pd-l1_same_n",
+      "passed": true,
+      "observed": [
+        "277"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_pd-l1_same_positives",
+      "passed": true,
+      "observed": [
+        "198"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_pd-l1_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.7148014440433214
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_pd-l1_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_pd-l1_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_same_n",
+      "passed": true,
+      "observed": [
+        "268"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_same_positives",
+      "passed": true,
+      "observed": [
+        "226"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.8432835820895522
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_trem2_same_n",
+      "passed": true,
+      "observed": [
+        "110"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_six_trem2_same_positives",
+      "passed": true,
+      "observed": [
+        "46"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_six_trem2_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.41818181818181815
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_six_trem2_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_six_trem2_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_five_selected_row_count",
+      "passed": true,
+      "observed": 15,
+      "expected": 15
+    },
+    {
+      "check": "primary_five_target_count",
+      "passed": true,
+      "observed": 5,
+      "expected": 5
+    },
+    {
+      "check": "primary_five_complete_layer_coverage",
+      "passed": true,
+      "observed": {
+        "human-vegf110": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "nipah-glycoprotein-g": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "pd-l1": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "sars-cov-2-rbd": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ],
+        "trem2": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ]
+      },
+      "expected": "U/I/F for every target"
+    },
+    {
+      "check": "primary_five_aah_i_membership",
+      "passed": true,
+      "observed": false,
+      "expected": false
+    },
+    {
+      "check": "primary_five_U_n_total",
+      "passed": true,
+      "observed": 1951,
+      "expected": 1951
+    },
+    {
+      "check": "primary_five_U_positives_total",
+      "passed": true,
+      "observed": 729,
+      "expected": 729
+    },
+    {
+      "check": "primary_five_I_n_total",
+      "passed": true,
+      "observed": 1951,
+      "expected": 1951
+    },
+    {
+      "check": "primary_five_I_positives_total",
+      "passed": true,
+      "observed": 729,
+      "expected": 729
+    },
+    {
+      "check": "primary_five_F_n_total",
+      "passed": true,
+      "observed": 1951,
+      "expected": 1951
+    },
+    {
+      "check": "primary_five_F_positives_total",
+      "passed": true,
+      "observed": 729,
+      "expected": 729
+    },
+    {
+      "check": "primary_five_human-vegf110_same_n",
+      "passed": true,
+      "observed": [
+        "268"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_five_human-vegf110_same_positives",
+      "passed": true,
+      "observed": [
+        "158"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_five_human-vegf110_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.5895522388059702
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_five_human-vegf110_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_five_human-vegf110_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_same_n",
+      "passed": true,
+      "observed": [
+        "1028"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_same_positives",
+      "passed": true,
+      "observed": [
+        "101"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.09824902723735408
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_five_pd-l1_same_n",
+      "passed": true,
+      "observed": [
+        "277"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_five_pd-l1_same_positives",
+      "passed": true,
+      "observed": [
+        "198"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_five_pd-l1_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.7148014440433214
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_five_pd-l1_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_five_pd-l1_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_same_n",
+      "passed": true,
+      "observed": [
+        "268"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_same_positives",
+      "passed": true,
+      "observed": [
+        "226"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.8432835820895522
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_five_trem2_same_n",
+      "passed": true,
+      "observed": [
+        "110"
+      ],
+      "expected": "one shared n"
+    },
+    {
+      "check": "primary_five_trem2_same_positives",
+      "passed": true,
+      "observed": [
+        "46"
+      ],
+      "expected": "one shared positives"
+    },
+    {
+      "check": "primary_five_trem2_same_prevalence",
+      "passed": true,
+      "observed": [
+        0.41818181818181815
+      ],
+      "expected": "one shared prevalence"
+    },
+    {
+      "check": "primary_five_trem2_all_layers_evaluable",
+      "passed": true,
+      "observed": {
+        "U": [
+          "evaluable",
+          "evaluable"
+        ],
+        "I": [
+          "evaluable",
+          "evaluable"
+        ],
+        "F": [
+          "evaluable",
+          "evaluable"
+        ]
+      },
+      "expected": "all evaluable"
+    },
+    {
+      "check": "primary_five_trem2_finite_metrics",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "primary_six_aah-i_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_six_human-vegf110_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_six_nipah-glycoprotein-g_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_six_pd-l1_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_six_sars-cov-2-rbd_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_six_trem2_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_five_human-vegf110_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_five_nipah-glycoprotein-g_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_five_pd-l1_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_five_sars-cov-2-rbd_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "primary_five_trem2_difference_arithmetic",
+      "passed": true,
+      "observed": "all four differences",
+      "expected": "exact within 1e-12"
+    },
+    {
+      "check": "derived_comparisons_match_frozen_table",
+      "passed": true,
+      "observed": {
+        "mismatches": [],
+        "comparison_metric_pairs": 8
+      },
+      "expected": {
+        "mismatches": [],
+        "comparison_metric_pairs": 8
+      }
+    },
+    {
+      "check": "derived_layer_macro_means_match_frozen_table",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "primary_six_u_matches_independent_loto_table",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "source_hashes_unchanged",
+      "passed": true,
+      "observed": {
+        "target_adaptation": true,
+        "loto": true,
+        "comparisons": true,
+        "macro": true,
+        "original_qc": true,
+        "original_hash_gate": true
+      },
+      "expected": "all unchanged"
+    }
+  ]
+}

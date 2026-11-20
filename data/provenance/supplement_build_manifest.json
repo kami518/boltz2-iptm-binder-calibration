@@ -1,0 +1,983 @@
+{
+  "generated": "2026-11-18",
+  "workbook": "Supplementary_Tables_S1_S16.xlsx",
+  "document": "Supplementary_Materials_PEDS_2026-11-16.md",
+  "expected_sheets": [
+    "Cover",
+    "Sources",
+    "S1",
+    "S2",
+    "S3",
+    "S4",
+    "S5",
+    "S6",
+    "S7",
+    "S8",
+    "S9",
+    "S10",
+    "S11",
+    "S12",
+    "S13",
+    "S14",
+    "S15",
+    "S16"
+  ],
+  "tables": [
+    {
+      "sheet": "S1",
+      "panel": "A. Frozen operational outcome rules",
+      "rows": 8,
+      "columns": 3,
+      "sources": [
+        "analysis/v3_outputs/pair_master_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S1",
+      "panel": "B. Target-level outcome audit",
+      "rows": 6,
+      "columns": 10,
+      "sources": [
+        "analysis/v3_outputs/pair_master_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S1",
+      "panel": "C. Complete pair-level outcome and discordance fields",
+      "rows": 2084,
+      "columns": 39,
+      "sources": [
+        "analysis/v3_outputs/pair_master_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S2",
+      "panel": "A. Assay-unit audit",
+      "rows": 2102,
+      "columns": 10,
+      "sources": [
+        "analysis/v3_outputs/assay_unit_audit_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S2",
+      "panel": "B. Actual assay and design counts by target",
+      "rows": 40,
+      "columns": 3,
+      "sources": [
+        "analysis/audit_outputs/target_actual_assay_design_counts.csv"
+      ]
+    },
+    {
+      "sheet": "S2",
+      "panel": "C. AAH-I confirmation structure",
+      "rows": 4,
+      "columns": 3,
+      "sources": [
+        "analysis/v3_outputs/pair_master_v3.csv",
+        "analysis/v3_outputs/assay_unit_audit_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S3",
+      "panel": "A. Complete target-level metrics and bootstrap intervals",
+      "rows": 198,
+      "columns": 24,
+      "sources": [
+        "analysis/rq12_outputs/rq12_target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S3",
+      "panel": "B. Target-equal and pair-weighted summaries",
+      "rows": 56,
+      "columns": 12,
+      "sources": [
+        "analysis/rq12_outputs/rq12_summary_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S3",
+      "panel": "C. Frozen common-bin reliability results",
+      "rows": 154,
+      "columns": 11,
+      "sources": [
+        "analysis/rq12_outputs/rq2_reliability_bins.csv"
+      ]
+    },
+    {
+      "sheet": "S4",
+      "panel": "A. Target-specific unpooled and partially pooled estimates",
+      "rows": 22,
+      "columns": 12,
+      "sources": [
+        "analysis/rq12_outputs/rq2_hierarchical_targets.csv"
+      ]
+    },
+    {
+      "sheet": "S4",
+      "panel": "B. Hierarchical hyperparameters",
+      "rows": 4,
+      "columns": 16,
+      "sources": [
+        "analysis/rq12_outputs/rq2_hierarchical_hyperparameters.csv"
+      ]
+    },
+    {
+      "sheet": "S4",
+      "panel": "C. Full hierarchical model output",
+      "rows": 252,
+      "columns": 2,
+      "sources": [
+        "analysis/rq12_outputs/rq2_hierarchical_full_results.json"
+      ]
+    },
+    {
+      "sheet": "S4",
+      "panel": "D. Adaptive quadrature convergence diagnostic",
+      "rows": 150,
+      "columns": 2,
+      "sources": [
+        "analysis/rq12_outputs/rq12_quadrature_convergence_diagnostic.json"
+      ]
+    },
+    {
+      "sheet": "S4",
+      "panel": "E. Frozen RQ1/RQ2 analysis configuration",
+      "rows": 40,
+      "columns": 2,
+      "sources": [
+        "analysis/rq12_outputs/rq12_analysis_config.json"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "A. Complete LOTO target-level results",
+      "rows": 176,
+      "columns": 28,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "B. LOTO macro summaries",
+      "rows": 256,
+      "columns": 14,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_macro_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "C. Target-level local-adaptation results",
+      "rows": 264,
+      "columns": 23,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_target_adaptation_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "D. Paired adaptation comparisons",
+      "rows": 144,
+      "columns": 12,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_adaptation_comparisons.csv"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "E. Adaptation macro summaries",
+      "rows": 432,
+      "columns": 13,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_adaptation_macro_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S5",
+      "panel": "F. Complete sensitivity summary",
+      "rows": 155,
+      "columns": 14,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_sensitivity_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S6",
+      "panel": "A. Exact-sequence overlap audit",
+      "rows": 5753,
+      "columns": 15,
+      "sources": [
+        "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_exact_sequence_overlap.csv"
+      ]
+    },
+    {
+      "sheet": "S6",
+      "panel": "B. Maximum similarity per unique sequence",
+      "rows": 2084,
+      "columns": 23,
+      "sources": [
+        "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_sequence_similarity_unique.csv"
+      ]
+    },
+    {
+      "sheet": "S6",
+      "panel": "C. Sequence-similarity run summary",
+      "rows": 307,
+      "columns": 2,
+      "sources": [
+        "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_sequence_similarity_summary.json"
+      ]
+    },
+    {
+      "sheet": "S6",
+      "panel": "D. Mirror/article version reconciliation",
+      "rows": 146,
+      "columns": 2,
+      "sources": [
+        "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_version_reconciliation.json"
+      ]
+    },
+    {
+      "sheet": "S7",
+      "panel": "A. Main-cohort pair-level source fields",
+      "rows": 2084,
+      "columns": 7,
+      "sources": [
+        "analysis/v3_outputs/pair_master_v3.csv"
+      ]
+    },
+    {
+      "sheet": "S7",
+      "panel": "B. External design-model × generator composition",
+      "rows": 15,
+      "columns": 6,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_generator_composition.csv"
+      ]
+    },
+    {
+      "sheet": "S7",
+      "panel": "C. External campaign/source descriptions",
+      "rows": 24,
+      "columns": 11,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_campaign_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S8",
+      "panel": "A. Primary external U target-level results",
+      "rows": 8,
+      "columns": 29,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S8",
+      "panel": "B. Primary external U grouped results",
+      "rows": 4,
+      "columns": 40,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_group_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S8",
+      "panel": "C. Low-event stress-test target metrics",
+      "rows": 6,
+      "columns": 30,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_162656/rq3e_low_event_stress_test_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S8",
+      "panel": "D. Low-event stress-test reliability bins",
+      "rows": 42,
+      "columns": 11,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_162656/rq3e_low_event_stress_test_reliability.csv"
+      ]
+    },
+    {
+      "sheet": "S9",
+      "panel": "A. All nonprimary group-level configurations",
+      "rows": 32,
+      "columns": 40,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_group_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S9",
+      "panel": "B. All nonprimary target-level configurations",
+      "rows": 64,
+      "columns": 29,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/rq3e_target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S9",
+      "panel": "C. Interpretation guide",
+      "rows": 3,
+      "columns": 3,
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/run_config.snapshot.json"
+      ]
+    },
+    {
+      "sheet": "S10",
+      "panel": "A. Grouped U/I/F metrics",
+      "rows": 27,
+      "columns": 37,
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/group_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S10",
+      "panel": "B. Target-level paired comparisons",
+      "rows": 24,
+      "columns": 5,
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/target_comparisons.csv"
+      ]
+    },
+    {
+      "sheet": "S10",
+      "panel": "C. Target-level U/I/F metrics",
+      "rows": 24,
+      "columns": 19,
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S10",
+      "panel": "D. Outer-fold metrics",
+      "rows": 120,
+      "columns": 12,
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/fold_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S10",
+      "panel": "E. Nested regularization selection",
+      "rows": 240,
+      "columns": 8,
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/lambda_selection.csv"
+      ]
+    },
+    {
+      "sheet": "S11",
+      "panel": "A. Complete target-level fixed-budget and threshold metrics",
+      "rows": 207,
+      "columns": 42,
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4ab_target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S11",
+      "panel": "B. Pooled and target-equal summaries",
+      "rows": 72,
+      "columns": 14,
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4ab_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S12",
+      "panel": "A. Complete strategy-level B/m results",
+      "rows": 75,
+      "columns": 16,
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4c_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S12",
+      "panel": "B. Complete paired strategy comparisons",
+      "rows": 105,
+      "columns": 11,
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4c_comparisons.csv"
+      ]
+    },
+    {
+      "sheet": "S12",
+      "panel": "C. Pilot parameter audit",
+      "rows": 69000,
+      "columns": 14,
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4c_pilot_parameters.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "A. Same-row target score metrics",
+      "rows": 34,
+      "columns": 26,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_target_score_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "B. Same-row score macro summaries",
+      "rows": 42,
+      "columns": 14,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_score_macro_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "C. LOTO U target metrics",
+      "rows": 102,
+      "columns": 26,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_u_target_metrics.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "D. LOTO U macro summaries",
+      "rows": 162,
+      "columns": 14,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_u_macro_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "E. Complete pairwise comparisons",
+      "rows": 720,
+      "columns": 47,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_pairwise_comparisons.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "F. Local-adaptation pair summaries",
+      "rows": 54,
+      "columns": 24,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_adaptation_pair_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "G. Complete Pinc sensitivity summary",
+      "rows": 720,
+      "columns": 48,
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_sensitivity_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "H. Pinc pair-level extension",
+      "rows": 2084,
+      "columns": 33,
+      "sources": [
+        "analysis/pinc_batch/run_20261110_181500/pinc_pair_extension.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "I. Pair-processing manifest",
+      "rows": 2084,
+      "columns": 33,
+      "sources": [
+        "analysis/pinc_batch/run_20261110_181500/pair_processing_manifest.csv"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "J. Batch summary",
+      "rows": 66,
+      "columns": 2,
+      "sources": [
+        "analysis/pinc_batch/run_20261110_181500/pinc_batch_summary.json"
+      ]
+    },
+    {
+      "sheet": "S13",
+      "panel": "K. Official C/R closure and PAE headline status",
+      "rows": 61,
+      "columns": 2,
+      "sources": [
+        "analysis/codex_outputs/C03_official_pinc_handoff_2026-11-09/run_20261109_220449/closure/closure_result.json"
+      ]
+    },
+    {
+      "sheet": "S14",
+      "panel": "A. Target-equal predictor × outcome summaries",
+      "rows": 180,
+      "columns": 11,
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_target_equal_summary.csv"
+      ]
+    },
+    {
+      "sheet": "S14",
+      "panel": "B. Complete predictor × target metrics",
+      "rows": 160,
+      "columns": 16,
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_metrics_by_target.csv"
+      ]
+    },
+    {
+      "sheet": "S14",
+      "panel": "C. Score shifts and within-target agreement",
+      "rows": 90,
+      "columns": 20,
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_score_shift_by_target.csv"
+      ]
+    },
+    {
+      "sheet": "S14",
+      "panel": "D. Paired bootstrap intervals",
+      "rows": 1200,
+      "columns": 11,
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_bootstrap_intervals.csv"
+      ]
+    },
+    {
+      "sheet": "S14",
+      "panel": "E. Selected run/model audit",
+      "rows": 7200,
+      "columns": 7,
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_selected_run_audit.csv"
+      ]
+    },
+    {
+      "sheet": "S15",
+      "panel": "A. Final hash manifests from accepted runs",
+      "rows": 223,
+      "columns": 6,
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/final_hash_manifest.csv",
+        "analysis/rq3e_outputs/run_20261114_164950/final_hash_manifest.csv",
+        "analysis/rq3e_if_outputs/run_20261114_174403/final_hash_manifest.csv",
+        "analysis/rq4_outputs/run_20261114_231925/final_hash_manifest.csv",
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/final_hash_manifest.csv",
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/final_hash_manifest.csv"
+      ]
+    },
+    {
+      "sheet": "S15",
+      "panel": "B. Run manifests and configuration snapshots",
+      "rows": 665,
+      "columns": 3,
+      "sources": [
+        "analysis/rq12_outputs/rq12_run_manifest.json",
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/run_config.snapshot.json",
+        "analysis/rq3e_outputs/run_20261114_164950/run_config.snapshot.json",
+        "analysis/rq3e_if_outputs/run_20261114_174403/run_config.snapshot.json",
+        "analysis/rq4_outputs/run_20261114_231925/run_config.snapshot.json",
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/run_config.snapshot.json",
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/run_manifest.json"
+      ]
+    },
+    {
+      "sheet": "S15",
+      "panel": "C. Analysis-to-display mapping",
+      "rows": 21,
+      "columns": 4,
+      "sources": []
+    },
+    {
+      "sheet": "S15",
+      "panel": "D. Source-release and submission metadata status",
+      "rows": 4,
+      "columns": 3,
+      "sources": []
+    },
+    {
+      "sheet": "S16",
+      "panel": "A. Analysis-set and model-definition audit",
+      "logical_panel": "A",
+      "rows": 7,
+      "columns": 17,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/analysis_set_audit.csv",
+        "analysis/RQ5RF_model_complexity_frozen_protocol_2026-11-17.md"
+      ],
+      "excel_table": "S16_Panel_1",
+      "range": "A9:Q16"
+    },
+    {
+      "sheet": "S16",
+      "panel": "B. U macro-averaged metrics",
+      "logical_panel": "B",
+      "rows": 24,
+      "columns": 30,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_macro_metrics.csv"
+      ],
+      "excel_table": "S16_Panel_2",
+      "range": "A22:AD46"
+    },
+    {
+      "sheet": "S16",
+      "panel": "C1. Target-level U metrics",
+      "logical_panel": "C",
+      "rows": 136,
+      "columns": 29,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_target_metrics.csv"
+      ],
+      "excel_table": "S16_Panel_3",
+      "range": "A52:AC188"
+    },
+    {
+      "sheet": "S16",
+      "panel": "C2. Target-level prespecified pairwise differences",
+      "logical_panel": "C",
+      "rows": 1530,
+      "columns": 18,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_pairwise_target_differences.csv"
+      ],
+      "excel_table": "S16_Panel_4",
+      "range": "A191:R1721"
+    },
+    {
+      "sheet": "S16",
+      "panel": "D1. I/F macro-averaged metrics",
+      "logical_panel": "D",
+      "rows": 48,
+      "columns": 30,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_macro_metrics.csv"
+      ],
+      "excel_table": "S16_Panel_5",
+      "range": "A1727:AD1775"
+    },
+    {
+      "sheet": "S16",
+      "panel": "D2. I/F target-level metrics",
+      "logical_panel": "D",
+      "rows": 272,
+      "columns": 29,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_target_metrics.csv"
+      ],
+      "excel_table": "S16_Panel_6",
+      "range": "A1778:AC2050"
+    },
+    {
+      "sheet": "S16",
+      "panel": "E1. Fixed-bin reliability summaries",
+      "logical_panel": "E",
+      "rows": 2856,
+      "columns": 16,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rq5rf_reliability.csv"
+      ],
+      "excel_table": "S16_Panel_7",
+      "range": "A2056:P4912"
+    },
+    {
+      "sheet": "S16",
+      "panel": "E2. Non-evaluable and failure-item ledger",
+      "logical_panel": "E",
+      "rows": 61,
+      "columns": 7,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/failed_item_ledger.csv"
+      ],
+      "excel_table": "S16_Panel_8",
+      "range": "A4915:G4976"
+    },
+    {
+      "sheet": "S16",
+      "panel": "F1. Inner-candidate metrics and selection",
+      "logical_panel": "F",
+      "rows": 1020,
+      "columns": 22,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rf_inner_candidate_selection.csv"
+      ],
+      "excel_table": "S16_Panel_9",
+      "range": "A4982:V6002"
+    },
+    {
+      "sheet": "S16",
+      "panel": "F2. Final-candidate fit audit",
+      "logical_panel": "F",
+      "rows": 680,
+      "columns": 30,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/rf_final_candidate_fit_audit.csv"
+      ],
+      "excel_table": "S16_Panel_10",
+      "range": "A6005:AD6685"
+    },
+    {
+      "sheet": "S16",
+      "panel": "F3. QC, interpretation screen, and source hashes",
+      "logical_panel": "F",
+      "rows": 48,
+      "columns": 7,
+      "sources": [
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/qc_checks.json",
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/independent_verification.json",
+        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855/direction_consistency_10_2.json"
+      ],
+      "excel_table": "S16_Panel_11",
+      "range": "A6688:G6736"
+    }
+  ],
+  "figures": [
+    {
+      "number": 1,
+      "filename": "Supplementary_Figure_S1.png",
+      "title": "Outcome and cohort sensitivity of discrimination and raw probability error",
+      "caption": "Target-equal AUC, Brier score, and Brier skill score under primary and strict outcomes, with and without AAH-I. Target-level intervals are 95% within-target sequence-cluster bootstrap intervals. Lower Brier is better; BSS=0 equals the target-constant prevalence reference. These sensitivity analyses do not create a new primary cohort.",
+      "sources": [
+        "analysis/rq12_outputs/rq12_target_metrics.csv",
+        "analysis/rq12_outputs/rq12_summary_metrics.csv"
+      ],
+      "pixels": [
+        3349,
+        2539
+      ],
+      "bytes": 383173
+    },
+    {
+      "number": 2,
+      "filename": "Supplementary_Figure_S2.png",
+      "title": "Linear versus restricted-cubic-spline zero-label transport",
+      "caption": "The sole prespecified nonlinear sensitivity analysis uses a three-knot restricted cubic spline on clipped logit-ipTM, with knots learned only from source training data. Primary six-target BSS-transport improves from −0.0809 to −0.0240 but remains negative. No further model search was triggered.",
+      "sources": [
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_macro_summary.csv",
+        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_metrics.csv"
+      ],
+      "pixels": [
+        3349,
+        1518
+      ],
+      "bytes": 301130
+    },
+    {
+      "number": 3,
+      "filename": "Supplementary_Figure_S3.png",
+      "title": "Post hoc external U/I/F out-of-fold metrics",
+      "caption": "External local intercept and intercept-plus-slope adaptation, evaluated out of fold on identical rows as U. Intercept adaptation reduces Brier in seven of eight targets; F improves on I only in PD-L1 and TREM2. This analysis was added after external U was examined and is exploratory.",
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/RQ3E_IF_OOF_metrics.png"
+      ],
+      "pixels": [
+        3300,
+        1320
+      ],
+      "bytes": 96230
+    },
+    {
+      "number": 4,
+      "filename": "Supplementary_Figure_S4.png",
+      "title": "Post hoc external U/I/F reliability",
+      "caption": "Out-of-fold reliability for external U, I, and F. Local labels are used during adaptation; the display does not alter or rescue the confirmatory zero-label U result.",
+      "sources": [
+        "analysis/rq3e_if_outputs/run_20261114_174403/RQ3E_IF_OOF_reliability.png"
+      ],
+      "pixels": [
+        3520,
+        1760
+      ],
+      "bytes": 275014
+    },
+    {
+      "number": 5,
+      "filename": "Supplementary_Figure_S5.png",
+      "title": "Nonconfirmatory low-event stress test",
+      "caption": "Six low-event targets (521 pairs) evaluated with the unchanged frozen U mapping. Mean predictions exceed observed prevalence in all six. MBP has zero positives; BBF-14 and 15-PGDH each have one, limiting or precluding slope and target-oracle interpretation.",
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_162656/RQ3E_U_low_event_stress_test.png"
+      ],
+      "pixels": [
+        2640,
+        1760
+      ],
+      "bytes": 244159
+    },
+    {
+      "number": 6,
+      "filename": "Supplementary_Figure_S6.png",
+      "title": "External outcome, score-rule, and source-weight sensitivity",
+      "caption": "Prespecified external sensitivity analyses across outcome definitions, score summaries/seeds, and source weighting. Changes in Brier or BSS-transport do not establish a stable probability mapping; BSS-target-oracle remains a diagnostic reference.",
+      "sources": [
+        "analysis/rq3e_outputs/run_20261114_164950/RQ3E_U_external_sensitivity.png"
+      ],
+      "pixels": [
+        3080,
+        1320
+      ],
+      "bytes": 84424
+    },
+    {
+      "number": 7,
+      "filename": "Supplementary_Figure_S7.png",
+      "title": "Shared-budget pilot sensitivity across analysis sets",
+      "caption": "Paired retrospective differences between pilot-I and raw-ipTM allocation. Error bars are central 95% simulation ranges. Pilot assays count against B and pilot-identified hits count toward total hits. Primary six-target scenarios use 2,000 replicates; five-target and strict scenarios use 1,000.",
+      "sources": [
+        "analysis/rq4_outputs/run_20261114_231925/rq4c_comparisons.csv"
+      ],
+      "pixels": [
+        3353,
+        1402
+      ],
+      "bytes": 230493
+    },
+    {
+      "number": 8,
+      "filename": "Supplementary_Figure_S8.png",
+      "title": "Raw Pinc and ipTM reliability on common complete cases",
+      "caption": "Raw-score reliability for Pinc and ipTM on the same 2,074 complete-case pairs and 740 primary positives. Both scores have negative target-constant BSS in every target; lower raw error is not achieved calibration.",
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/RQ5_raw_reliability.png"
+      ],
+      "pixels": [
+        2665,
+        1213
+      ],
+      "bytes": 290070
+    },
+    {
+      "number": 9,
+      "filename": "Supplementary_Figure_S9.png",
+      "title": "Pinc increment across analysis sets and source weighting",
+      "caption": "Complete-case LOTO U comparison of ipTM+Pinc versus ipTM-only on identical rows and folds. The summary_type filter is target_equal_macro; source_weighting varies independently between target_equal and pair. Negative ΔBrier favors the combined model. The sign reversal under source-pair weighting precludes a stable general increment claim.",
+      "sources": [
+        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_sensitivity_summary.csv"
+      ],
+      "pixels": [
+        2707,
+        1410
+      ],
+      "bytes": 163488
+    },
+    {
+      "number": 10,
+      "filename": "Supplementary_Figure_S10.png",
+      "title": "Target-equal description across ten predictor pipelines",
+      "caption": "Points are target-equal means across eight targets; lines extend from the minimum to maximum target-specific value and are not confidence intervals. Ten complete pipelines are compared on the same 720 external designs under two outcomes. No U/I/F mapping is fitted across predictors and no superiority test is performed.",
+      "sources": [
+        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_target_equal_summary.csv"
+      ],
+      "pixels": [
+        3709,
+        2510
+      ],
+      "bytes": 357238
+    }
+  ],
+  "source_hashes": {
+    "analysis/audit_outputs/target_actual_assay_design_counts.csv": "0b38ab40ff32af7a99ee1ed34d1fca27610aaed5c82ce9cdc21a2960b4a7f0c9",
+    "analysis/codex_outputs/C03_official_pinc_handoff_2026-11-09/run_20261109_220449/closure/closure_result.json": "515b116277dd898c620f1f879dd7f6f9fed61288a1a08864574a82347e3cbb74",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/final_hash_manifest.csv": "1c74f2c5bb2ee6a71daad8a2c041a666fb8f1eabdadf47fd8404540d28f10c1b",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_adaptation_comparisons.csv": "fd8ad1c97552f5278cb52f608683e79bd40d50e62caa1f0ec607610627e98e83",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_adaptation_macro_summary.csv": "e55ed1f0c69c874d80fd0fa5b789ef63b17ddff2f8e50cf96bd026ac9f2c421c",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_macro_summary.csv": "94bbbd23893e18fb8d436b86dd448b356387ec09cb4f96f9ff8962a83990d5f2",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_loto_metrics.csv": "c30b8c3d4212686222130112d843ea89f410e2897e2728efaf3161267682862d",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_sensitivity_summary.csv": "4502cfa1b1815da89ec7df545ec686030d224b61d874c27a4cef42d9ae996110",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_target_adaptation_metrics.csv": "9624e31b5d08f04558314ef6235c3688653169857daceb8a3494a01b4fe1f81f",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/run_config.snapshot.json": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_exact_sequence_overlap.csv": "57b48c41a3191c739620a7deed38cccdb256049cf8c17f69e3107a63c7722758",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_sequence_similarity_summary.json": "be09af645e32d05f1816da279540cc89ceb300a6e41612d0aacd7a201137f697",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_sequence_similarity_unique.csv": "a15c0c8d4360813f909ba652c20a663d419251c22d90c65621ee51bf1f278f50",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/overath_version_reconciliation.json": "15492eeb22a57dfbbc4e3f75dcab0dc1a75753ff965b961a895200a199edc1c7",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/RQ5_raw_reliability.png": "9e7bd5357af6d1c1c522865f24a27fa08896008470469af99747dd8f6879102b",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/final_hash_manifest.csv": "d7374fe74abed52958bd18b26f43e3264b1f6f38e50307e2178d3d38a9fc3038",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_adaptation_pair_summary.csv": "a8d3185541f7499c50c3fdcd90b3094564c4d64b4b437994f0a88ced7410b433",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_pairwise_comparisons.csv": "ca5e8a5e299d903bf2a934d77009b826c2e81ed160cbb9d3e13a5bb2e6242008",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_score_macro_summary.csv": "6a114416d1c94d5bf8e4f2274dd3fd427a0d06083bcdddb61b8b1fe2dd34e164",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_sensitivity_summary.csv": "662b0aef81fc390dcb3f620317f170d6d39495119ed621a47c28d5c1253d21a0",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_target_score_metrics.csv": "425249a75f13721ad192a3f8862065e9f68989cfeeea1ffc7c42e52a9bd24a0e",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_u_macro_summary.csv": "b868be1844826bb0048f3d96c0cef7a62dc2bc8b483ae1347895ef6e4a361126",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_u_target_metrics.csv": "d74f541798f2cb7ba4c7c1bf4600d5b9dc70b72750759d85e6b28cc7b10e7c60",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/run_config.snapshot.json": "2fa4648940d3ce8aadde1c8c361f9ec3d69a10e9a58bd867ed008663330596e8",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/final_hash_manifest.csv": "efb97d00654fa329b7021875bf3acbefc44b0f5d8e7487c68b13b8a6584a159b",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_bootstrap_intervals.csv": "2d330f12c6380ca46d03b268620b73f02119e112d0c7156f3443049d7bd7b34b",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_metrics_by_target.csv": "ea2ad36b0ac2178575eadae2e101308813bbf4aaa9653c96a26d1319d912b08a",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_score_shift_by_target.csv": "189ea4ecadab91d474f0e136a5f928d3468bd7a2c8d888dd952f3d98cf36d3d8",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_selected_run_audit.csv": "e1cda53f5fa318f587c7dd976ec0dfb97c7dc71604ce0496823e54dee408baa4",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_target_equal_summary.csv": "0cfa1d4dc780ed9554a4f68005afe7faedbc4ddf85ea43ac4661f9d92233ada5",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/run_manifest.json": "d99644db2efe3ab69f9abe04fe68e8bc1561fefabb9e4de445afaeb569d323b0",
+    "analysis/pinc_batch/run_20261110_181500/pair_processing_manifest.csv": "8e7a65b81a96c2b50c99670f8decd134dd1f0e72632f4fc5273f67169471331c",
+    "analysis/pinc_batch/run_20261110_181500/pinc_batch_summary.json": "cc6a1721996ac80f978e1822326a7d16082be84ec7b7e5793cd1a79175b2af8d",
+    "analysis/pinc_batch/run_20261110_181500/pinc_pair_extension.csv": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
+    "analysis/rq12_outputs/rq12_analysis_config.json": "9bda43a08714c86550d73fc5d3e7368fd51ea7c905e7fd8de6fc0752b91ffbf1",
+    "analysis/rq12_outputs/rq12_quadrature_convergence_diagnostic.json": "8acb91a611d4066b5ab30e770dfb5560cff8c06f36e268203f4dc817650e1309",
+    "analysis/rq12_outputs/rq12_run_manifest.json": "bcdccd1b23905d85966c31d45faea3b6aac9c7c5891033409871f443ddcf3f1e",
+    "analysis/rq12_outputs/rq12_summary_metrics.csv": "c5a297f320168ed86655678e105a0b3d0ad8384a1826762bdf0e421c16b26db5",
+    "analysis/rq12_outputs/rq12_target_metrics.csv": "b92bca7a9ace336be59c2a14a6ecefce4f673b969915ccd526b8023816115d34",
+    "analysis/rq12_outputs/rq2_hierarchical_full_results.json": "af7938a7c88908149c764158552b58abc8dc1fea427c2b3cb00e1daf9e422a58",
+    "analysis/rq12_outputs/rq2_hierarchical_hyperparameters.csv": "d5a54054e1b2d77ef32e06abd7505f3e3d75ded2ade4f8cabeecd6a2368be101",
+    "analysis/rq12_outputs/rq2_hierarchical_targets.csv": "5880a78a1273ca684eaadd745c51ef94ab5d841c7aadc71a9835f75f69545c7a",
+    "analysis/rq12_outputs/rq2_reliability_bins.csv": "4c2daa026c4bd01dfbb960cc1bd9c065caf17a3ba2ef29c08ac28fa993b065d9",
+    "analysis/rq3e_if_outputs/run_20261114_174403/RQ3E_IF_OOF_metrics.png": "a474af3d64d9c279021deb11bf9330b5771d86b8ca104cad25b42f959a239923",
+    "analysis/rq3e_if_outputs/run_20261114_174403/RQ3E_IF_OOF_reliability.png": "cda72ac8051498b579e0f21645f3c1104448764c26b93f195fc8b04c90738b7e",
+    "analysis/rq3e_if_outputs/run_20261114_174403/final_hash_manifest.csv": "26c55fb303881a39e135de66b75737b9444ebeb0f501b5d420dede8681e63efe",
+    "analysis/rq3e_if_outputs/run_20261114_174403/fold_metrics.csv": "b1a52b01e387d3223af8bfc007bbfa7a3bd7b9bd0c74e8fbfd3d6c65dc2f6d82",
+    "analysis/rq3e_if_outputs/run_20261114_174403/group_metrics.csv": "80f446f4d8a31cefc936e3b594c14a4536cff8ebd59d7dcd1400d19f982c38fd",
+    "analysis/rq3e_if_outputs/run_20261114_174403/lambda_selection.csv": "11e641e5f3a745922617f09cfb4b404d4de5ffc703ba9e075dd91bd95294d83d",
+    "analysis/rq3e_if_outputs/run_20261114_174403/run_config.snapshot.json": "254d21b40c739bf0721ec9739ba2388ac6219a0a5e519c2214266a6b3815ef9d",
+    "analysis/rq3e_if_outputs/run_20261114_174403/target_comparisons.csv": "04959d9dd48dbb664d87c9100eed0718f606c9797f7dbd68848bbfbf7da776f1",
+    "analysis/rq3e_if_outputs/run_20261114_174403/target_metrics.csv": "6f0e2d4983d5201f706f39c8c6b4a6900e744f4990a93ba271ef5367dbc2d2cb",
+    "analysis/rq3e_outputs/run_20261114_162656/RQ3E_U_low_event_stress_test.png": "0ae1ab8604374b9d56b86627d7e078ce2f84c7410d3b0c169b4857ef5dcc770e",
+    "analysis/rq3e_outputs/run_20261114_162656/rq3e_low_event_stress_test_metrics.csv": "14b0bbb4207b6f09ff63147337aa8a6a777887ab0efadc5434af3760bb2cc5f9",
+    "analysis/rq3e_outputs/run_20261114_162656/rq3e_low_event_stress_test_reliability.csv": "0887d1a4e9cdf81ad1df99a00d5a89bd9bbf8765df52d1e849f5e451ced54902",
+    "analysis/rq3e_outputs/run_20261114_164950/RQ3E_U_external_sensitivity.png": "1b50a043c78e2120189bab076fa3e1cac81a8176196f7c98dbedd7a2981aeae8",
+    "analysis/rq3e_outputs/run_20261114_164950/final_hash_manifest.csv": "72db0176e41ce53a1aaa50e0fedde010ce998d1dbda34a08e72ec2e7ca2302a3",
+    "analysis/rq3e_outputs/run_20261114_164950/rq3e_campaign_metrics.csv": "e43a29aad0518ae341d53d49a454ebb5173e19676917e64188f0d46deba69371",
+    "analysis/rq3e_outputs/run_20261114_164950/rq3e_generator_composition.csv": "c930c4c6759c68012ea2843177dadfc2592b5307b2ce6c992145022dab69cd9f",
+    "analysis/rq3e_outputs/run_20261114_164950/rq3e_group_metrics.csv": "667650429eb47f7283254141eb48e29e049f19a4876647850088b608c5db807f",
+    "analysis/rq3e_outputs/run_20261114_164950/rq3e_target_metrics.csv": "0d128e1da469826ce6cb6e4e3d1c80b5c92add729948624fe23a8f66c718692f",
+    "analysis/rq3e_outputs/run_20261114_164950/run_config.snapshot.json": "4602a60ac7d40bcfb96c4d897578737ea5a839ae05d4e1442d7e5ae7a7dd14a9",
+    "analysis/rq4_outputs/run_20261114_231925/final_hash_manifest.csv": "74cbe62efc09ab805a5486590ec2423c1aed66b9ac4f20ebc156fd0ba33ae44b",
+    "analysis/rq4_outputs/run_20261114_231925/rq4ab_summary.csv": "aa871f4e4a7ca16ac193878a6ebb7605b0df1c1795bbc8a17619d3f44190f9c4",
+    "analysis/rq4_outputs/run_20261114_231925/rq4ab_target_metrics.csv": "0ec31ea89a5218780a4f5cb6b6d5aecb0867f5bfc24c1393e558df3ba7c32d01",
+    "analysis/rq4_outputs/run_20261114_231925/rq4c_comparisons.csv": "6e36ae9b8a8f86d679ca029ed475c7dbc632a02003ec0404cb437bb293d999ef",
+    "analysis/rq4_outputs/run_20261114_231925/rq4c_pilot_parameters.csv": "e8f0981d3c2ecaa26e8c3b63ee2c1562d05dac023431b0ad501d0920f268c516",
+    "analysis/rq4_outputs/run_20261114_231925/rq4c_summary.csv": "2afe2ef337311517542ee625228a7995ad409d045bb9ac5084b8102add913f41",
+    "analysis/rq4_outputs/run_20261114_231925/run_config.snapshot.json": "292b19e627ea5088ed116a4a490f9ee536086a97c650e35ebf731a335ff88d5e",
+    "analysis/v3_outputs/assay_unit_audit_v3.csv": "091628670d7cb7db18395cc4c49a0925f7c837c803652e2a88c720baf8653d93",
+    "analysis/v3_outputs/pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
+  },
+  "output_hashes": {
+    "Supplementary_Tables_S1_S15.xlsx": "80a5d1bcab095a1c7d159e0bc5fc7a5e62cc8343e2b486d4ba4a607f54082a66",
+    "Supplementary_Materials_PEDS_2026-11-16.md": "c7b0beb35bd35f1d4128b8d13fce5f63597f20620e79a907570659d2f21ef71d",
+    "supplement_source_manifest_2026-11-16.md": "aba1f1032e5ee8725cb55afb2e2db1910f7f16e8ed0e25c3ef0a1f7cbece88ff"
+  },
+  "anchors": {
+    "main_pairs": 2084,
+    "main_primary_positives": 748,
+    "main_strict_positives": 678,
+    "external_pairs": 720,
+    "external_weak_positives": 287,
+    "external_medium_positives": 254,
+    "low_event_pairs": 521,
+    "low_event_targets": 6,
+    "pinc_complete_pairs": 2074,
+    "pinc_complete_positives": 740,
+    "rq6_summary_rows": 180
+  },
+  "s16_logical_panels": 6,
+  "s16_excel_tables": 11
+}

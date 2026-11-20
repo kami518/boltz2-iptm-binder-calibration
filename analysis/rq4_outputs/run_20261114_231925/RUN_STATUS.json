@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "run_dir": "E:\\diyipian\\analysis\\rq4_outputs\\run_20261114_231925",
+  "qc_passed": true,
+  "ab_rows": 207,
+  "c_run_rows": 100000,
+  "c_parameter_rows": 69000,
+  "manifest_sha256": "787ef5d0a1c8905b87d1caf30770843b1ecfc43684a0e5553ffcec15b92f2338"
+}

@@ -1,0 +1,157 @@
+{
+  "handoff_id": "RQ5_EXECUTION_2026-11-15",
+  "analysis_scope": "exploratory_incremental_only",
+  "created_at": "2026-11-15T11:17:29+08:00",
+  "workspace": "E:\\diyipian",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720",
+  "handoff_path": "E:\\diyipian\\analysis\\codex_tasks\\RQ5_EXECUTION_CODEX_HANDOFF_2026-11-15\\START_HERE_CODEX.md",
+  "handoff_sha256": "de1bbc9bf73b3444decf491df02fc2840a287e24dd5f670678cb330bcb5376e9",
+  "rq3_config_path": "E:\\diyipian\\analysis\\codex_tasks\\RQ3_EXECUTION_CODEX_HANDOFF_2026-11-13\\rq3_execution_config.json",
+  "rq3_config_sha256": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51",
+  "inputs": {
+    "pair_master": {
+      "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+      "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+      "expected_rows": 2084
+    },
+    "pinc_extension": {
+      "path": "E:\\diyipian\\analysis\\pinc_batch\\run_20261110_181500\\pinc_pair_extension.csv",
+      "sha256": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
+      "expected_rows": 2084,
+      "expected_success": 2074,
+      "expected_missing_input": 10,
+      "missing_target": "pd-l1"
+    },
+    "sequence_clusters": {
+      "path": "<REPRODUCTION_ROOT>/analysis/rq12_outputs/sequence_clusters_rq12.csv",
+      "sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+      "expected_rows": 2084
+    },
+    "loto_assignments": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_pair_assignments.csv",
+      "sha256": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
+      "expected_folds": 44
+    },
+    "loto_manifest": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_fold_manifest.csv",
+      "sha256": "281a1775edb6d45af635c273e83591c60fa5aa75467afa07d8d2b4cc6869bfd9",
+      "expected_rows": 44
+    },
+    "target_cv5_assignments": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_pair_assignments.csv",
+      "sha256": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796",
+      "expected_fold_rows": 220
+    },
+    "target_cv5_manifest": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_fold_manifest.csv",
+      "sha256": "964e65aa8e05c73e4f8b070f5d8bba887d593f366c6ed1781dd5f351a795f0ed",
+      "expected_rows": 220
+    },
+    "cross_target_exclusions": {
+      "path": "<REPRODUCTION_ROOT>/analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/cross_target_cluster_exclusions.csv",
+      "sha256": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
+    },
+    "rq3_implementation": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_common.py",
+      "sha256": "282a039571a6a1498949f1affa92fe174727608f9ab758c9f64549b8552e6221"
+    }
+  },
+  "analysis_sets": {
+    "primary_six": {
+      "outcome": "primary_outcome",
+      "exclude_target": null
+    },
+    "primary_five": {
+      "outcome": "primary_outcome",
+      "exclude_target": "aah-i"
+    },
+    "strict_six": {
+      "outcome": "strict_outcome",
+      "exclude_target": null
+    }
+  },
+  "cluster_rule": "sequence_cluster90",
+  "source_weighting": {
+    "main": "target_equal",
+    "sensitivity": "pair"
+  },
+  "probability_clip": 1e-06,
+  "reliability_bin_edges": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    0.9,
+    0.95,
+    1.0
+  ],
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261115,
+    "unit": "sequence_cluster90 whole cluster",
+    "paired_scores": true
+  },
+  "combo_u": {
+    "estimator": "source-target intercepts plus two common ridge-penalized slopes",
+    "penalty": "0.5*lambda*(beta_iptm^2+beta_pinc^2); intercepts unpenalized",
+    "lambda_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "inner_selection": "leave-one-source-target-out; equal-target macro mean log loss; 1e-12 ties choose larger lambda",
+    "standardization": "weighted mean and population SD from each current source/inner training set only"
+  },
+  "adaptation": {
+    "scope": "linear U only, both source weighting schemes and all analysis-set/cluster-rule combinations",
+    "outer_cv": {
+      "reuse_existing_assignments": true,
+      "algorithm_already_frozen": "StratifiedGroupKFold",
+      "n_splits": 5,
+      "shuffle": true,
+      "random_state": 20261112,
+      "regenerate_or_change_allowed": false
+    },
+    "base_prediction": "eta_U is fixed from the corresponding LOTO source model before target-internal adaptation; never refit the source model using target adaptation labels",
+    "I_model": "eta_I=a+eta_U; fit only intercept a on each outer adaptation-training set by weighted-free maximum likelihood/root solving; all adaptation pairs have equal weight",
+    "F_model": "eta_F=a+gamma*eta_U=a+eta_U+delta*eta_U, where gamma=1+delta",
+    "F_penalty": "minimize mean negative log-likelihood on the adaptation-training rows + 0.5*lambda*delta^2; intercept a is unpenalized and delta=0 corresponds exactly to unchanged U slope",
+    "lambda_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "lambda_zero_allowed": false,
+    "adaptation_training_weight": "1 per pair for both source-weighting variants; source weighting affects only the fixed U base model",
+    "inner_cv": {
+      "algorithm": "sklearn.model_selection.StratifiedGroupKFold",
+      "n_splits": 3,
+      "shuffle": true,
+      "random_state": 20261113,
+      "fit_input": "each outer adaptation-training set only",
+      "groups": "current cluster_rule sequence_cluster_value",
+      "stratify_by": "current analysis-set outcome",
+      "reuse_rows_across_lambdas": true,
+      "save_assignments": true,
+      "fallback_allowed": false
+    },
+    "lambda_selection": "for each lambda, fit F on every inner-training split and concatenate all inner-validation predictions; choose the lambda with minimum pooled inner-validation log loss using probability_clip; if values tie within 1e-12, choose the larger lambda; Brier is not the selection metric",
+    "final_outer_fit": "refit a and delta with selected lambda on the full outer adaptation-training set and predict its untouched outer test split",
+    "failure_rule": "if inner folds cannot be formed, an inner-training set has one class, a candidate fails QC, or the final fit fails, record the affected lambda/fold as unevaluable; if all lambdas fail, predictive F is unevaluable; never use outer test labels to repair or select",
+    "required_comparisons": "on identical outer-test rows compare U, predictive I and predictive F; include Brier, log loss, BSS-adaptation-train, BSS-target-oracle and the same target's original BSS-transport",
+    "aggregation": "save outer-fold metrics and concatenate each target's five outer-test prediction sets for target-level out-of-fold metrics; adaptation-train baselines remain fold-specific row by row"
+  },
+  "forbidden": [
+    "modify v1/v2/v3, frozen master, clusters, folds, Pinc extension, or prior results",
+    "network, install, upgrade, RQ6, random forest, other ML, ipSAE, LIS, extra feature search",
+    "change outcomes, features, lambda, weights, folds, or analysis sets based on results",
+    "claim population uncertainty over future targets or rewrite RQ3 conclusions"
+  ]
+}

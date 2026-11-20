@@ -1,0 +1,226 @@
+{
+  "items": [
+    {
+      "analysis_set": "primary_six",
+      "target": "aah-i",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 79,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_six",
+      "target": "human-vegf110",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 251,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_six",
+      "target": "nipah-glycoprotein-g",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 816,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_six",
+      "target": "pd-l1",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 253,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_six",
+      "target": "sars-cov-2-rbd",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 215,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_six",
+      "target": "trem2",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 104,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_five",
+      "target": "human-vegf110",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 251,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_five",
+      "target": "nipah-glycoprotein-g",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 816,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_five",
+      "target": "pd-l1",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 253,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_five",
+      "target": "sars-cov-2-rbd",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 215,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "primary_five",
+      "target": "trem2",
+      "outcome_name": "primary_outcome",
+      "n_clusters": 104,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "aah-i",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 79,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "human-vegf110",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 251,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "nipah-glycoprotein-g",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 816,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "pd-l1",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 253,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "sars-cov-2-rbd",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 215,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    },
+    {
+      "analysis_set": "strict_six",
+      "target": "trem2",
+      "outcome_name": "strict_outcome",
+      "n_clusters": 104,
+      "n_boot": 2000,
+      "seed": 20261115,
+      "valid": {
+        "auc": 2000,
+        "ap": 2000,
+        "brier": 2000
+      }
+    }
+  ],
+  "all_requested_draws": true
+}

@@ -1,0 +1,25 @@
+target,design_model,campaign,n,positives,observed_prevalence,mean_prediction,brier,log_loss,generators_observed,sequence_design_methods
+BHRF1,Mythos Preview,multi_target,30,7,0.23333333333333334,0.671223981787673,0.36586379844266315,0.9394060610934327,BoltzGen;PXDesign;Proteina-Complexa,Caliby (SolubleCaliby);SolubleMPNN
+BHRF1,Mythos Preview,single_target,30,4,0.13333333333333333,0.6622740376303936,0.3930994118104475,0.9929973903644492,BoltzGen;FreeBindCraft (BindCraft);Proteina-Complexa,Caliby (SolubleCaliby);SolubleMPNN;designed jointly by the structure model (native co-design)
+BHRF1,Opus 4.8,multi_target,30,9,0.3,0.5960078800878061,0.32486299812089975,0.849603136382013,Genie3;PXDesign;RFdiffusion,SolubleMPNN
+IL-7Ra,Mythos Preview,multi_target,30,17,0.5666666666666667,0.523951056734408,0.23215858559308353,0.6550002361193771,FreeBindCraft (BindCraft);PXDesign;Proteina-Complexa;RFdiffusion;RFdiffusion3,SolubleMPNN
+IL-7Ra,Mythos Preview,single_target,30,19,0.6333333333333333,0.53439415980419,0.25704061645941295,0.711046570997516,BoltzGen;FreeBindCraft (BindCraft);PXDesign;Proteina-Complexa;RFdiffusion,SolubleMPNN;designed jointly by the structure model (native co-design)
+IL-7Ra,Opus 4.8,multi_target,30,11,0.36666666666666664,0.49929697183996496,0.21482567697342575,0.6202536208659821,PXDesign;Proteina-Complexa;RFdiffusion;RFdiffusion3,SolubleMPNN
+Nipah-G,Mythos Preview,multi_target,30,5,0.16666666666666666,0.48188063517906726,0.23186746798191962,0.6507410086653657,BoltzGen;Genie3;PXDesign;Proteina-Complexa;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+Nipah-G,Mythos Preview,single_target,30,12,0.4,0.5041335305438871,0.2273113730312891,0.6473480690962448,BoltzGen;Genie3;PXDesign;Proteina-Complexa;RFdiffusion3,ProteinMPNN;SolubleMPNN;designed jointly by the structure model (native co-design)
+Nipah-G,Opus 4.8,multi_target,30,2,0.06666666666666667,0.5092492717477883,0.2803912138210942,0.751061105786043,Genie3;PXDesign;RFdiffusion;RFdiffusion3,SolubleMPNN
+PD-L1,Mythos Preview,multi_target,30,10,0.3333333333333333,0.59802348950794,0.2704412249725877,0.7350649610014418,BoltzDesign1;FreeBindCraft (BindCraft);PXDesign;Proteina-Complexa;RFdiffusion;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+PD-L1,Mythos Preview,single_target,30,27,0.9,0.6552833267854177,0.15112443334982192,0.48944467913052814,BoltzGen;FreeBindCraft (BindCraft);PXDesign;RFdiffusion;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN;designed jointly by the structure model (native co-design)
+PD-L1,Opus 4.8,multi_target,30,2,0.06666666666666667,0.5722819633820919,0.31817834088235286,0.8325648018460513,FoldCraft;Genie3;PXDesign;RFdiffusion;RFdiffusion3,SolubleMPNN
+RBX1,Mythos Preview,multi_target,30,10,0.3333333333333333,0.5981337675660341,0.28587466682474555,0.7674207365590225,BoltzGen;PXDesign;Proteina-Complexa;RFdiffusion;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+RBX1,Mythos Preview,single_target,30,9,0.3,0.6360055792899068,0.3105738433844652,0.8199296268676289,Genie3;PXDesign;RFdiffusion;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+RBX1,Opus 4.8,multi_target,30,4,0.13333333333333333,0.6026460660473052,0.3329876997855744,0.8660507032808166,Genie3;PXDesign;RFdiffusion,SolubleMPNN
+TREM2,Mythos Preview,multi_target,30,23,0.7666666666666667,0.6136582863089511,0.17158030514677813,0.5321132511781573,BoltzGen;FreeBindCraft (BindCraft);PXDesign;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+TREM2,Mythos Preview,single_target,30,23,0.7666666666666667,0.6189025129774601,0.17155748475267393,0.5311978249526548,FreeBindCraft (BindCraft);PXDesign;Proteina-Complexa;RFdiffusion3,SolubleMPNN;designed jointly by the structure model (native co-design)
+TREM2,Opus 4.8,multi_target,30,19,0.6333333333333333,0.6084501251527444,0.2130709527525811,0.6160894003883421,Genie3;PXDesign;RFdiffusion3,SolubleMPNN
+TrkA,Mythos Preview,multi_target,30,10,0.3333333333333333,0.5356336401558413,0.23491802229816036,0.6609250190088465,BoltzGen;PXDesign;Proteina-Complexa;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN
+TrkA,Mythos Preview,single_target,30,7,0.23333333333333334,0.5345338597687354,0.26727301189763947,0.7282922976182505,BoltzGen;FreeBindCraft (BindCraft);RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN;designed jointly by the structure model (native co-design)
+TrkA,Opus 4.8,multi_target,30,2,0.06666666666666667,0.5011394283078112,0.249354420996716,0.6891821755721307,FoldCraft;Genie3;PXDesign;RFdiffusion3,SolubleMPNN
+VEGF-A,Mythos Preview,multi_target,30,13,0.43333333333333335,0.48568444611346256,0.23312191184278094,0.6582293841293422,BoltzGen;FreeBindCraft (BindCraft);Genie3;PXDesign;RFdiffusion;RFdiffusion3,SolubleMPNN
+VEGF-A,Mythos Preview,single_target,30,21,0.7,0.5304216345701962,0.247950196949518,0.689966465659433,BoltzGen;Proteina-Complexa;RFdiffusion;RFdiffusion3,Caliby (SolubleCaliby);SolubleMPNN;designed jointly by the structure model (native co-design)
+VEGF-A,Opus 4.8,multi_target,30,21,0.7,0.5374821086824692,0.2298528102980747,0.6535495836262069,BoltzGen;FoldCraft;Genie3,SolubleMPNN

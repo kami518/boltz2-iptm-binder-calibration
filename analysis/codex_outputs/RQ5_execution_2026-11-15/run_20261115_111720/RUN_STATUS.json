@@ -1,0 +1,90 @@
+{
+  "handoff_id": "RQ5_EXECUTION_2026-11-15",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720",
+  "overall_status": "complete",
+  "created_at": "2026-11-15T11:17:29+08:00",
+  "analysis_scope": "exploratory_incremental_only",
+  "stages": {
+    "stage_0_input_and_fold_qc": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:17:29+08:00",
+      "checks_passed": 12,
+      "failures": 0,
+      "hash_gate_passed": true,
+      "config_snapshot_sha256": "2fa4648940d3ce8aadde1c8c361f9ec3d69a10e9a58bd867ed008663330596e8"
+    },
+    "stage_a_same_sample_diagnostics": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:18:40+08:00",
+      "target_metric_rows": 34,
+      "bootstrap_comparison_rows": 51,
+      "bootstrap_replicates_each_pair": 2000,
+      "reliability_rows_including_empty_bins": 238,
+      "macro_rows": 42,
+      "pair_summary_rows": 6,
+      "figures": [
+        "RQ5_score_discrimination.png",
+        "RQ5_raw_reliability.png"
+      ]
+    },
+    "stage_b_transport_and_adaptation": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:23:31+08:00",
+      "analysis_sets": [
+        "primary_six",
+        "primary_five",
+        "strict_six"
+      ],
+      "source_weightings": [
+        "target_equal",
+        "pair"
+      ],
+      "exposures": [
+        "ipTM_only",
+        "Pinc_only",
+        "ipTM_plus_Pinc"
+      ],
+      "u_prediction_rows": 36534,
+      "adaptation_prediction_rows": 36534,
+      "source_parameter_rows": 102,
+      "combo_lambda_selection_rows": 204,
+      "combo_lambda_inner_rows": 960,
+      "adaptation_parameter_rows": 1020,
+      "adaptation_lambda_selection_rows": 3060,
+      "adaptation_inner_assignment_rows": 438408,
+      "u_target_metric_rows": 102,
+      "adaptation_target_metric_rows": 306,
+      "pairwise_summary_rows": 720,
+      "same_outer_test_row_checks": 34,
+      "same_outer_test_rows_all_passed": true,
+      "adaptation_exposure_row_set_failures": 0,
+      "figures": [
+        "RQ5_U_transport.png",
+        "RQ5_adaptation_increment.png"
+      ]
+    },
+    "stage_d_finalize_and_handoff": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:27:12+08:00",
+      "unit_tests_passed": true,
+      "independent_verification_passed": true,
+      "unresolved_failures": 0,
+      "figures_manually_opened": true
+    },
+    "stage_c_required_unit_tests": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:27:12+08:00",
+      "n_checks": 15,
+      "n_failed": 0
+    },
+    "stage_independent_verification": {
+      "status": "complete",
+      "updated_at": "2026-11-15T11:27:12+08:00",
+      "n_checks": 18,
+      "n_failed": 0
+    }
+  },
+  "updated_at": "2026-11-15T11:27:12+08:00",
+  "current_stage": "stage_d_finalize_and_handoff",
+  "completed_at": "2026-11-15T11:27:12+08:00"
+}

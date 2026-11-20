@@ -1,0 +1,53 @@
+{
+  "protocol": "E:\\diyipian\\analysis\\RQ4_decision_value_frozen_protocol_2026-11-14.md",
+  "protocol_sha256": "ab35dfe08ca76d45d2c12827ad1480366124d369f9aff401274d4d1273247832",
+  "v3_sha256_at_run": "ad919014b5d540967fe2c819aefad9ebeccdf9f5cff7533265313c03a50aaaf5",
+  "expected_input_hashes": {
+    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+    "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_u_pair_predictions.csv": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
+  },
+  "actual_input_hashes": {
+    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+    "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_u_pair_predictions.csv": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
+  },
+  "fractions": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "absolute_k_exploratory": [
+    10,
+    20,
+    50
+  ],
+  "thresholds": [
+    0.8,
+    0.9,
+    0.95
+  ],
+  "B_values": [
+    120,
+    300
+  ],
+  "m_values": [
+    10,
+    20,
+    40
+  ],
+  "lambda_F": 0.1,
+  "seed_AB": 20261115,
+  "seed_C": 20261114,
+  "N_boot": 2000,
+  "N_sim": {
+    "primary_six": 2000,
+    "primary_five": 1000,
+    "strict_six": 1000
+  },
+  "python": "3.12.16 (main, Nov 11 2026, 00:20:04) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "scipy": "1.18.1"
+}

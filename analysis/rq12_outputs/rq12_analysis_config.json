@@ -1,0 +1,28 @@
+{
+  "config_frozen_before_rq12_results": true,
+  "analysis_date": "2026-11-09",
+  "random_seed": 20261109,
+  "bootstrap_replicates": 2000,
+  "bootstrap_cluster_column": "sequence_cluster90",
+  "probability_clip": 1e-06,
+  "reliability_bin_edges": [0.0, 0.2, 0.4, 0.6, 0.8, 0.9, 0.95, 1.0],
+  "analysis_sets": {
+    "primary_six": {"outcome": "primary_outcome", "exclude_aah_i": false},
+    "primary_five": {"outcome": "primary_outcome", "exclude_aah_i": true},
+    "strict_six": {"outcome": "strict_outcome", "exclude_aah_i": false},
+    "strict_five": {"outcome": "strict_outcome", "exclude_aah_i": true}
+  },
+  "hierarchical_model": {
+    "quadrature_method": "adaptive Gauss-Hermite centered at target-specific conditional posterior modes; changed after nonadaptive integration failed the prespecified stability gate",
+    "quadrature_nodes": 9,
+    "quadrature_stability_nodes": 11,
+    "random_effects": "independent target intercepts and slopes with partial pooling",
+    "mu_intercept_prior": {"distribution": "normal", "mean": 0.0, "sd": 5.0},
+    "mu_slope_prior": {"distribution": "normal", "mean": 0.0, "sd": 5.0},
+    "log_tau_prior": {"distribution": "normal", "mean_log_tau": 0.0, "sd": 1.0},
+    "tau_bounds": [0.01, 10.0],
+    "random_slope_collapse_threshold": 0.02,
+    "fallback": "random intercept plus common slope only for convergence or identifiability failure",
+    "uncertainty": "conditional target posteriors from Gauss-Hermite quadrature and hyperparameter observed-information approximation"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "stage_1_U_linear_and_RCS_with_predictions_metrics_reliability",
+  "completed_at": "2026-11-13T18:23:24+08:00",
+  "expected_model_evaluations": 176,
+  "observed_model_evaluations": 176,
+  "observed_pair_prediction_rows": 64560,
+  "expected_pair_prediction_rows": 64560,
+  "source_models_evaluable": 176,
+  "source_models_failed": 0,
+  "all_predictions_finite_for_evaluable_models": true,
+  "rcs_unit_test": {
+    "status": "passed",
+    "checks": {
+      "b2_zero_below_k1": true,
+      "second_derivative_zero_below_k1": true,
+      "second_derivative_zero_above_k3": true,
+      "linear_extrapolation_above_k3": true
+    },
+    "below_k1_max_abs_B2": 0.0,
+    "below_k1_max_abs_second_derivative": 0.0,
+    "above_k3_max_abs_second_derivative": 6.661338147750939e-16,
+    "above_k3_slope_range": 6.883382752675971e-13
+  }
+}

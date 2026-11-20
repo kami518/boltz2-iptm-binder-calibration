@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "finite_difference_max_abs": 5.204170427930421e-18,
+  "large_lambda_delta_abs": 0.0003411411919826993,
+  "small_lambda_delta_abs": 0.28326325786343937
+}

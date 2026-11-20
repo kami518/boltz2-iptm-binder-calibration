@@ -1,0 +1,165 @@
+{
+  "status": "complete",
+  "started_unix": 1794218977.5858166,
+  "runtime_seconds": 60.70212650299072,
+  "input_master": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+  "input_master_sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+  "cluster_mapping": "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv",
+  "cluster_mapping_sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+  "config": {
+    "config_frozen_before_rq12_results": true,
+    "analysis_date": "2026-11-09",
+    "random_seed": 20261109,
+    "bootstrap_replicates": 2000,
+    "bootstrap_cluster_column": "sequence_cluster90",
+    "probability_clip": 1e-06,
+    "reliability_bin_edges": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "analysis_sets": {
+      "primary_six": {
+        "outcome": "primary_outcome",
+        "exclude_aah_i": false
+      },
+      "primary_five": {
+        "outcome": "primary_outcome",
+        "exclude_aah_i": true
+      },
+      "strict_six": {
+        "outcome": "strict_outcome",
+        "exclude_aah_i": false
+      },
+      "strict_five": {
+        "outcome": "strict_outcome",
+        "exclude_aah_i": true
+      }
+    },
+    "hierarchical_model": {
+      "quadrature_method": "adaptive Gauss-Hermite centered at target-specific conditional posterior modes; changed after nonadaptive integration failed the prespecified stability gate",
+      "quadrature_nodes": 9,
+      "quadrature_stability_nodes": 11,
+      "random_effects": "independent target intercepts and slopes with partial pooling",
+      "mu_intercept_prior": {
+        "distribution": "normal",
+        "mean": 0.0,
+        "sd": 5.0
+      },
+      "mu_slope_prior": {
+        "distribution": "normal",
+        "mean": 0.0,
+        "sd": 5.0
+      },
+      "log_tau_prior": {
+        "distribution": "normal",
+        "mean_log_tau": 0.0,
+        "sd": 1.0
+      },
+      "tau_bounds": [
+        0.01,
+        10.0
+      ],
+      "random_slope_collapse_threshold": 0.02,
+      "fallback": "random intercept plus common slope only for convergence or identifiability failure",
+      "uncertainty": "conditional target posteriors from Gauss-Hermite quadrature and hyperparameter observed-information approximation"
+    }
+  },
+  "quality_gates": {
+    "frozen_master_2084_748_678": true,
+    "all_requested_bootstraps_valid": true,
+    "summary_bootstraps_valid": true,
+    "main_hierarchical_converged": true,
+    "main_hierarchical_information_pd": true,
+    "all_hierarchical_models_converged_pd": true,
+    "primary_six_quadrature_stability": true,
+    "figures_created": true
+  },
+  "bootstrap_audit": [
+    {
+      "target": "aah-i",
+      "clusters": 79,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2000,
+      "primary_outcome": 0,
+      "strict_outcome": 0
+    },
+    {
+      "target": "human-vegf110",
+      "clusters": 251,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2000,
+      "primary_outcome": 0,
+      "strict_outcome": 0
+    },
+    {
+      "target": "nipah-glycoprotein-g",
+      "clusters": 816,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2001,
+      "primary_outcome": 0,
+      "strict_outcome": 1
+    },
+    {
+      "target": "pd-l1",
+      "clusters": 263,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2002,
+      "primary_outcome": 1,
+      "strict_outcome": 1
+    },
+    {
+      "target": "sars-cov-2-rbd",
+      "clusters": 215,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2001,
+      "primary_outcome": 0,
+      "strict_outcome": 1
+    },
+    {
+      "target": "trem2",
+      "clusters": 104,
+      "requested_bootstrap": 2000,
+      "valid_bootstrap": 2000,
+      "attempts": 2000,
+      "primary_outcome": 0,
+      "strict_outcome": 0
+    }
+  ],
+  "hierarchical_stability": {
+    "status": "complete",
+    "base_nodes": 9,
+    "check_nodes": 11,
+    "same_model_type": true,
+    "check_converged": true,
+    "check_information_positive_definite": true,
+    "hyperparameter_absolute_differences": {
+      "mu_intercept": 1.7817521036356254e-05,
+      "mu_slope": 1.5959402143161938e-06,
+      "tau_intercept": 5.844966405099683e-06,
+      "tau_slope": 7.994540335287681e-07
+    },
+    "max_target_estimate_absolute_difference": 2.714280835647287e-06,
+    "tolerance": 0.02
+  },
+  "software": {
+    "python": "3.12.16 (main, Oct 26 2026, 14:10:56) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.0",
+    "matplotlib": "3.10.9"
+  },
+  "interpretation_boundary": "Raw ipTM metrics are in-sample diagnostics of the frozen score, not out-of-fold prediction performance. Target posterior SDs are conditional on estimated hyperparameters; hyperparameter uncertainty is reported separately."
+}

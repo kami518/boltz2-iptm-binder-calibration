@@ -1,0 +1,132 @@
+{
+  "status": "passed",
+  "n_checks": 15,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "logit_clip",
+      "passed": true,
+      "detail": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "logit_symmetry",
+      "passed": true,
+      "detail": {
+        "logit_0": -13.815509557963773,
+        "logit_1": 13.815509557935018
+      }
+    },
+    {
+      "check": "target_equal_weights",
+      "passed": true,
+      "detail": {
+        "n_fold_errors": 0,
+        "examples": []
+      }
+    },
+    {
+      "check": "pair_source_weights",
+      "passed": true,
+      "detail": {
+        "n_fold_errors": 0,
+        "examples": []
+      }
+    },
+    {
+      "check": "loto_leakage",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "inner_standardization_training_only",
+      "passed": true,
+      "detail": {
+        "mean": [
+          1.0,
+          2.25
+        ],
+        "sd": [
+          0.7071067811865476,
+          1.0897247358851685
+        ],
+        "max_mean_abs_difference": 0.0,
+        "max_sd_abs_difference": 0.0,
+        "validation_values_influence": false
+      }
+    },
+    {
+      "check": "combo_penalty_objective",
+      "passed": true,
+      "detail": {
+        "fit_objective": 0.6574942882478998,
+        "reconstructed_objective": 0.6574942882478998,
+        "lambda": 1.0,
+        "penalty_on_slopes_only": true
+      }
+    },
+    {
+      "check": "combo_gradient_convergence",
+      "passed": true,
+      "detail": {
+        "gradient_max_abs": 2.220446049250313e-16,
+        "newton_refinement": {
+          "iterations": 2,
+          "converged": true
+        }
+      }
+    },
+    {
+      "check": "delta_zero_reproduces_U",
+      "passed": true,
+      "detail": {
+        "max_abs_error": 0.0
+      }
+    },
+    {
+      "check": "I_mean_probability_constraint",
+      "passed": true,
+      "detail": {
+        "mean_prediction": 0.5000000000000246,
+        "observed_prevalence": 0.5,
+        "intercept": -0.3400502003432848
+      }
+    },
+    {
+      "check": "F_gradient_objective",
+      "passed": true,
+      "detail": {
+        "reconstructed_objective": 0.5577757099249652,
+        "saved_objective": 0.5577757099249652,
+        "gradient_max_abs": 3.9856798417226e-11
+      }
+    },
+    {
+      "check": "same_U_outer_test_rows",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "same_adaptation_outer_test_rows",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "U_complete_prediction_grid",
+      "passed": true,
+      "detail": {
+        "observed": 36534,
+        "expected": 36534
+      }
+    },
+    {
+      "check": "adaptation_complete_prediction_grid",
+      "passed": true,
+      "detail": {
+        "observed": 36534,
+        "expected": 36534
+      }
+    }
+  ]
+}

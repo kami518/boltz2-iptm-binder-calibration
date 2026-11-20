@@ -1,0 +1,218 @@
+{
+  "verification_scope": "independent of production fitting, selection, aggregation, and screening functions",
+  "all_passed": true,
+  "checks": [
+    {
+      "name": "input_hash:frozen_protocol",
+      "pass": true,
+      "actual": "d9db1c3a09d1264580ca56b797922d55fce0e563c04ecb9dab76ac4744a25e28"
+    },
+    {
+      "name": "input_hash:execution_handoff_copy",
+      "pass": true,
+      "actual": "8c9a3ed96b532462c66e39be0014804888b79de1d1400cffcf99d86eca8ebdb2"
+    },
+    {
+      "name": "input_hash:rq5_config",
+      "pass": true,
+      "actual": "2fa4648940d3ce8aadde1c8c361f9ec3d69a10e9a58bd867ed008663330596e8"
+    },
+    {
+      "name": "input_hash:pair_master",
+      "pass": true,
+      "actual": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
+    },
+    {
+      "name": "input_hash:pinc_extension",
+      "pass": true,
+      "actual": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab"
+    },
+    {
+      "name": "input_hash:sequence_clusters",
+      "pass": true,
+      "actual": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb"
+    },
+    {
+      "name": "input_hash:loto_assignments",
+      "pass": true,
+      "actual": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea"
+    },
+    {
+      "name": "input_hash:loto_manifest",
+      "pass": true,
+      "actual": "281a1775edb6d45af635c273e83591c60fa5aa75467afa07d8d2b4cc6869bfd9"
+    },
+    {
+      "name": "input_hash:target_cv5_assignments",
+      "pass": true,
+      "actual": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796"
+    },
+    {
+      "name": "input_hash:target_cv5_manifest",
+      "pass": true,
+      "actual": "964e65aa8e05c73e4f8b070f5d8bba887d593f366c6ed1781dd5f351a795f0ed"
+    },
+    {
+      "name": "input_hash:cross_target_exclusions",
+      "pass": true,
+      "actual": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
+    },
+    {
+      "name": "input_hash:rq3_implementation",
+      "pass": true,
+      "actual": "282a039571a6a1498949f1affa92fe174727608f9ab758c9f64549b8552e6221"
+    },
+    {
+      "name": "sample:primary_six",
+      "pass": true,
+      "rows": 2074,
+      "positives": 740
+    },
+    {
+      "name": "sample:primary_five",
+      "pass": true,
+      "rows": 1941,
+      "positives": 721
+    },
+    {
+      "name": "sample:strict_six",
+      "pass": true,
+      "rows": 2074,
+      "positives": 674
+    },
+    {
+      "name": "selection_recomputation",
+      "pass": true,
+      "candidate_rows": 4800,
+      "selected_exposure_tasks": 136,
+      "checks": 1156,
+      "failed_checks": []
+    },
+    {
+      "name": "single_and_dual_final_rf_rerun",
+      "pass": true,
+      "task_id": "primary_six|target_equal|aah-i",
+      "checks": [
+        {
+          "exposure": "rf_ipTM",
+          "features": [
+            "x_ipTM"
+          ],
+          "seed": 689227684,
+          "n_train": 1941,
+          "n_test": 133,
+          "pair_ids_identical": true,
+          "max_abs_probability_difference": 0.0,
+          "elementwise_identical": true,
+          "pass": true
+        },
+        {
+          "exposure": "rf_combo",
+          "features": [
+            "x_ipTM",
+            "x_Pinc"
+          ],
+          "seed": 689227684,
+          "n_train": 1941,
+          "n_test": 133,
+          "pair_ids_identical": true,
+          "max_abs_probability_difference": 0.0,
+          "elementwise_identical": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "target_and_macro_recomputation",
+      "pass": true,
+      "target_rows_independent": 408,
+      "target_rows_recorded": 408,
+      "target_max_absolute_differences": {
+        "brier": 9.71445146547012e-17,
+        "log_loss": 2.220446049250313e-16,
+        "bss_transport": 9.71445146547012e-17,
+        "bss_target_oracle": 8.881784197001252e-16,
+        "roc_auc": 1.1102230246251565e-16,
+        "ap": 1.1102230246251565e-16,
+        "calibration_intercept": 6.13114881886645e-06,
+        "calibration_slope": 2.7507074484844907e-06
+      },
+      "macro_rows_independent": 72,
+      "macro_rows_recorded": 72,
+      "macro_max_absolute_differences": {
+        "brier": 8.326672684688674e-17,
+        "log_loss": 5.551115123125783e-17,
+        "bss_transport": 9.481347998385736e-17,
+        "bss_target_oracle": 2.220446049250313e-16,
+        "roc_auc": 0.0,
+        "ap": 5.551115123125783e-17,
+        "calibration_intercept": 8.373119664284445e-07,
+        "calibration_slope": 4.5734817488707336e-07
+      },
+      "target_recompute_pass": true,
+      "macro_recompute_pass": true,
+      "pair_rows_independent": 72,
+      "pair_rows_recorded": 72,
+      "pair_max_absolute_differences": {
+        "brier": 8.326672684688674e-17,
+        "log_loss": 2.220446049250313e-16,
+        "bss_transport": 8.326672684688674e-17,
+        "bss_target_oracle": 2.220446049250313e-16,
+        "roc_auc": 8.326672684688674e-17,
+        "ap": 8.326672684688674e-17,
+        "calibration_intercept": 3.0245366544612295e-08,
+        "calibration_slope": 5.757113008542092e-08
+      },
+      "pair_recompute_pass": true
+    },
+    {
+      "name": "pairwise_and_10_2_recomputation",
+      "pass": true,
+      "independent_condition_1": false,
+      "independent_condition_2": false,
+      "independent_condition_3": false,
+      "recorded_conditions": [
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "name": "figure_readability",
+      "pass": true,
+      "images": [
+        {
+          "file": "RQ5RF_IF_same_layer_comparison.png",
+          "bytes": 105990,
+          "png_signature": true,
+          "pass": true
+        },
+        {
+          "file": "RQ5RF_primary_pairwise_differences.png",
+          "bytes": 76075,
+          "png_signature": true,
+          "pass": true
+        },
+        {
+          "file": "RQ5RF_reliability_primary_six.png",
+          "bytes": 496447,
+          "png_signature": true,
+          "pass": true
+        },
+        {
+          "file": "RQ5RF_U_four_model_transport.png",
+          "bytes": 112559,
+          "png_signature": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "outer_checkpoint_count",
+      "pass": true,
+      "observed": 34
+    }
+  ],
+  "independent_target_rows": 408,
+  "independent_pairwise_rows": 270
+}

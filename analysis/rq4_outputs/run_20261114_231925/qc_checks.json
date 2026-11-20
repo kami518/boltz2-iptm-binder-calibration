@@ -1,0 +1,15 @@
+{
+  "input_hashes_match": true,
+  "master_2084_unique_pairs": true,
+  "six_primary_targets": true,
+  "raw_U_within_target_rank_checks_passed": true,
+  "all_c_total_tests_equal_B": true,
+  "all_c_hits_accounted": true,
+  "all_c_expected_strategies": true,
+  "all_c_pilot_costs_correct": true,
+  "all_fits_evaluable": true,
+  "no_F_guard_boundary": true,
+  "ab_expected_rule_counts": true,
+  "B_empty_selection_retained": true,
+  "protocol_and_script_snapshotted": true
+}

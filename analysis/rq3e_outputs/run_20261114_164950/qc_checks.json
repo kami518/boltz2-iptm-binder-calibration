@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "scope": "confirmatory_720_and_prespecified_sensitivities",
+  "input_hash_gate": "passed",
+  "upstream_target_equal_model_sha256": "c3a22f05199729828d9b96051ea8759a64d9f4c632a6558ed6ae84f0f902aabd",
+  "target_equal_model_reused_without_refit": true,
+  "pair_sensitivity_fit_used_source_rows_only": true,
+  "external_rows": 720,
+  "external_unique_uuids": 720,
+  "external_targets": 8,
+  "external_main_positives": 287,
+  "new_target_pairs": 360,
+  "same_target_campaign_pairs": 360,
+  "outcome_coverage": {
+    "adaptyv_weak_plus": {
+      "n": 720,
+      "positives": 287
+    },
+    "adaptyv_medium_plus": {
+      "n": 720,
+      "positives": 254
+    },
+    "integrated": {
+      "n": 720,
+      "positives": 304
+    },
+    "twist_qc": {
+      "n": 718,
+      "positives": 247
+    },
+    "twist_permissive": {
+      "n": 718,
+      "positives": 289
+    }
+  },
+  "score_rules": [
+    "best_ipsae_seed",
+    "seed_mean",
+    "seed_median",
+    "seed0"
+  ],
+  "seed0_from_raw_design_target_stoichiometry_rows": true,
+  "configuration_count": 9,
+  "prediction_rows": 6476,
+  "target_metric_rows": 72,
+  "group_metric_rows": 36,
+  "reliability_rows": 504,
+  "all_predictions_finite_and_inside_open_unit_interval": true,
+  "external_design_models": 2,
+  "external_generators": 9,
+  "I_or_F_fitted": false,
+  "Pinc_or_cross_predictor_or_ML_run": false,
+  "master_hash_after": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+  "result_driven_changes": false,
+  "standard_error_correction": "inv(mean Hessian) SE divided by sqrt(sum of unit weights); point estimates unchanged"
+}

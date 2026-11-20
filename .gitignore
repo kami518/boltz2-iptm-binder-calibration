@@ -1,0 +1,24 @@
+# Upstream data must be acquired separately
+data/proteinbase_latest.csv
+data/proteinbase_latest.parquet
+data/overath_*.csv
+data/overath_*.parquet
+data/external_target_audit_2026-11-13/*.parquet
+
+# Local environments and generated analyses
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+analysis/**/run_*/*.new
+
+# Credentials and editor state
+.env
+.env.*
+*.pem
+*.key
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

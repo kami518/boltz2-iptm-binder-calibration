@@ -1,0 +1,141 @@
+{
+  "checks": [
+    {
+      "check": "master_pair_count",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "unique_pair_ids",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "cluster_pair_count",
+      "passed": true,
+      "observed": 2084,
+      "expected": 2084
+    },
+    {
+      "check": "loto_manifest_rows",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    },
+    {
+      "check": "cv5_manifest_rows",
+      "passed": true,
+      "observed": 220,
+      "expected": 220
+    },
+    {
+      "check": "loto_manifest_qc",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    },
+    {
+      "check": "cv5_manifest_qc",
+      "passed": true,
+      "observed": 220,
+      "expected": 220
+    },
+    {
+      "check": "analysis_set_names",
+      "passed": true,
+      "observed": [
+        "primary_five",
+        "primary_six",
+        "strict_five",
+        "strict_six"
+      ],
+      "expected": [
+        "primary_five",
+        "primary_six",
+        "strict_five",
+        "strict_six"
+      ]
+    },
+    {
+      "check": "cluster_rule_names",
+      "passed": true,
+      "observed": [
+        "sequence_cluster80",
+        "sequence_cluster90"
+      ],
+      "expected": [
+        "sequence_cluster80",
+        "sequence_cluster90"
+      ]
+    },
+    {
+      "check": "all_assignment_pair_ids",
+      "passed": true,
+      "observed": {
+        "loto": 2084,
+        "cv5": 2084
+      },
+      "expected": 2084
+    },
+    {
+      "check": "loto_expected_rows_per_fold",
+      "passed": true,
+      "observed": "manifest-consistent",
+      "expected": "manifest-consistent"
+    },
+    {
+      "check": "cv5_expected_rows_per_fold",
+      "passed": true,
+      "observed": "manifest-consistent",
+      "expected": "manifest-consistent"
+    },
+    {
+      "check": "loto_training_target_absent",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "loto_test_complete",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "cv5_group_isolation",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "cv5_fold_counts",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    },
+    {
+      "check": "cv5_each_pair_tested_once",
+      "passed": true,
+      "observed": 16140,
+      "expected": 16140
+    },
+    {
+      "check": "exclusion_ledger_nonempty_and_accounted",
+      "passed": true,
+      "observed": 364,
+      "expected": 364
+    },
+    {
+      "check": "loto_combination_complete",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    }
+  ],
+  "all_passed": true,
+  "n_checks": 19,
+  "failure_count": 0,
+  "note": "Tests above are structural and do not fit or evaluate any model."
+}

@@ -1,0 +1,61 @@
+{
+  "protocol": "E:\\diyipian\\analysis\\RQ3E_IF_external_adaptation_protocol_2026-11-14.md",
+  "protocol_sha256": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
+  "analysis_role": "post_hoc_exploratory_external_IF",
+  "input_hashes": {
+    "E:\\diyipian\\analysis\\RQ3E_IF_external_adaptation_protocol_2026-11-14.md": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
+    "E:\\diyipian\\analysis\\rq3e_outputs\\run_20261114_164950\\rq3e_u_pair_predictions.csv": "3b256c3fd0f813885ce817bfa6df8f80cd23ac57473047ff976ee87e0b70b2c1",
+    "E:\\diyipian\\analysis\\rq3e_outputs\\run_20261114_164950\\rq3e_external_pairs.csv": "72f4127d410160224701729fa401b4076297641402aa0965a3f9aec250a8002e",
+    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
+  },
+  "primary_config": "primary_target_equal_weak_plus_best_ipsae",
+  "targets": [
+    "BHRF1",
+    "IL-7Ra",
+    "RBX1",
+    "TrkA",
+    "Nipah-G",
+    "PD-L1",
+    "TREM2",
+    "VEGF-A"
+  ],
+  "new_targets": [
+    "BHRF1",
+    "IL-7Ra",
+    "RBX1",
+    "TrkA"
+  ],
+  "lambda_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "outer_cv": {
+    "algorithm": "StratifiedGroupKFold",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 20261112,
+    "groups": "within-target sequence_cluster90"
+  },
+  "inner_cv": {
+    "algorithm": "StratifiedGroupKFold",
+    "n_splits": 3,
+    "shuffle": true,
+    "random_state": 20261113,
+    "groups": "within-target sequence_cluster90"
+  },
+  "I_model": "eta_I=a+eta_U",
+  "F_model": "eta_F=a+(1+delta)*eta_U; mean NLL + 0.5*lambda*delta^2",
+  "lambda_selection": "minimum pooled inner log loss; abs difference <=1e-12 ties choose larger lambda",
+  "software": {
+    "python": "3.12.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "parasail": "1.3.4"
+  },
+  "execution_script_sha256": "faafbff8cfc8f76cb6c0c6f55397cd8f85339def15abe5a2dee71a08e10c2b93"
+}

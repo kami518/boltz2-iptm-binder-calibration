@@ -1,0 +1,425 @@
+{
+  "stage": "stage_4_figures_tables_qc_and_handoff",
+  "checked_at": "2026-11-13T18:24:53+08:00",
+  "all_passed": true,
+  "n_checks": 40,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "initial_stage0_structural_qc",
+      "passed": true,
+      "observed": 19,
+      "expected": 19
+    },
+    {
+      "check": "frozen_input_hash_gate_closed",
+      "passed": true,
+      "observed": 9,
+      "expected": 9
+    },
+    {
+      "check": "loto_fold_count",
+      "passed": true,
+      "observed": 44,
+      "expected": 44
+    },
+    {
+      "check": "u_model_target_evaluations",
+      "passed": true,
+      "observed": 176,
+      "expected": 176
+    },
+    {
+      "check": "u_pair_prediction_count",
+      "passed": true,
+      "observed": 64560,
+      "expected": 64560
+    },
+    {
+      "check": "u_source_models_evaluable",
+      "passed": true,
+      "observed": 176,
+      "expected": 176
+    },
+    {
+      "check": "u_predictions_finite",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "u_test_pair_coverage_unique",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "rcs_knots_strict_and_source_training_only",
+      "passed": true,
+      "observed": 264,
+      "expected": 264
+    },
+    {
+      "check": "u_metrics_recomputable_from_predictions",
+      "passed": true,
+      "observed": 1.5543122344752192e-15,
+      "expected": "<1e-10"
+    },
+    {
+      "check": "u_reliability_frozen_bins_complete",
+      "passed": true,
+      "observed": 2464,
+      "expected": 2464
+    },
+    {
+      "check": "oracle_descriptive_evaluations",
+      "passed": true,
+      "observed": 176,
+      "expected": 176
+    },
+    {
+      "check": "oracle_I_mean_probability_equals_target_prevalence",
+      "passed": true,
+      "observed": 9.614531393253856e-14,
+      "expected": "<1e-10"
+    },
+    {
+      "check": "information_layer_labels_separated",
+      "passed": true,
+      "observed": [
+        "descriptive_in_sample_adaptation",
+        "oracle_base_rate_scenario"
+      ],
+      "expected": [
+        "oracle_base_rate_scenario",
+        "descriptive_in_sample_adaptation"
+      ]
+    },
+    {
+      "check": "predictive_outer_pair_rows",
+      "passed": true,
+      "observed": 32280,
+      "expected": 32280
+    },
+    {
+      "check": "predictive_same_outer_rows_complete",
+      "passed": true,
+      "observed": true,
+      "expected": true
+    },
+    {
+      "check": "predictive_five_outer_folds_per_target_config",
+      "passed": true,
+      "observed": {
+        "5": 88
+      },
+      "expected": {
+        "5": 88
+      }
+    },
+    {
+      "check": "predictive_fold_layer_evaluations",
+      "passed": true,
+      "observed": 1320,
+      "expected": 1320
+    },
+    {
+      "check": "inner_assignments_each_pair_once",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "inner_cluster_isolation",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "frozen_six_lambda_grid",
+      "passed": true,
+      "observed": {
+        "6": 440
+      },
+      "expected": {
+        "6": 440
+      }
+    },
+    {
+      "check": "one_lambda_selected_per_outer_fit",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "lambda_selection_rule_reproducible",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "transport_and_target_oracle_references_distinct",
+      "passed": true,
+      "observed": {
+        "transport_column": "bss_transport_reference",
+        "target_oracle_column": "bss_target_oracle_reference"
+      },
+      "expected": "separate row-level columns"
+    },
+    {
+      "check": "zero_label_conclusion_limited_to_U",
+      "passed": true,
+      "observed": {
+        "stage_1_u": [
+          "U_transport_zero_label"
+        ],
+        "stage_2": [
+          "descriptive_in_sample_adaptation",
+          "oracle_base_rate_scenario"
+        ],
+        "stage_3": [
+          "U_transport_zero_label",
+          "predictive_F",
+          "predictive_I"
+        ]
+      },
+      "expected": "U only in stage 1 zero-label layer"
+    },
+    {
+      "check": "all_failed_calibration_diagnostics_ledgered",
+      "passed": true,
+      "observed": {
+        "calibration_failed_fold_rows": 28,
+        "ledger_rows": 28
+      },
+      "expected": "equal counts"
+    },
+    {
+      "check": "no_unledgered_model_fit_failure",
+      "passed": true,
+      "observed": 0,
+      "expected": 0
+    },
+    {
+      "check": "F_regression_suite_passed",
+      "passed": true,
+      "observed": "passed",
+      "expected": "passed"
+    },
+    {
+      "check": "F_regression_record_count_complete",
+      "passed": true,
+      "observed": 528,
+      "expected": 528
+    },
+    {
+      "check": "F_saved_objective_matches_reconstruction",
+      "passed": true,
+      "observed": 2.220446049250313e-16,
+      "expected": "<=1e-10"
+    },
+    {
+      "check": "F_gamma_identity_complete",
+      "passed": true,
+      "observed": 1.7763568394002505e-15,
+      "expected": "<=1e-14"
+    },
+    {
+      "check": "F_eta_prediction_reconstruction_complete",
+      "passed": true,
+      "observed": 3.552713678800501e-15,
+      "expected": "<=1e-12"
+    },
+    {
+      "check": "F_probability_prediction_reconstruction_complete",
+      "passed": true,
+      "observed": 4.440892098500626e-16,
+      "expected": "<=1e-12"
+    },
+    {
+      "check": "F_saved_gradients_near_zero",
+      "passed": true,
+      "observed": 1.649816357040992e-07,
+      "expected": "<=1e-05"
+    },
+    {
+      "check": "F_lambda_zero_independent_implementation_matches",
+      "passed": true,
+      "observed": 2.438229529388991e-08,
+      "expected": "<=1e-07"
+    },
+    {
+      "check": "F_large_lambda_limit_passed",
+      "passed": true,
+      "observed": 9.994922831335968e-10,
+      "expected": "<=1e-5"
+    },
+    {
+      "check": "old_new_U_numerically_unchanged",
+      "passed": true,
+      "observed": {
+        "new_rows": 64560.0,
+        "old_rows": 64560.0,
+        "joined_rows": 64560.0,
+        "unmatched_rows": 0.0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0.0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      "expected": "zero material-change rows"
+    },
+    {
+      "check": "old_new_oracle_I_numerically_unchanged",
+      "passed": true,
+      "observed": {
+        "new_rows": 32280.0,
+        "old_rows": 32280.0,
+        "joined_rows": 32280.0,
+        "unmatched_rows": 0.0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0.0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      "expected": "zero material-change rows"
+    },
+    {
+      "check": "old_new_predictive_I_numerically_unchanged",
+      "passed": true,
+      "observed": {
+        "new_rows": 32280.0,
+        "old_rows": 32280.0,
+        "joined_rows": 32280.0,
+        "unmatched_rows": 0.0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0.0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      "expected": "zero material-change rows"
+    },
+    {
+      "check": "required_outputs_present_before_handoff",
+      "passed": true,
+      "observed": [],
+      "expected": []
+    }
+  ],
+  "failure_ledger_rows": 28,
+  "calibration_bound_hit_rows": 28,
+  "model_fit_failures": 0,
+  "f_regression": {
+    "status": "passed",
+    "checks": {
+      "objective_prediction_rows_complete": true,
+      "objective_reconstruction_within_tolerance": true,
+      "gamma_identity_within_tolerance": true,
+      "eta_reconstruction_within_tolerance": true,
+      "probability_reconstruction_within_tolerance": true,
+      "saved_gradient_within_tolerance": true,
+      "all_lambda_zero_independent_fits_succeeded": true,
+      "all_lambda_zero_independent_predictions_match": true,
+      "U_unchanged_within_materiality": true,
+      "oracle_I_unchanged_within_materiality": true,
+      "predictive_I_unchanged_within_materiality": true
+    },
+    "tolerances": {
+      "objective_abs": 1e-10,
+      "gamma_identity_abs": 1e-14,
+      "eta_reconstruction_abs": 1e-12,
+      "probability_reconstruction_abs": 1e-12,
+      "saved_gradient_max_abs": 1e-05,
+      "lambda_zero_independent_probability_abs": 1e-07,
+      "old_new_eta_abs": 1e-10,
+      "old_new_probability_abs": 1e-12
+    },
+    "record_counts": {
+      "descriptive_F_fits": 88,
+      "predictive_F_fits": 440,
+      "total_F_fits": 528
+    },
+    "numerical_maxima": {
+      "objective_reconstruction_abs_error": 2.220446049250313e-16,
+      "gamma_identity_abs_error": 1.7763568394002505e-15,
+      "eta_reconstruction_abs_error": 3.552713678800501e-15,
+      "probability_reconstruction_abs_error": 4.440892098500626e-16,
+      "saved_gradient_max_abs": 1.649816357040992e-07,
+      "lambda_zero_independent_probability_abs_error": 2.438229529388991e-08
+    },
+    "old_new_consistency": [
+      {
+        "layer": "U",
+        "new_rows": 64560,
+        "old_rows": 64560,
+        "joined_rows": 64560,
+        "unmatched_rows": 0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      {
+        "layer": "oracle_I",
+        "new_rows": 32280,
+        "old_rows": 32280,
+        "joined_rows": 32280,
+        "unmatched_rows": 0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      {
+        "layer": "predictive_I",
+        "new_rows": 32280,
+        "old_rows": 32280,
+        "joined_rows": 32280,
+        "unmatched_rows": 0,
+        "max_absolute_eta_difference": 0.0,
+        "max_absolute_probability_difference": 0.0,
+        "material_change_rows": 0,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      {
+        "layer": "descriptive_F",
+        "new_rows": 32280,
+        "old_rows": 32280,
+        "joined_rows": 32280,
+        "unmatched_rows": 0,
+        "max_absolute_eta_difference": 4.46857013386593,
+        "max_absolute_probability_difference": 0.6496493028101304,
+        "material_change_rows": 32280,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      },
+      {
+        "layer": "predictive_F",
+        "new_rows": 32280,
+        "old_rows": 32280,
+        "joined_rows": 32280,
+        "unmatched_rows": 0,
+        "max_absolute_eta_difference": 3.7666420738119086,
+        "max_absolute_probability_difference": 0.6429912399691053,
+        "material_change_rows": 32280,
+        "eta_materiality_tolerance": 1e-10,
+        "probability_materiality_tolerance": 1e-12
+      }
+    ],
+    "invalidated_old_F_scope": {
+      "descriptive_F_fits": 88,
+      "predictive_F_fits": 440,
+      "lambda_candidates": 2640,
+      "descriptive_F_pair_predictions": 32280,
+      "predictive_F_pair_predictions": 32280,
+      "reason": "The old fit optimized a + theta_1*eta_U while saving delta=theta_1 and predicting with a+(1+delta)*eta_U."
+    }
+  },
+  "hash_manifest_status": "generated by finalize_hash_manifest.py after all logs are closed"
+}

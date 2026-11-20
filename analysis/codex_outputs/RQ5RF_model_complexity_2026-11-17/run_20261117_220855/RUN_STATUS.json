@@ -1,0 +1,35 @@
+{
+  "handoff_id": "RQ5RF_EXECUTION_CODEX_HANDOFF_2026-11-17",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855",
+  "overall_status": "complete",
+  "scope": "post hoc exploratory model-complexity sensitivity",
+  "completed_at": "2026-11-17T22:48:36+08:00",
+  "protocol_sha256": "d9db1c3a09d1264580ca56b797922d55fce0e563c04ecb9dab76ac4744a25e28",
+  "stages": {
+    "stage_0_preflight": "complete",
+    "stage_1_shared_rows_and_unit_tests": "complete",
+    "stage_2_u_models": "complete",
+    "stage_3_adaptation": "complete",
+    "stage_4_metrics_and_figures": "complete",
+    "stage_5_independent_verification": "complete",
+    "stage_5_qc_and_final_handoff": "complete"
+  },
+  "rf_fits": {
+    "inner": 2880,
+    "final_candidate_audit": 612,
+    "total": 3492,
+    "expected": 3492
+  },
+  "unresolved_failure_count": 0,
+  "resolved_failure_count": 1,
+  "recorded_non_evaluable_diagnostic_count": 60,
+  "screen_10_2_satisfied": false,
+  "screen_10_2_conclusion": "未满足冻结的 10.2 全部条件；只能按实际结果报告方向不一致、局部增量或无明确增量。",
+  "limitations": [
+    "post hoc exploratory only",
+    "no independent external Pinc cohort",
+    "no pure interaction identification",
+    "RF probabilities are not claimed to be calibrated",
+    "six-target direction counts are not future-target population inference"
+  ]
+}

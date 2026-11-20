@@ -1,0 +1,170 @@
+{
+  "status": "passed",
+  "pdf": "E:\\diyipian\\manuscript\\review\\PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf",
+  "pages": 51,
+  "bytes": 15069049,
+  "main_tables": 4,
+  "main_figures": 7,
+  "supplementary_table_guides": 16,
+  "supplementary_figures": 10,
+  "detailed_supplementary_panels": "All 75 remain in the companion Excel workbook; they are not reduced into this PDF.",
+  "checks": {
+    "page_count_matches_build": {
+      "passed": true,
+      "detail": {
+        "pdf_pages": 51,
+        "build_pages": 51
+      }
+    },
+    "file_size_matches_build": {
+      "passed": true,
+      "detail": {
+        "pdf_bytes": 15069049,
+        "build_bytes": 15069049
+      }
+    },
+    "continuous_page_numbers": {
+      "passed": true,
+      "detail": {
+        "expected": "Page 2 through Page 51",
+        "wrong_pages": [],
+        "cover_unnumbered": true
+      }
+    },
+    "a4_pages": {
+      "passed": true,
+      "detail": "All pages are A4-sized."
+    },
+    "source_heading_counts": {
+      "passed": true,
+      "detail": {
+        "main_tables": 4,
+        "main_figures": 7,
+        "supplementary_tables": 16,
+        "supplementary_figures": 10
+      }
+    },
+    "all_37_figure_and_table_titles_present": {
+      "passed": true,
+      "detail": {
+        "expected": 37,
+        "missing": []
+      }
+    },
+    "all_17_figures_embedded_on_title_pages": {
+      "passed": true,
+      "detail": {
+        "embedded_images": 17,
+        "image_pages": {
+          "27": 1,
+          "28": 1,
+          "29": 1,
+          "30": 1,
+          "31": 1,
+          "32": 1,
+          "33": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "44": 1,
+          "45": 1,
+          "46": 1,
+          "47": 1,
+          "48": 1,
+          "49": 1,
+          "50": 1
+        },
+        "resolved_figure_title_pages": 17,
+        "titles_without_exactly_one_image": []
+      }
+    },
+    "bookmarks_and_destinations": {
+      "passed": true,
+      "detail": {
+        "destination_count": 80,
+        "invalid_destinations": [],
+        "required_titles_missing_from_bookmarks": []
+      }
+    },
+    "working_link_annotations": {
+      "passed": true,
+      "detail": {
+        "counts": {
+          "total": 265,
+          "internal": 228,
+          "web": 22,
+          "local_file": 15
+        },
+        "invalid_internal_links": [],
+        "contents_pages_link_counts": {
+          "2": 53,
+          "3": 54,
+          "4": 54
+        }
+      }
+    },
+    "key_numerical_anchors_present": {
+      "passed": true,
+      "detail": {
+        "expected": [
+          "2,084",
+          "748",
+          "678",
+          "0.3086",
+          "−0.0809",
+          "45.1%",
+          "42.9%",
+          "0.1693",
+          "0.1793",
+          "+18.08",
+          "−38.64",
+          "2,074",
+          "3,669",
+          "3,766",
+          "0.2624",
+          "0.7254",
+          "0.0690",
+          "−0.7152",
+          "+0.0466",
+          "0.1656"
+        ],
+        "missing": []
+      }
+    },
+    "unresolved_placeholders_retained": {
+      "passed": true,
+      "detail": {
+        "expected": [
+          "REPOSITORY AND DOI TO BE ADDED"
+        ],
+        "missing": []
+      }
+    },
+    "verified_source_placeholders_removed": {
+      "passed": true,
+      "detail": {
+        "resolved_markers_absent": [
+          "VERIFIED ANTHROPIC DATASET CITATION REQUIRED",
+          "EXTERNAL DATASET CITATION REQUIRED",
+          "VERIFIED ANTHROPIC EXTERNAL-DATASET REFERENCE TO BE INSERTED"
+        ],
+        "unexpected": []
+      }
+    },
+    "no_raw_markdown_or_replacement_glyphs": {
+      "passed": true,
+      "detail": {
+        "![": 0,
+        "**": 0,
+        "##": 0,
+        "�": 0
+      }
+    },
+    "no_text_empty_pages": {
+      "passed": true,
+      "detail": {
+        "pages_with_less_than_20_extracted_characters_after_header_footer_removal": []
+      }
+    }
+  }
+}

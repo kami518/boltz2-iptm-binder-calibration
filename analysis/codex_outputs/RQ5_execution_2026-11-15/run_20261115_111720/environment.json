@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-11-15T11:17:29+08:00",
+  "python": "3.12.16 (main, Nov 11 2026, 00:20:04) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "D:\\KimiData\\daimon-share\\daimon\\runtime\\python\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "scipy": "1.18.1",
+  "scikit_learn": "1.9.0",
+  "matplotlib": "3.10.9",
+  "network_access_used": false,
+  "dependency_install_or_upgrade_performed": false
+}

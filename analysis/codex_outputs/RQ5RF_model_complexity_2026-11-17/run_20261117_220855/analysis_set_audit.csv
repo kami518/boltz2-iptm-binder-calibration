@@ -1,0 +1,4 @@
+analysis_set,outcome,excluded_target,rows,positives,targets,unique_pair_ids,iptm_min,iptm_max,pinc_min,pinc_max,status
+primary_six,primary_outcome,,2074,740,6,2074,0.090169608592987,0.9775866270065308,0.0826,0.9599,pass
+primary_five,primary_outcome,aah-i,1941,721,5,1941,0.090169608592987,0.9775866270065308,0.0826,0.9599,pass
+strict_six,strict_outcome,,2074,674,6,2074,0.090169608592987,0.9775866270065308,0.0826,0.9599,pass

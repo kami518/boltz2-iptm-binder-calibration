@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "n_rows": 1600,
+  "n_trees": 500,
+  "n_jobs": 1,
+  "elapsed_seconds": 0.29930719999993016,
+  "rss_before_bytes": 218640384,
+  "rss_after_bytes": 219009024,
+  "process_peak_working_set_bytes": 244015104,
+  "process_peak_pagefile_bytes": 1787756544,
+  "rss_delta_bytes": 368640,
+  "note": "Representative resource probe only; not a result fit."
+}

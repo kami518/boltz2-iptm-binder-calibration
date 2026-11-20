@@ -1,0 +1,180 @@
+{
+  "handoff_id": "RQ5RF_EXECUTION_CODEX_HANDOFF_2026-11-17",
+  "protocol_version": "RQ5RF_v1_frozen",
+  "analysis_scope": "post_hoc_exploratory_model_complexity_sensitivity",
+  "created_at": "2026-11-17T22:08:55+08:00",
+  "workspace": "E:\\diyipian",
+  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855",
+  "protocol": {
+    "path": "E:\\diyipian\\analysis\\RQ5RF_model_complexity_frozen_protocol_2026-11-17.md",
+    "sha256": "d9db1c3a09d1264580ca56b797922d55fce0e563c04ecb9dab76ac4744a25e28"
+  },
+  "inputs": {
+    "rq5_config": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720\\run_config.snapshot.json",
+      "sha256": "2fa4648940d3ce8aadde1c8c361f9ec3d69a10e9a58bd867ed008663330596e8"
+    },
+    "pair_master": {
+      "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+      "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+      "expected_rows": 2084
+    },
+    "pinc_extension": {
+      "path": "E:\\diyipian\\analysis\\pinc_batch\\run_20261110_181500\\pinc_pair_extension.csv",
+      "sha256": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
+      "expected_rows": 2084,
+      "expected_success": 2074,
+      "expected_missing_input": 10,
+      "missing_target": "pd-l1"
+    },
+    "sequence_clusters": {
+      "path": "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv",
+      "sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+      "expected_rows": 2084
+    },
+    "loto_assignments": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_pair_assignments.csv",
+      "sha256": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
+      "expected_folds": 44
+    },
+    "loto_manifest": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_fold_manifest.csv",
+      "sha256": "281a1775edb6d45af635c273e83591c60fa5aa75467afa07d8d2b4cc6869bfd9",
+      "expected_rows": 44
+    },
+    "target_cv5_assignments": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_pair_assignments.csv",
+      "sha256": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796",
+      "expected_fold_rows": 220
+    },
+    "target_cv5_manifest": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_fold_manifest.csv",
+      "sha256": "964e65aa8e05c73e4f8b070f5d8bba887d593f366c6ed1781dd5f351a795f0ed",
+      "expected_rows": 220
+    },
+    "cross_target_exclusions": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\cross_target_cluster_exclusions.csv",
+      "sha256": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
+    },
+    "rq3_implementation": {
+      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_common.py",
+      "sha256": "282a039571a6a1498949f1affa92fe174727608f9ab758c9f64549b8552e6221"
+    }
+  },
+  "analysis_sets": {
+    "primary_six": {
+      "outcome": "primary_outcome",
+      "exclude_target": null,
+      "expected_rows": 2074,
+      "expected_positives": 740
+    },
+    "primary_five": {
+      "outcome": "primary_outcome",
+      "exclude_target": "aah-i",
+      "expected_rows": 1941,
+      "expected_positives": 721
+    },
+    "strict_six": {
+      "outcome": "strict_outcome",
+      "exclude_target": null,
+      "expected_rows": 2074,
+      "expected_positives": 674
+    }
+  },
+  "cluster_rule": "sequence_cluster90",
+  "source_weightings": ["target_equal", "pair"],
+  "models": {
+    "pooled_logistic_ipTM": {
+      "family": "pooled_logistic",
+      "features": ["x_ipTM"]
+    },
+    "pooled_logistic_combo": {
+      "family": "pooled_logistic",
+      "features": ["x_ipTM", "x_Pinc"]
+    },
+    "rf_ipTM": {
+      "family": "random_forest",
+      "features": ["x_ipTM"]
+    },
+    "rf_combo": {
+      "family": "random_forest",
+      "features": ["x_ipTM", "x_Pinc"]
+    }
+  },
+  "transform": "logit(clip(probability,1e-6,1-1e-6))",
+  "probability_clip": 1e-06,
+  "logistic": {
+    "global_intercept": true,
+    "source_target_intercepts": false,
+    "standardization": "weighted mean and population SD from current fit/training rows only",
+    "lambda_grid": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+    "penalty": "0.5*lambda*sum(beta_slope^2); intercept unpenalized",
+    "inner_selection": "source-only leave-one-source-target-out; equal-target macro mean log loss",
+    "tie_rule": "within 1e-12 choose larger lambda"
+  },
+  "random_forest": {
+    "implementation": "sklearn.ensemble.RandomForestClassifier",
+    "sklearn_version": "1.9.0",
+    "base_grid": {
+      "max_depth": [2, 4, null],
+      "min_samples_leaf": [10, 30],
+      "max_features": [1, 2]
+    },
+    "n_estimators": 500,
+    "criterion": "gini",
+    "bootstrap": true,
+    "max_samples": null,
+    "class_weight": null,
+    "min_samples_split": 2,
+    "min_weight_fraction_leaf": 0.0,
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "oob_score": false,
+    "warm_start": false,
+    "ccp_alpha": 0.0,
+    "verbose": 0,
+    "n_jobs": 1,
+    "seed_string": "RQ5RF|v1|analysis_set|weighting|outer_fold|inner_fold|inner_or_final",
+    "seed_derivation": "SHA-256 canonical UTF-8 string; first four digest bytes interpreted big-endian",
+    "inner_selection": "source-only leave-one-source-target-out; equal-target macro mean log loss",
+    "tie_rule": "within 1e-12 choose shallower depth, then larger min_samples_leaf, then smaller effective max_features"
+  },
+  "adaptation": {
+    "outer_source": "StratifiedGroupKFold",
+    "outer_reuse_existing_assignments": true,
+    "outer_n_splits": 5,
+    "outer_shuffle": true,
+    "outer_random_state": 20261112,
+    "inner_n_splits": 3,
+    "inner_shuffle": true,
+    "inner_random_state": 20261113,
+    "reuse_inner_assignments_across_all_four_exposures_both_weightings_and_all_lambdas": true,
+    "pair_id_sort": "UTF-8 string ascending",
+    "I_model": "eta_I=a+eta_U; update intercept only",
+    "F_model": "eta_F=a+(1+delta)*eta_U; update intercept and delta",
+    "F_penalty": "mean NLL + 0.5*lambda*delta^2; intercept unpenalized",
+    "lambda_grid": [0.001, 0.01, 0.1, 1.0, 10.0, 100.0],
+    "lambda_selection": "minimum pooled inner-validation log loss using probability clip; 1e-12 ties choose larger lambda",
+    "adaptation_training_weight": 1.0,
+    "fallback_allowed": false
+  },
+  "reliability_bin_edges": [0.0, 0.2, 0.4, 0.6, 0.8, 0.9, 0.95, 1.0],
+  "expected_computation": {
+    "final_outer_source_tasks": 34,
+    "inner_source_target_tasks": 160,
+    "rf_fits": 3492
+  },
+  "preset_pairwise_comparisons": [
+    ["pooled_logistic_combo", "pooled_logistic_ipTM"],
+    ["rf_ipTM", "pooled_logistic_ipTM"],
+    ["rf_combo", "pooled_logistic_combo"],
+    ["rf_combo", "rf_ipTM"],
+    ["rf_combo", "pooled_logistic_ipTM"]
+  ],
+  "forbidden": [
+    "modify frozen inputs, folds, old results, manuscripts, or files outside the new run directory",
+    "network, download, install, upgrade, or cross-version result splicing",
+    "change trees, grid, folds, analysis sets, weights, outcomes, or interpretation thresholds after results",
+    "describe pure interaction, general calibration, universal RF superiority, or future-target inference"
+  ]
+}

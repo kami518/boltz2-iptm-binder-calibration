@@ -1,0 +1,198 @@
+{
+  "status": "passed",
+  "independent_of_production_summary_functions": true,
+  "n_checks": 18,
+  "n_failed": 0,
+  "checks": [
+    {
+      "check": "frozen_input_hashes",
+      "passed": true,
+      "detail": {
+        "mismatches": [],
+        "n_checked": 9
+      }
+    },
+    {
+      "check": "core_input_rows",
+      "passed": true,
+      "detail": {
+        "master": 2084,
+        "pinc": 2084,
+        "clusters": 2084
+      }
+    },
+    {
+      "check": "core_unique_pair_ids",
+      "passed": true,
+      "detail": {
+        "master": 2084,
+        "pinc": 2084,
+        "clusters": 2084
+      }
+    },
+    {
+      "check": "pinc_acceptance",
+      "passed": true,
+      "detail": {
+        "success": 2074,
+        "missing": 10,
+        "missing_primary_positive": 8,
+        "missing_strict_positive": 4
+      }
+    },
+    {
+      "check": "analysis_set_counts",
+      "passed": true,
+      "detail": {
+        "primary_six": {
+          "n": 2074,
+          "positives": 740
+        },
+        "primary_five": {
+          "n": 1941,
+          "positives": 721
+        },
+        "strict_six": {
+          "n": 2074,
+          "positives": 674
+        }
+      }
+    },
+    {
+      "check": "stage_a_all_point_estimates",
+      "passed": true,
+      "detail": {
+        "n_rows": 34,
+        "errors": []
+      }
+    },
+    {
+      "check": "representative_paired_cluster_bootstrap",
+      "passed": true,
+      "detail": {
+        "analysis_set": "primary_six",
+        "target": "aah-i",
+        "n_boot": 2000,
+        "seed": 20261115,
+        "errors": []
+      }
+    },
+    {
+      "check": "frozen_loto_isolation",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "main_U_prediction_reconstruction",
+      "passed": true,
+      "detail": {
+        "errors": [],
+        "analysis": "primary_six/target_equal/ipTM_only"
+      }
+    },
+    {
+      "check": "main_U_target_metrics_reconstruction",
+      "passed": true,
+      "detail": {
+        "errors": []
+      }
+    },
+    {
+      "check": "all_target_pairwise_differences",
+      "passed": true,
+      "detail": {
+        "saved_rows": 3672,
+        "independent_rows": 3672,
+        "mismatch_rows": 0
+      }
+    },
+    {
+      "check": "all_pairwise_macro_summaries",
+      "passed": true,
+      "detail": {
+        "saved_rows": 648,
+        "independent_rows": 648,
+        "mismatch_rows": 0
+      }
+    },
+    {
+      "check": "all_pair_pooled_pairwise_summaries",
+      "passed": true,
+      "detail": {
+        "saved_rows": 648,
+        "independent_rows": 648,
+        "mismatch_rows": 0
+      }
+    },
+    {
+      "check": "prediction_row_counts",
+      "passed": true,
+      "detail": {
+        "u": 36534,
+        "adaptation": 36534,
+        "expected": 36534
+      }
+    },
+    {
+      "check": "same_U_outer_rows",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "same_adaptation_outer_rows",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "adaptation_inner_isolation",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "figure_readability",
+      "passed": true,
+      "detail": {
+        "RQ5_score_discrimination.png": {
+          "shape": [
+            2665,
+            2885,
+            4
+          ],
+          "bytes": 182340,
+          "finite_pixels": true,
+          "readable": true
+        },
+        "RQ5_raw_reliability.png": {
+          "shape": [
+            1213,
+            2665,
+            4
+          ],
+          "bytes": 290070,
+          "finite_pixels": true,
+          "readable": true
+        },
+        "RQ5_U_transport.png": {
+          "shape": [
+            1213,
+            3545,
+            4
+          ],
+          "bytes": 131071,
+          "finite_pixels": true,
+          "readable": true
+        },
+        "RQ5_adaptation_increment.png": {
+          "shape": [
+            1169,
+            3325,
+            4
+          ],
+          "bytes": 100231,
+          "finite_pixels": true,
+          "readable": true
+        }
+      }
+    }
+  ]
+}

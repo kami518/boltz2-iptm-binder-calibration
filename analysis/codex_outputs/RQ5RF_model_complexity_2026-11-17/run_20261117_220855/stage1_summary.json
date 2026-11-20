@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-17T22:12:50+08:00",
+  "unit_tests": {
+    "tests_run": 16,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "test_names": []
+  },
+  "outer_source_tasks": 34,
+  "inner_source_target_tasks": 160,
+  "shared_split_contract": "all four exposures, both weightings, and all lambdas reuse frozen assignments",
+  "recoverable_checkpoint_root": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855\\checkpoints",
+  "all_inner_splits_cluster_disjoint": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "outer_tasks": 34,
+  "inner_source_target_tasks": 160,
+  "u_prediction_rows": 48712,
+  "source_parameter_rows": 136,
+  "inner_candidate_fit_rows": 4800,
+  "inner_candidate_selection_rows": 1020,
+  "final_candidate_fit_rows": 680,
+  "rf_inner_fits": 2880,
+  "rf_final_candidate_fits": 612,
+  "rf_total_fits": 3492,
+  "all_same_outer_test_rows": true,
+  "all_source_fits_evaluable": true,
+  "all_inner_selections_evaluable": true,
+  "checkpoints_complete": 34
+}

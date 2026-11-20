@@ -1,0 +1,21 @@
+{
+  "loto_fold_count": 44,
+  "loto_assignment_rows": 89036,
+  "loto_train_rows": 72532,
+  "loto_test_rows": 16140,
+  "loto_removed_rows": 364,
+  "cv5_fold_count": 220,
+  "cv5_assignment_rows": 80700,
+  "cv5_train_rows": 64560,
+  "cv5_test_rows": 16140,
+  "cross_target_exclusions": 364,
+  "unique_pair_ids": 2084,
+  "targets": {
+    "aah-i": 133,
+    "human-vegf110": 268,
+    "nipah-glycoprotein-g": 1028,
+    "pd-l1": 277,
+    "sars-cov-2-rbd": 268,
+    "trem2": 110
+  }
+}

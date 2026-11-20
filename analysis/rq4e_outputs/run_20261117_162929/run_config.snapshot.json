@@ -1,0 +1,37 @@
+{
+  "analysis": "RQ4E_intercept_addressable_post_hoc_diagnostic",
+  "generated_at": "2026-11-17T16:29:29.503278+08:00",
+  "protocol": "E:\\diyipian\\analysis\\RQ4E_intercept_addressable_frozen_protocol_2026-11-17.md",
+  "protocol_sha256": "5398a7d013c4294ffbca36a0262d73f4f2ca2695140e4f658fff33cb37050ab5",
+  "script": "E:\\diyipian\\analysis\\run_rq4e_intercept_addressable_2026-11-17.py",
+  "script_sha256": "5b037e09e2f1b7bf88c74f3f95ee6e328852186143d6f2d3aeeb2be7f6216f87",
+  "source_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311",
+  "selection": {
+    "outcome_name": "primary_outcome",
+    "cluster_rule": "sequence_cluster90",
+    "source_weighting": "target_equal"
+  },
+  "analysis_sets": {
+    "primary_six": {
+      "rows": 18,
+      "targets": 6,
+      "n": 2084,
+      "positives": 748
+    },
+    "primary_five": {
+      "rows": 15,
+      "targets": 5,
+      "n": 1951,
+      "positives": 729
+    }
+  },
+  "layers": [
+    "U_transport_zero_label",
+    "predictive_I",
+    "predictive_F"
+  ],
+  "tolerance": 1e-12,
+  "model_refitting": false,
+  "new_bootstrap_or_inference": false,
+  "causal_attribution_permitted": false
+}
