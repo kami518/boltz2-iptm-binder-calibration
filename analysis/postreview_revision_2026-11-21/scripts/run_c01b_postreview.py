@@ -598,6 +598,7 @@ def main() -> None:
             "scikit_learn": base.sklearn.__version__,
         },
         "script_sha256": base.sha256(Path(__file__)),
+        "base_script_sha256": base.sha256(BASE_SCRIPT),
     }
     base.write_json(COMBO_OUT / "run_manifest.json", manifest)
 

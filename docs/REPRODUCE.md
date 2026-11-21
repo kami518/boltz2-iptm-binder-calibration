@@ -55,6 +55,8 @@ python analysis/postreview_revision_2026-11-21/scripts/qc_postreview_delivery.py
 
 The exact script options are recorded in each run manifest. `run_c01_c02_postreview.py --bootstrap-only` reads the frozen U/I/F predictions and does not refit a model. `reproduce_postreview.py --check` verifies every required derived input before changing any output.
 
+`--execute` writes regenerated outputs into the working tree. The result tables are expected to be byte-identical to the frozen tables. Run timestamps, Python patch versions, figure-library version strings, SVG object identifiers, and PDF creation dates can change without changing the plotted pixels, PDF page content, or manuscript text. The wrapper updates `RUN_STATUS.json` to identify its two supported tasks (`C01B` and `C02`) and should be run in a disposable copy when the released file hashes must remain unchanged.
+
 The restored accepted-run records are also included:
 
 - RQ3-F commands and stages: `analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/COMMANDS.md`;

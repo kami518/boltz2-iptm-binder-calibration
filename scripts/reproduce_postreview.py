@@ -7,8 +7,10 @@ reconstructing those earlier analyses from the documented upstream inputs.
 from __future__ import annotations
 
 import argparse
+import json
 import subprocess
 import sys
+from datetime import datetime
 from pathlib import Path
 
 
@@ -62,6 +64,22 @@ def main() -> None:
             raise SystemExit(f"Missing reproduction script: {command[0]}")
         print("RUN", " ".join(command), flush=True)
         subprocess.run([sys.executable, str(path), *command[1:]], cwd=ROOT, check=True)
+    status_path = ROOT / "analysis" / "postreview_revision_2026-11-21" / "RUN_STATUS.json"
+    status_path.write_text(
+        json.dumps(
+            {
+                "status": "complete",
+                "completed_at": datetime.now().astimezone().isoformat(timespec="seconds"),
+                "tasks": ["C01B", "C02"],
+                "entrypoint": "scripts/reproduce_postreview.py",
+                "basis": "frozen derived inputs",
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     print("frozen derived workflow complete")
 
 
