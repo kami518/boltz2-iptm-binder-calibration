@@ -2,9 +2,9 @@
   "status": "complete",
   "started_unix": 1794218977.5858166,
   "runtime_seconds": 60.70212650299072,
-  "input_master": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+  "input_master": "<ABSOLUTE_PATH_REDACTED>",
   "input_master_sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
-  "cluster_mapping": "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv",
+  "cluster_mapping": "<ABSOLUTE_PATH_REDACTED>",
   "cluster_mapping_sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
   "config": {
     "config_frozen_before_rq12_results": true,

@@ -1,25 +1,23 @@
-# GitHub Release assets
+# GitHub Release assets: v1.1.0
 
-The complete review PDF and supplementary Excel workbook are distributed as ZIP archives split into 1 MB pieces to remain reliable over constrained connections. The compressed pilot-parameter CSV is distributed as one ZIP asset.
+Three large generated files are distributed as deterministic ZIP archives split into 1 MB pieces:
 
-The machine-readable list of every archive, piece, byte count, and SHA-256 is:
+- `PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf`;
+- `Supplementary_Tables_S1_S16_v1.1.0.xlsx`;
+- `rq4c_pilot_parameters_v1.1.0.csv`.
+
+The machine-readable archive, piece, and final-file hashes are in:
 
 `data/release_assets_manifest.json`
 
 ## Reassembly
 
-Download all assets attached to release `v1.0.0` into one directory, then run:
+Download every `v1.1.0` asset into one directory, then run:
 
 ```bash
 python scripts/reassemble_release_assets.py /path/to/downloaded/assets
 ```
 
-The script:
+The script verifies every piece, rebuilds each archive, verifies archive hashes, safely extracts the archive, and verifies the three final outputs.
 
-1. verifies every download piece;
-2. concatenates pieces for archives that were split;
-3. verifies each complete ZIP archive;
-4. safely extracts the files; and
-5. verifies the final PDF, XLSX, and CSV against their original SHA-256 values.
-
-The Git tag identifies the exact code and summary-table state. The asset manifest identifies the accompanying large generated outputs.
+The Git tag identifies the exact source snapshot. The Release assets identify the PDF, supplementary workbook, and pilot-parameter table generated from that snapshot.

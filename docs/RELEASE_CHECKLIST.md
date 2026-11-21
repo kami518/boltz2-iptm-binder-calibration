@@ -1,19 +1,25 @@
 # Public-release checklist
 
-- [x] Audit source Data licenses and required attribution.
-- [x] Pin both upstream datasets to versions and revisions.
-- [x] Exclude raw datasets and unverified Overath-derived files.
-- [x] Include accepted run summaries, code, figures, and manuscript outputs.
-- [x] Add local path and credential checks.
-- [x] Add machine-readable published-file hash manifest.
-- [x] Move large generated outputs to the release-asset workflow.
-- [ ] Confirm the final author list, order, affiliations, corresponding author, contributions, funding, conflicts, and acknowledgements.
-- [ ] Confirm that all authors approve MIT for code and CC BY 4.0 for derived data and documentation.
-- [ ] Decide the GitHub owner and public repository name.
-- [ ] Review the rendered repository landing page and included manuscript outputs.
-- [ ] Create the GitHub repository and push a first release commit.
-- [ ] Create a tagged GitHub Release.
-- [ ] Upload the three large generated files listed in `publication/RELEASE_ASSETS.md`.
-- [ ] Enable the repository in Zenodo, archive the release, and obtain a DOI.
-- [ ] Replace `[REPOSITORY AND DOI TO BE ADDED]` in the manuscript and regenerate the PDF.
-- [ ] Confirm the DOI resolves to the exact tagged release.
+- [x] Confirm author and corresponding author: KangMing Chen.
+- [x] Confirm ORCID: `0009-0006-9634-5397`.
+- [x] Confirm affiliation: College of Biological Science and Medical Engineering, Donghua University.
+- [x] Confirm ROR: `035psfh38`.
+- [x] Confirm no specific funding.
+- [x] Confirm no conflicts of interest.
+- [x] Confirm acknowledgement to Kai Li.
+- [x] Confirm CRediT contribution statement.
+- [x] Audit upstream data licenses and required attribution.
+- [x] Pin Proteinbase, Anthropic data, IPSAE, and Pinc sources.
+- [x] Exclude raw datasets, raw structures, PAE matrices, model weights, and unverified Overath-derived material.
+- [x] Include C01, C01B, and C02 scripts, manifests, derived tables, and evidence-boundary records.
+- [x] Rebuild main figures, Supplementary Figure S7, and the PDF from the corrected scientific source.
+- [x] Remove local paths, file URIs, credentials, and stale author-pending states from the compiled package.
+- [x] Prepare formal `CITATION.cff` and Zenodo metadata.
+- [x] Prepare three release assets and the Zenodo candidate ZIP locally.
+- [x] Run publication verification in a different root directory.
+- [ ] Obtain mainline approval for remote publication.
+- [ ] Push a clean `v1.1.0` source snapshot based on the approved remote history.
+- [ ] Create the GitHub `v1.1.0` tag and Release.
+- [ ] Upload the three verified release assets.
+- [ ] Replace or confirm the Zenodo candidate and activate DOI `10.5281/zenodo.24400262`.
+- [ ] Verify that the activated DOI resolves to the exact approved `v1.1.0` record.

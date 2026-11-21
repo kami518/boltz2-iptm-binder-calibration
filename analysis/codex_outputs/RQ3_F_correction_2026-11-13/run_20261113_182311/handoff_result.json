@@ -1,6 +1,6 @@
 {
   "handoff_id": "RQ3_EXECUTION_2026-11-13",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
   "overall_status": "complete",
   "requires_independent_acceptance": true,
   "config_frozen": true,
@@ -88,7 +88,7 @@
   },
   "correction": {
     "result_markdown": "CORRECTION_RESULT.md",
-    "old_run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_execution_2026-11-13\\run_20261113_175022",
+    "old_run_directory": "<ABSOLUTE_PATH_REDACTED>",
     "root_cause": "fit_offset_slope optimized a + theta_1*eta_U, saved delta=theta_1, then predicted a+(1+delta)*eta_U",
     "correction": "explicit offset eta_U in the shared objective/gradient/Hessian; save delta directly and gamma=1+delta",
     "regression_status": "passed",

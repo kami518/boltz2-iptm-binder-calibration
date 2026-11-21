@@ -1,0 +1,84 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-21T15:55:10+08:00",
+  "analysis": "C01",
+  "analysis_role": "post_hoc_sensitivity_extension",
+  "complete_cases": 2074,
+  "positives": 740,
+  "ipSAE_definition": "minimum directional ipSAE at PAE cutoff 10 A and distance cutoff 10 A",
+  "released_metric_fields": [
+    "boltz2_ipsae",
+    "boltz2_min_ipsae"
+  ],
+  "official_implementation": {
+    "repository": "https://github.com/DunbrackLab/IPSAE",
+    "commit": "6174cf9e71cb1bd660cc805856a18c4871a6dec3",
+    "script": "analysis\\postreview_revision_2026-11-21\\ipSAE\\vendor\\IPSAE\\ipsae.py",
+    "script_sha256": "10cf9b08c68c91e06cb28526cf2026f47a3980c9048fd3226d13e3304eaf1c27",
+    "parameters": {
+      "pae_cutoff": 10,
+      "distance_cutoff": 10
+    }
+  },
+  "affinity_metrics_found": [],
+  "sample_qc": {
+    "n": 18,
+    "passed": 18,
+    "failed": 0
+  },
+  "mapping_checks": {
+    "complete_cases": 2074,
+    "primary_positives": 740,
+    "targets": {
+      "aah-i": 133,
+      "human-vegf110": 268,
+      "nipah-glycoprotein-g": 1028,
+      "pd-l1": 267,
+      "sars-cov-2-rbd": 268,
+      "trem2": 110
+    },
+    "pae_square_and_matches_tokens": true,
+    "pae_all_finite": true,
+    "chain_fields_complete": true,
+    "residue_counts_sum_to_tokens": true,
+    "sample_qc_n": 18,
+    "sample_qc_passed": 18
+  },
+  "released_field_agreement": {
+    "minimum_field_exact_matches": 1048,
+    "maximum_field_exact_matches": 821,
+    "complete_cases": 2074
+  },
+  "inputs": {
+    "analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "analysis\\audit_outputs\\pair_audit.csv": "1ce35c8ee601a05dd390d43a76814800d8429aa64fff30f60c196ad30d74e571",
+    "analysis\\pinc_batch\\run_20261110_181500\\pinc_pair_extension.csv": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
+    "analysis\\rq12_outputs\\sequence_clusters_rq12.csv": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+    "analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_pair_assignments.csv": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
+    "analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_pair_assignments.csv": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796",
+    "data\\proteinbase_latest.csv": "8eac08bfc931409e0703eda904cdd1066c9d4a2ceb46af43763f94c74dabb9cc",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\vendor\\IPSAE\\ipsae.py": "10cf9b08c68c91e06cb28526cf2026f47a3980c9048fd3226d13e3304eaf1c27"
+  },
+  "outputs": {
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_pair_extension.csv": "8fe6dbe5af786c6e4a8275bf9f54fa8e285a5e84f9e29c7d67f54bda66afd972",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipsae_official_pair_metrics.csv": "63f65f836d0d2a19d464287a9b2c486ad533bd7339f5b6c2e46cefdc2634ffd9",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_UIF_pair_predictions.csv": "1ad96c0dabac070845ccccfe8de1bcc7c4b02b9f24c8901be7253ce81bb4585e",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_source_parameters.csv": "a4cfcd67701b3ad88ad940fd41d387f39abfa771e7d40d418f4f10fbbf35e223",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_adaptation_parameters.csv": "70da131c9a2d415dd715f3ea660239b78428075e13e30a7ce7983cf6ae11344f",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_lambda_selection.csv": "26f10e23a1df20459036c70db782700252bbd56a966e89c69c0d303a50f8bd80",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_target_metrics.csv": "84cf972f48fa34ea6f84c0e48c95db6158519aeccc9f262e1099c22bd67db7ff",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_macro_metrics.csv": "779c01e6736a00ed17cc03e348af799c2e9c50f6fac5a4a23a41d2d778822ca2",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_paired_comparisons.csv": "e5c3f3a8fab04896c4c8bb17f340eb3323a7609799dae55be1d09cf27d2ed1d4",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipsae_sample_qc.csv": "c2124a638698a1d10b5a175365bed8cf3de7ff9b5896c96489f6ab0f98220baa",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\feasibility_report.md": "0f862355a8ce291ff1132b246d6850aa535b18991ab93ed2fff9eabc6053397d"
+  },
+  "software": {
+    "python": "3.12.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "script_sha256": "e6ead36b6df4bce9d13b4aa6e0924e66960dde58bd6383ec64ecdd4362f23a3b",
+  "frozen_inputs_modified": false
+}

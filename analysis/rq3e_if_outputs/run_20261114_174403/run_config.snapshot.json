@@ -1,12 +1,12 @@
 {
-  "protocol": "E:\\diyipian\\analysis\\RQ3E_IF_external_adaptation_protocol_2026-11-14.md",
+  "protocol": "<ABSOLUTE_PATH_REDACTED>",
   "protocol_sha256": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
   "analysis_role": "post_hoc_exploratory_external_IF",
   "input_hashes": {
-    "E:\\diyipian\\analysis\\RQ3E_IF_external_adaptation_protocol_2026-11-14.md": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
-    "E:\\diyipian\\analysis\\rq3e_outputs\\run_20261114_164950\\rq3e_u_pair_predictions.csv": "3b256c3fd0f813885ce817bfa6df8f80cd23ac57473047ff976ee87e0b70b2c1",
-    "E:\\diyipian\\analysis\\rq3e_outputs\\run_20261114_164950\\rq3e_external_pairs.csv": "72f4127d410160224701729fa401b4076297641402aa0965a3f9aec250a8002e",
-    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
+    "<ABSOLUTE_PATH_REDACTED>": "919a8010610e8b1abd9ac4a6c20f4516e60c1156c9a85e19ebcd4682d2b54df1",
+    "<ABSOLUTE_PATH_REDACTED>": "3b256c3fd0f813885ce817bfa6df8f80cd23ac57473047ff976ee87e0b70b2c1",
+    "<ABSOLUTE_PATH_REDACTED>": "72f4127d410160224701729fa401b4076297641402aa0965a3f9aec250a8002e",
+    "<ABSOLUTE_PATH_REDACTED>": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
   },
   "primary_config": "primary_target_equal_weak_plus_best_ipsae",
   "targets": [

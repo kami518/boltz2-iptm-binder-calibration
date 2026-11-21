@@ -54,3 +54,11 @@ Pinc is not bundled. The accepted analysis records the official repository:
 https://git.mpi-cbg.de/tothpetroczylab/Pinc.git
 
 and commit `57afb08e29fe97379db5b155da5fb78c4c8715d1`, run with R 4.6.2 and jsonlite 2.0.0. The accepted run used symmetrised Pinc only.
+
+## Official IPSAE implementation
+
+IPSAE source code is not bundled. The accepted C01 recomputation used:
+
+https://github.com/DunbrackLab/IPSAE
+
+at commit `6174cf9e71cb1bd660cc805856a18c4871a6dec3`, with a 10 Å PAE cutoff and a 10 Å CA-distance cutoff. The released Proteinbase `boltz2_ipsae` and `boltz2_min_ipsae` fields were retained for provenance but were not used as the analysis endpoint.

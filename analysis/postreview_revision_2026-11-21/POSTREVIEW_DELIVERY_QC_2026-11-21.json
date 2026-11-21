@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "main": {
+    "path": "publication/manuscript/main_article.md",
+    "sha256": "3999d58ea30ec8c62108dfbdd154b00c48c0fae7dfa2edc4edc759e49a11cf00"
+  },
+  "supplement": {
+    "path": "publication/manuscript/supplementary_materials.md",
+    "sha256": "0d6a00c634b11d6edce8ea0030de1dad5090ce2dc4a067ab7965ec95271e00b2"
+  },
+  "pdf": {
+    "path": "publication/manuscript/PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf",
+    "sha256": "aaf638d0c1c162ee005351bf0bc8540de4698f62a6c79f281f963fa9574eae6c",
+    "pages": 57,
+    "bytes": 5708787
+  },
+  "checks": {
+    "reference_count_and_uniqueness": {
+      "passed": true,
+      "detail": {
+        "references": 41,
+        "doi_mentions": 35,
+        "unique_dois": 35
+      }
+    },
+    "references_alphabetical": {
+      "passed": true,
+      "detail": "Reference entries are alphabetically ordered."
+    },
+    "abstract_length": {
+      "passed": true,
+      "detail": {
+        "words": 240,
+        "sentences": 9
+      }
+    },
+    "title_consistent": {
+      "passed": true,
+      "detail": {
+        "main": "# Context-dependent calibration and experimental decision value of Boltz-2 ipTM in binder design",
+        "supplement": "## Context-dependent calibration and experimental decision value of Boltz-2 ipTM in binder design"
+      }
+    },
+    "rejected_wording_absent": {
+      "passed": true,
+      "detail": "Rejected wording is absent from the main manuscript."
+    },
+    "canonical_c01b_sentence": {
+      "passed": true,
+      "detail": "Canonical post hoc wording is present."
+    },
+    "bootstrap_intervals_locked": {
+      "passed": true,
+      "detail": "Primary, five-target, and external intervals are present in both documents."
+    },
+    "anthropic_report_cited": {
+      "passed": true,
+      "detail": "Technical report and data release are cited distinctly."
+    },
+    "author_metadata_and_declarations_complete": {
+      "passed": true,
+      "detail": "Confirmed author metadata and declarations are complete."
+    },
+    "c01_official_batch_complete": {
+      "passed": true,
+      "detail": {
+        "manifest_status": "complete",
+        "rows": 2074,
+        "passed": 2074
+      }
+    },
+    "c01b_complete_no_rf": {
+      "passed": true,
+      "detail": {
+        "manifest_status": "complete",
+        "rows": 36,
+        "random_forest_run": false
+      }
+    },
+    "c02_replicates_complete": {
+      "passed": true,
+      "detail": {
+        "manifest_status": "complete",
+        "valid_replicates": [
+          2000
+        ],
+        "failed_replicates": [
+          0
+        ]
+      }
+    },
+    "all_vector_and_raster_outputs_exist": {
+      "passed": true,
+      "detail": {
+        "expected": 24,
+        "found": 24
+      }
+    },
+    "no_internal_rq_labels_in_figure_vectors": {
+      "passed": true,
+      "detail": "Generated SVG panels contain no RQ work labels."
+    },
+    "supplement_s17_and_s11": {
+      "passed": true,
+      "detail": "S1-S16 order is retained and S17/S11 are present."
+    },
+    "pdf_qc_passed": {
+      "passed": true,
+      "detail": {
+        "pages": 57,
+        "main_figures": 7,
+        "supplementary_figures": 11,
+        "supplementary_table_guides": 17
+      }
+    },
+    "pdf_metadata_title": {
+      "passed": true,
+      "detail": "Context-dependent calibration and experimental decision value of Boltz-2 ipTM in binder design"
+    }
+  }
+}

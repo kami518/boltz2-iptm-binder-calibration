@@ -1,0 +1,4360 @@
+{
+  "created_at": "2026-11-13T10:55:40+08:00",
+  "inputs": {
+    "pair_master": "<REPRODUCTION_ROOT>\\analysis\\v3_outputs\\pair_master_v3.csv",
+    "sequence_clusters": "<REPRODUCTION_ROOT>\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv",
+    "pair_master_sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "sequence_clusters_sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb"
+  },
+  "joined_rows": 2084,
+  "analysis_set_targets": {
+    "primary_six": 6,
+    "primary_five": 5,
+    "strict_six": 6,
+    "strict_five": 5
+  },
+  "loto": {
+    "fold_kind": "loto",
+    "n_folds": 44,
+    "n_passed": 44,
+    "n_failed": 0,
+    "n_exclusion_rows": 364,
+    "all_fold_ids_unique": true,
+    "folds": [
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|aah-i",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "aah-i",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|human-vegf110",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|nipah-glycoprotein-g",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|pd-l1",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|sars-cov-2-rbd",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster90|trem2",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|aah-i",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "aah-i",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|human-vegf110",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|nipah-glycoprotein-g",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|pd-l1",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|sars-cov-2-rbd",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_six|sequence_cluster80|trem2",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster90|human-vegf110",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster90|nipah-glycoprotein-g",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster90|pd-l1",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster90|sars-cov-2-rbd",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster90|trem2",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster80|human-vegf110",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster80|nipah-glycoprotein-g",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster80|pd-l1",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster80|sars-cov-2-rbd",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|primary_five|sequence_cluster80|trem2",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|aah-i",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "aah-i",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|human-vegf110",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|nipah-glycoprotein-g",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|pd-l1",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|sars-cov-2-rbd",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster90|trem2",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|aah-i",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "aah-i",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|human-vegf110",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|nipah-glycoprotein-g",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|pd-l1",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|sars-cov-2-rbd",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_six|sequence_cluster80|trem2",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster90|human-vegf110",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster90|nipah-glycoprotein-g",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster90|pd-l1",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster90|sars-cov-2-rbd",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster90|trem2",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster80|human-vegf110",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster80|nipah-glycoprotein-g",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster80|pd-l1",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 2.220446049250313e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster80|sars-cov-2-rbd",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 1.1102230246251565e-16
+      },
+      {
+        "fold_kind": "loto",
+        "fold_id": "loto|strict_five|sequence_cluster80|trem2",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "held_out_target": "trem2",
+        "passed": true,
+        "tests": {
+          "test_pairs_not_removed": true,
+          "train_test_cluster_intersection_empty": true,
+          "test_target_pure": true,
+          "target_equal_raw_sums_to_one_within_source_target": true,
+          "target_equal_mean_is_one": true,
+          "all_analysis_pairs_accounted_once": true
+        },
+        "raw_sum_max_abs_error": 0.0,
+        "normalized_mean_abs_error": 0.0
+      }
+    ],
+    "expected_folds": 44,
+    "all_expected_folds_present": true,
+    "each_analysis_set_rule_target_has_one_fold": true
+  },
+  "target_cv5": {
+    "fold_kind": "target_cv5",
+    "n_splitter_runs": 220,
+    "n_fold_records": 220,
+    "n_passed": 220,
+    "n_failed": 0,
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 20261112,
+    "folds": [
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|aah-i|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|aah-i|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|aah-i|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|aah-i|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|aah-i|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|human-vegf110|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|human-vegf110|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|human-vegf110|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|human-vegf110|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|human-vegf110|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|pd-l1|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|pd-l1|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|pd-l1|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|pd-l1|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|pd-l1|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|sars-cov-2-rbd|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|sars-cov-2-rbd|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|sars-cov-2-rbd|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|sars-cov-2-rbd|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|sars-cov-2-rbd|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|trem2|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|trem2|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|trem2|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|trem2|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster90|trem2|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|aah-i|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|aah-i|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|aah-i|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|aah-i|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|aah-i|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|human-vegf110|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|human-vegf110|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|human-vegf110|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|human-vegf110|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|human-vegf110|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|pd-l1|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|pd-l1|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|pd-l1|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|pd-l1|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|pd-l1|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|sars-cov-2-rbd|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|sars-cov-2-rbd|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|sars-cov-2-rbd|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|sars-cov-2-rbd|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|sars-cov-2-rbd|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|trem2|fold_01",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|trem2|fold_02",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|trem2|fold_03",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|trem2|fold_04",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_six|sequence_cluster80|trem2|fold_05",
+        "analysis_set": "primary_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|human-vegf110|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|human-vegf110|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|human-vegf110|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|human-vegf110|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|human-vegf110|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|pd-l1|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|pd-l1|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|pd-l1|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|pd-l1|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|pd-l1|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|sars-cov-2-rbd|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|sars-cov-2-rbd|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|sars-cov-2-rbd|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|sars-cov-2-rbd|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|sars-cov-2-rbd|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|trem2|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|trem2|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|trem2|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|trem2|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster90|trem2|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|human-vegf110|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|human-vegf110|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|human-vegf110|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|human-vegf110|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|human-vegf110|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|pd-l1|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|pd-l1|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|pd-l1|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|pd-l1|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|pd-l1|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|sars-cov-2-rbd|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|sars-cov-2-rbd|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|sars-cov-2-rbd|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|sars-cov-2-rbd|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|sars-cov-2-rbd|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|trem2|fold_01",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|trem2|fold_02",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|trem2|fold_03",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|trem2|fold_04",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|primary_five|sequence_cluster80|trem2|fold_05",
+        "analysis_set": "primary_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|aah-i|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|aah-i|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|aah-i|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|aah-i|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|aah-i|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|human-vegf110|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|human-vegf110|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|human-vegf110|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|human-vegf110|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|human-vegf110|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|pd-l1|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|pd-l1|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|pd-l1|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|pd-l1|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|pd-l1|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|sars-cov-2-rbd|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|sars-cov-2-rbd|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|sars-cov-2-rbd|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|sars-cov-2-rbd|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|sars-cov-2-rbd|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|trem2|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|trem2|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|trem2|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|trem2|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster90|trem2|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|aah-i|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|aah-i|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|aah-i|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|aah-i|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|aah-i|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "aah-i",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|human-vegf110|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|human-vegf110|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|human-vegf110|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|human-vegf110|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|human-vegf110|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|pd-l1|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|pd-l1|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|pd-l1|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|pd-l1|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|pd-l1|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|sars-cov-2-rbd|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|sars-cov-2-rbd|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|sars-cov-2-rbd|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|sars-cov-2-rbd|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|sars-cov-2-rbd|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|trem2|fold_01",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|trem2|fold_02",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|trem2|fold_03",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|trem2|fold_04",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_six|sequence_cluster80|trem2|fold_05",
+        "analysis_set": "strict_six",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|human-vegf110|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|human-vegf110|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|human-vegf110|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|human-vegf110|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|human-vegf110|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|pd-l1|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|pd-l1|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|pd-l1|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|pd-l1|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|pd-l1|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|sars-cov-2-rbd|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|sars-cov-2-rbd|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|sars-cov-2-rbd|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|sars-cov-2-rbd|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|sars-cov-2-rbd|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|trem2|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|trem2|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|trem2|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|trem2|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster90|trem2|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster90",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|human-vegf110|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|human-vegf110|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|human-vegf110|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|human-vegf110|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|human-vegf110|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "human-vegf110",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|nipah-glycoprotein-g|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|nipah-glycoprotein-g|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|nipah-glycoprotein-g|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|nipah-glycoprotein-g|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|nipah-glycoprotein-g|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "nipah-glycoprotein-g",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|pd-l1|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|pd-l1|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|pd-l1|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|pd-l1|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|pd-l1|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "pd-l1",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|sars-cov-2-rbd|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|sars-cov-2-rbd|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|sars-cov-2-rbd|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|sars-cov-2-rbd|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|sars-cov-2-rbd|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "sars-cov-2-rbd",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|trem2|fold_01",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|trem2|fold_02",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|trem2|fold_03",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|trem2|fold_04",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      },
+      {
+        "fold_kind": "target_cv5",
+        "fold_id": "cv5|strict_five|sequence_cluster80|trem2|fold_05",
+        "analysis_set": "strict_five",
+        "cluster_rule": "sequence_cluster80",
+        "target": "trem2",
+        "passed": true,
+        "tests": {
+          "each_pair_assigned_once": true,
+          "group_intersection_empty": true,
+          "test_target_pure": true,
+          "train_has_two_outcome_classes": true,
+          "test_has_two_outcome_classes": true
+        },
+        "failure_reason": null
+      }
+    ],
+    "expected_splitter_runs": 44,
+    "expected_complete_fold_records": 220,
+    "all_complete_fold_records_present": true,
+    "nested_inner_folds_generated": false,
+    "fallback_used": false
+  },
+  "outcome_columns_modified": false,
+  "frozen_fields_modified": false
+}

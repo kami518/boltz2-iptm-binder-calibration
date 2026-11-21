@@ -1,55 +1,72 @@
-# Boltz-2 ipTM binder-calibration reproducibility release
+# Context-dependent calibration and experimental decision value of Boltz-2 ipTM in binder design
 
-Release-candidate repository for the manuscript:
+Reproducibility materials for the manuscript above, prepared as the `v1.1.0` submission candidate.
 
-> Evaluating Boltz-2 ipTM as an experimental-success probability across binder-design targets
+Author: KangMing Chen, College of Biological Science and Medical Engineering, Donghua University, Shanghai, China.
 
-This repository contains the analysis code, accepted numerical summaries, publication figures, and manuscript-facing outputs needed to audit the reported results. It is prepared for a public GitHub release and a later archival DOI, but no public remote or DOI has been created yet.
+Repository: https://github.com/kami518/boltz2-iptm-binder-calibration
 
-## What is included
+Reserved archival DOI: `10.5281/zenodo.24400262` (not activated in this candidate).
 
-- analyses for within-target discrimination and raw probability error;
-- target-held-out transport and local intercept/slope adaptation;
-- frozen external evaluation and post-hoc external adaptation;
-- experimental-selection and shared-budget analyses;
-- Pinc complete-case comparisons and random-forest sensitivity summaries;
+## Included evidence
+
+- frozen Proteinbase and Claude binder-design dataset references;
+- within-target discrimination and raw probability error;
+- target-held-out U/I/F transport and local adaptation;
+- external evaluation and nonconfirmatory low-event stress test;
+- fixed-budget and retrospective shared-budget analyses;
+- complete-case Pinc analyses;
+- C01 official ipSAE recomputation;
+- C01B post hoc ipTM-plus-ipSAE complementarity analysis;
+- C02 paired sequence-cluster bootstrap intervals;
+- random-forest model-complexity sensitivity;
 - paired predictor-pipeline descriptions;
-- accepted run scripts, commands, QC records, and hash manifests;
-- main and supplementary figures and manuscript source text.
+- publication figures, manuscript source, supplement guide, run manifests, and QC records.
 
-Three generated files are distributed as GitHub Release assets rather than Git blobs:
+## Large release assets
 
-- the complete review PDF;
-- the supplementary Excel workbook;
-- the full pilot-parameter table.
+Three generated files are distributed through the GitHub Release rather than as ordinary Git blobs:
 
-Their reassembly instructions are in `publication/RELEASE_ASSETS.md`; all piece and output hashes are recorded in `data/release_assets_manifest.json`.
+- `PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf`;
+- `Supplementary_Tables_S1_S16_v1.1.0.xlsx`;
+- `rq4c_pilot_parameters_v1.1.0.csv`.
 
-## What is not included
+Their pieces, hashes, and reassembly instructions are recorded in `data/release_assets_manifest.json` and `publication/RELEASE_ASSETS.md`.
+
+## Exclusions
 
 - the raw Proteinbase CSV;
-- the Anthropic release's raw per-design data, structure files, vendor reports, or PAE matrices;
-- the Overath mirror or Overath-derived row-level tables;
-- third-party model weights or bundled third-party software;
-- the official Pinc implementation;
-- local execution-environment paths or credentials.
+- raw Anthropic per-design files, vendor reports, structure files, and PAE matrices;
+- the Overath mirror and row-level Overath-derived tables whose redistribution basis is not established;
+- model weights;
+- the official IPSAE and Pinc source repositories;
+- local execution paths and credentials.
 
-See `docs/DATA_SOURCES.md` for the official pinned releases and `docs/REPRODUCE.md` for acquisition and verification steps.
+See `docs/DATA_SOURCES.md`, `docs/REPRODUCE.md`, and `THIRD_PARTY_NOTICES.md`.
 
-## Quick integrity check
+## Integrity check
 
 ```bash
-python scripts/verify_publication.py
+python scripts/verify_publication.py --asset-dir /path/to/release-assets
 ```
 
-The command checks every published file against `data/PUBLICATION_MANIFEST.csv`, compiles all included Python files, and scans text files for local home paths and credential-like content.
+The verifier checks the complete hash manifest, reverse file coverage, Python syntax, Markdown links, local paths, credentials, XLSX strings, PDF text, and PDF link annotations.
+
+For the supported frozen-derived workflow:
+
+```bash
+python scripts/reproduce_postreview.py --check
+python scripts/reproduce_postreview.py --execute
+```
+
+Legacy RQ1/RQ2, RQ3, RQ4, RQ5, RQ6, and RQ5-RF files are retained as historical evidence. They are not presented as an unrestricted upstream-to-result executable pipeline.
 
 ## Licenses
 
-- Analysis code written for this study: MIT, see `LICENSE`.
-- Derived data, documentation, figures, and manuscript outputs: CC BY 4.0, see `DATA_LICENSE.md`.
-- Upstream data retain their own attribution and third-party terms; see `THIRD_PARTY_NOTICES.md`.
+- analysis code: MIT;
+- derived data, documentation, figures, and manuscript outputs: CC BY 4.0;
+- upstream data and third-party outputs: their original terms.
 
-## Citation
+## Release status
 
-The author list, repository URL, and DOI are intentionally pending. Do not cite this candidate release as a final archived record. Fill `CITATION.cff.template` and `ZENODO_METADATA.template.json` only after author approval and repository publication.
+The source, figures, workbook, PDF, release assets, and Zenodo archive are prepared locally. No Git tag, GitHub Release, Zenodo record, or active DOI was created during candidate assembly. Remote publication remains subject to mainline approval.

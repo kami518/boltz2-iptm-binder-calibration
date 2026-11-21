@@ -1,14 +1,87 @@
+"""Build a clean publication candidate from an explicit allowlist."""
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import re
 import shutil
 from pathlib import Path
 
-ROOT = Path(r"E:/diyipian")
-RELEASE = ROOT / "release/boltz2-iptm-binder-calibration"
-MANIFEST = RELEASE / "data/PUBLICATION_MANIFEST.csv"
+
+TEXT_SUFFIXES = {".py", ".md", ".txt", ".json", ".csv", ".yaml", ".yml", ".toml", ".cff"}
+ROOT_FILES = [
+    ".gitattributes",
+    ".gitignore",
+    ".release-root",
+    "CITATION.cff",
+    "DATA_LICENSE.md",
+    "LICENSE",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "ZENODO_METADATA.json",
+    "Proteinbase校准研究_实验流程_v3_2026-11-06.md",
+    "pyproject.toml",
+    "requirements.txt",
+]
+PUBLICATION_FILES = [
+    "publication/RELEASE_ASSETS.md",
+    "publication/manuscript/main_article.md",
+    "publication/manuscript/supplementary_materials.md",
+    "publication/manuscript/build_review_pdf.py",
+    "publication/manuscript/qc_review_pdf.py",
+    "publication/manuscript/review_pdf_build.json",
+    "publication/manuscript/review_pdf_qc_results.json",
+    "publication/manuscript/supplement_source_manifest.md",
+    "publication/manuscript/supplement_build_manifest.json",
+]
+DATA_FILES = [
+    "data/postreview_dependency_manifest.json",
+    "data/release_assets_manifest.json",
+]
+ANALYSIS_FILES = [
+    "analysis/audit_outputs/pair_audit.csv",
+    "analysis/pinc_batch/run_20261110_181500/pinc_pair_extension.csv",
+    "analysis/rq12_outputs/sequence_clusters_rq12.csv",
+    "analysis/rq12_outputs/rq12_target_metrics.csv",
+    "analysis/rq12_outputs/rq2_reliability_bins.csv",
+    "analysis/rq12_outputs/rq2_hierarchical_targets.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_pair_assignments.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/loto_fold_manifest.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_pair_assignments.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/target_cv5_fold_manifest.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/cross_target_cluster_exclusions.csv",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/fold_qc.json",
+    "analysis/codex_outputs/RQ3_prep_2026-11-13/run_20261113_105301/phase_ab.py",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_target_adaptation_metrics.csv",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_adaptation_pair_predictions.csv",
+    "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311/rq3_common.py",
+    "analysis/rq3e_if_outputs/run_20261114_174403/target_metrics.csv",
+    "analysis/rq3e_if_outputs/run_20261114_174403/oof_predictions.csv",
+    "analysis/rq4_outputs/run_20261114_231925/rq4ab_target_metrics.csv",
+    "analysis/rq4_outputs/run_20261114_231925/rq4c_comparisons.csv",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_score_macro_summary.csv",
+    "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720/rq5_pairwise_comparisons.csv",
+    "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147/rq6_target_equal_summary.csv",
+    "analysis/v3_outputs/pair_master_v3.csv",
+]
+POSTREVIEW_ROOT_FILES = [
+    "analysis/postreview_revision_2026-11-21/C01_C02_RESULTS.md",
+    "analysis/postreview_revision_2026-11-21/C03_EVIDENCE_LOCK_2026-11-21.md",
+    "analysis/postreview_revision_2026-11-21/RUN_STATUS.json",
+    "analysis/postreview_revision_2026-11-21/POSTREVIEW_DELIVERY_QC_2026-11-21.md",
+    "analysis/postreview_revision_2026-11-21/POSTREVIEW_DELIVERY_QC_2026-11-21.json",
+]
+POSTREVIEW_DIRS = {
+    "ipSAE": {".csv", ".json", ".md"},
+    "ipSAE_combo": {".csv", ".json", ".md"},
+    "bootstrap": {".csv", ".json", ".md"},
+    "figures": {".json"},
+    "scripts": {".py"},
+}
+MAIN_FIGURE_SUFFIXES = {".png", ".svg", ".pdf"}
+ANALYSIS_SUFFIXES = {".py", ".md", ".json", ".csv", ".txt", ".png"}
+ANALYSIS_EXCLUDED_PARTS = {"__pycache__", "sample_qc", "vendor", "batch_work", "sources"}
 
 
 def sha256(path: Path) -> str:
@@ -19,223 +92,100 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def relative(path: Path) -> str:
-    return path.relative_to(ROOT).as_posix()
-
-
-def public_relative(path: Path) -> str:
-    return path.relative_to(RELEASE).as_posix()
-
-
-def manifest_entries() -> list[str]:
-    text = (ROOT / "manuscript/supplement/supplement_source_manifest_2026-11-16.md").read_text(encoding="utf-8")
-    return re.findall(r"^\| `([^`]+)` \| \d+ \| `[0-9a-f]{64}` \|$", text, flags=re.MULTILINE)
-
-
-def source_manifest_relative_paths() -> list[str]:
-    paths = {path for path in manifest_entries() if path.startswith("analysis/")}
-    accepted_roots = [
-        "analysis/codex_outputs/RQ3_F_correction_2026-11-13/run_20261113_182311",
-        "analysis/rq3e_outputs/run_20261114_164950",
-        "analysis/rq3e_if_outputs/run_20261114_174403",
-        "analysis/rq4_outputs/run_20261114_231925",
-        "analysis/rq4e_outputs/run_20261117_162929",
-        "analysis/codex_outputs/RQ5_execution_2026-11-15/run_20261115_111720",
-        "analysis/codex_outputs/RQ6_execution_2026-11-15/run_20261115_151147",
-        "analysis/codex_outputs/RQ5RF_model_complexity_2026-11-17/run_20261117_220855",
-    ]
-    for rel_root in accepted_roots:
-        base = ROOT / rel_root
-        for path in base.rglob("*"):
-            if not path.is_file():
-                continue
-            if path.suffix.lower() in {".py", ".md", ".json"} or path.name in {
-                "COMMANDS.md", "RUN_STATUS.json", "qc_checks.json", "final_hash_manifest.csv",
-                "final_input_hashes.csv", "manifest_sha256.txt",
-            }:
-                paths.add(relative(path))
-    return sorted(paths)
-
-
-CODE_FILES = [
-    "analysis/build_pair_master_v3.py",
-    "analysis/audit_proteinbase.py",
-    "analysis/audit_external_proteinbase_2026-11-13.py",
-    "analysis/audit_anthropic_external_2026-11-13.py",
-    "analysis/audit_anthropic_sequence_similarity_2026-11-13.py",
-    "analysis/build_sequence_clusters_rq12_2026-11-09.py",
-    "analysis/check_rq12_adaptive_modes.py",
-    "analysis/check_rq12_quadrature_convergence.py",
-    "analysis/debug_rq12_hierarchy.py",
-    "analysis/rq12_adaptive.py",
-    "analysis/rq12_core.py",
-    "analysis/run_rq12_analysis_2026-11-09.py",
-    "analysis/setup_mmseqs_rq12_2026-11-09.py",
-    "analysis/summarize_rq12_results_2026-11-09.py",
-    "analysis/test_rq12_core.py",
-    "analysis/trace_rq12_adaptive_mode.py",
-    "analysis/validate_rq3e_low_event_stress_2026-11-14.py",
-    "analysis/verify_rq4_decision_value_2026-11-14.py",
-    "analysis/finalize_rq4_run_2026-11-14.py",
-    "analysis/run_rq3e_confirmatory_720_2026-11-14.py",
-    "analysis/run_rq3e_if_external_adaptation_2026-11-14.py",
-    "analysis/run_rq3e_low_event_stress_2026-11-14.py",
-    "analysis/run_rq4_decision_value_2026-11-14.py",
-    "analysis/run_rq4e_intercept_addressable_2026-11-17.py",
-    "analysis/RQ3E_external_transport_frozen_protocol_2026-11-14.md",
-    "analysis/RQ4E_intercept_addressable_frozen_protocol_2026-11-17.md",
-    "analysis/RQ5RF_model_complexity_frozen_protocol_2026-11-17.md",
-    "manuscript/assemble_figures_2026-11-15.py",
-    "manuscript/build_review_pdf_v2_2026-11-18.py",
-    "manuscript/build_supplement_2026-11-16.py",
-    "manuscript/integrate_rq5rf_manuscript_2026-11-18.py",
-    "manuscript/qc_manuscript_v2_2026-11-17.py",
-    "manuscript/qc_rq5rf_integration_2026-11-18.py",
-    "manuscript/supplement/build_supplement_s16_2026-11-18.py",
-    "manuscript/review/qc_review_pdf_v2_2026-11-18.py",
-    "Proteinbase校准研究_实验流程_v3_2026-11-06.md",
-]
-
-EXACT_FILES = [
-    ("manuscript/build_public_release_2026-11-19.py", "scripts/build_release.py"),
-    ("manuscript/PEDS_Research_Article_English_draft_v2_2026-11-17.md", "publication/manuscript/main_article.md"),
-    ("manuscript/supplement/Supplementary_Materials_PEDS_2026-11-16.md", "publication/manuscript/supplementary_materials.md"),
-    ("manuscript/review/review_pdf_qc_results_v2_2026-11-18.json", "publication/manuscript/review_pdf_qc_results.json"),
-    ("manuscript/DATA_SOURCE_VERIFICATION_2026-11-18.md", "docs/DATA_SOURCE_VERIFICATION.md"),
-    ("manuscript/supplement/supplement_source_manifest_2026-11-16.md", "data/provenance/supplement_source_manifest.md"),
-    ("manuscript/supplement/supplement_build_manifest.json", "data/provenance/supplement_build_manifest.json"),
-    ("manuscript/review/RQ5RF_results_and_supplement_note_for_review_2026-11-18.md", "docs/RQ5RF_REVIEW_NOTE.md"),
-]
-
-LARGE_RELEASE_ASSET_NAMES = {
-    "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf",
-    "Supplementary_Tables_S1_S16.xlsx",
-    "rq4c_pilot_parameters.csv",
-}
-
-FIGURE_GLOBS = [
-    ("manuscript/figures/Figure_*.png", "publication/figures/main"),
-    ("manuscript/supplement/figures/Supplementary_Figure_S*.png", "publication/figures/supplementary"),
-]
-
-
-def should_exclude(rel: str) -> bool:
-    lower = rel.lower()
-    return any(
-        token in lower
-        for token in (
-            "overath",
-            "pinc_pair_extension",
-            "pair_processing_manifest",
-            "pilot_pair_processing_manifest",
-            "pilot_pinc_pair_extension",
-        )
-    )
-
-
-def sanitize_text(text: str) -> str:
-    root_patterns = [
-        r'ROOT\s*=\s*Path\(r?["\']E:[\\/]diyipian["\']\)',
-        r'ROOT\s*=\s*Path\(__file__\)\.resolve\(\)\.parents\[1\]',
-    ]
-    root_line = 'ROOT = next(_p for _p in Path(__file__).resolve().parents if (_p / ".release-root").is_file())'
-    for pattern in root_patterns:
-        text = re.sub(pattern, root_line, text)
-    replacements = {
-        "E:\\diyipian": "<REPRODUCTION_ROOT>",
-        "E:/diyipian": "<REPRODUCTION_ROOT>",
-        "D:\\KimiData\\daimon-share\\daimon\\runtime\\python\\.venv\\Scripts\\python.exe": "<EXECUTION_PYTHON>",
-        "C:\\Users\\leo": "<LOCAL_USER>",
-    }
-    for old, new in replacements.items():
-        text = text.replace(old, new)
+def sanitize(text: str) -> str:
+    text = re.sub(r"(?i)\b[A-Z]:[\\/]+[^\s\"']+", "<ABSOLUTE_PATH_REDACTED>", text)
+    text = re.sub(r"(?i)\b[A-Z]:[\\/]+diyipian", "<REPRODUCTION_ROOT>", text)
+    text = re.sub(r"(?i)\b[A-Z]:[\\/]+Users[\\/]+[^\\/\\\s\"']+", "<LOCAL_USER>", text)
+    text = text.replace("/home/", "<HOME>/").replace("/Users/", "<USERS>/")
     return text
 
 
-def copy_file(source_rel: str, target_rel: str, *, text_mode: bool, category: str) -> dict[str, object]:
-    source = ROOT / source_rel
-    target = RELEASE / target_rel
-    if not source.is_file():
-        raise FileNotFoundError(source)
-    target.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(source, target)
-    transformed = False
-    if text_mode:
-        original = target.read_text(encoding="utf-8", errors="replace")
-        sanitized = sanitize_text(original)
-        if sanitized != original:
-            target.write_text(sanitized, encoding="utf-8")
-            transformed = True
-    return {
-        "source_path": source_rel,
-        "published_path": target_rel,
-        "source_sha256": sha256(source),
-        "published_sha256": sha256(target),
-        "published_bytes": target.stat().st_size,
-        "category": category,
-        "transform": "text-path-redacted" if transformed else "verbatim",
-    }
+def source_files(source_root: Path) -> list[Path]:
+    selected: set[Path] = set()
+    for rel in ROOT_FILES + PUBLICATION_FILES + DATA_FILES + ANALYSIS_FILES + POSTREVIEW_ROOT_FILES:
+        path = source_root / rel
+        if path.is_file():
+            selected.add(path)
+    analysis_root = source_root / "analysis"
+    if analysis_root.is_dir():
+        for path in analysis_root.rglob("*"):
+            if not path.is_file() or path.suffix.lower() not in ANALYSIS_SUFFIXES:
+                continue
+            relative_parts = path.relative_to(source_root).parts
+            if any(part in ANALYSIS_EXCLUDED_PARTS for part in relative_parts):
+                continue
+            if path.name == "rq4c_pilot_parameters.csv":
+                continue
+            selected.add(path)
+    for rel_root, suffixes in POSTREVIEW_DIRS.items():
+        directory = source_root / "analysis" / "postreview_revision_2026-11-21" / rel_root
+        if directory.is_dir():
+            selected.update(path for path in directory.iterdir() if path.is_file() and path.suffix.lower() in suffixes)
+    docs = source_root / "docs"
+    if docs.is_dir():
+        selected.update(docs.glob("*.md"))
+    scripts = source_root / "scripts"
+    if scripts.is_dir():
+        selected.update(path for path in scripts.glob("*.py") if path.is_file())
+    main_figures = source_root / "publication" / "figures" / "main"
+    if main_figures.is_dir():
+        for path in main_figures.iterdir():
+            if path.is_file() and "_postreview" in path.stem and path.suffix.lower() in MAIN_FIGURE_SUFFIXES:
+                selected.add(path)
+    supplementary_figures = source_root / "publication" / "figures" / "supplementary"
+    if supplementary_figures.is_dir():
+        for path in supplementary_figures.iterdir():
+            name = path.name
+            if re.fullmatch(r"Supplementary_Figure_S(?:[1-9]|10)\.png", name):
+                selected.add(path)
+            elif re.fullmatch(r"Supplementary_Figure_S11_ipSAE_postreview\.(?:png|svg|pdf)", name):
+                selected.add(path)
+    return sorted(selected)
 
 
 def main() -> None:
-    RELEASE.mkdir(parents=True, exist_ok=True)
-    entries: list[dict[str, object]] = []
-    seen_targets: set[str] = set()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--source-root", type=Path, required=True)
+    parser.add_argument("--candidate-root", type=Path, required=True)
+    args = parser.parse_args()
+    source_root = args.source_root.resolve()
+    candidate_root = args.candidate_root.resolve()
+    if candidate_root.exists() and any(candidate_root.iterdir()):
+        raise SystemExit(f"Candidate root must be absent or empty: {candidate_root}")
+    candidate_root.mkdir(parents=True, exist_ok=True)
 
-    candidate_paths = sorted(set(source_manifest_relative_paths()) | set(CODE_FILES))
-    for source_rel in candidate_paths:
-        if should_exclude(source_rel) or Path(source_rel).name in LARGE_RELEASE_ASSET_NAMES:
-            continue
-        source = ROOT / source_rel
-        if not source.is_file():
-            raise FileNotFoundError(f"Selected source is missing: {source_rel}")
-        target_rel = source_rel
-        text_mode = source.suffix.lower() in {".py", ".md", ".json", ".txt", ".csv", ".yaml", ".yml"}
-        category = "code" if source.suffix == ".py" else "derived_data_or_provenance"
-        if target_rel not in seen_targets:
-            entries.append(copy_file(source_rel, target_rel, text_mode=text_mode, category=category))
-            seen_targets.add(target_rel)
-
-    for source_rel, target_rel in EXACT_FILES:
-        if target_rel in seen_targets:
-            continue
-        text_mode = Path(source_rel).suffix.lower() in {".md", ".json", ".txt", ".csv"}
-        entries.append(copy_file(source_rel, target_rel, text_mode=text_mode, category="publication_output"))
-        seen_targets.add(target_rel)
-
-    for pattern, target_dir in FIGURE_GLOBS:
-        for source in sorted(ROOT.glob(pattern)):
-            target_rel = f"{target_dir}/{source.name}"
-            if target_rel in seen_targets:
-                continue
-            entries.append(copy_file(relative(source), target_rel, text_mode=False, category="figure"))
-            seen_targets.add(target_rel)
-
-    # Authored repository files are generated in place; include them in the integrity manifest too.
-    for path in sorted(RELEASE.rglob("*")):
-        if not path.is_file() or path == MANIFEST:
-            continue
-        relative_parts = path.relative_to(RELEASE).parts
-        if ".git" in relative_parts or "__pycache__" in relative_parts or path.suffix in {".pyc", ".pyo"}:
-            continue
-        target_rel = public_relative(path)
-        if target_rel in seen_targets:
-            continue
-        entries.append(
+    rows: list[dict[str, object]] = []
+    for source in source_files(source_root):
+        rel = source.relative_to(source_root)
+        target = candidate_root / rel
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(source, target)
+        transformed = False
+        non_sanitized_tools = {
+            (source_root / "scripts" / "build_release.py").resolve(),
+            (source_root / "scripts" / "verify_publication.py").resolve(),
+        }
+        if source.suffix.lower() in TEXT_SUFFIXES and source.resolve() not in non_sanitized_tools:
+            original = target.read_text(encoding="utf-8", errors="replace")
+            cleaned = sanitize(original)
+            if cleaned != original:
+                target.write_text(cleaned, encoding="utf-8")
+                transformed = True
+        rows.append(
             {
-                "source_path": "<repository>",
-                "published_path": target_rel,
-                "source_sha256": "",
-                "published_sha256": sha256(path),
-                "published_bytes": path.stat().st_size,
-                "category": "repository_document",
-                "transform": "authored",
+                "source_path": rel.as_posix(),
+                "published_path": rel.as_posix(),
+                "source_sha256": sha256(source),
+                "published_sha256": sha256(target),
+                "published_bytes": target.stat().st_size,
+                "category": "figure" if source.suffix.lower() in MAIN_FIGURE_SUFFIXES else "code_or_documentation",
+                "transform": "text-path-redacted" if transformed else "verbatim",
             }
         )
-        seen_targets.add(target_rel)
 
-    MANIFEST.parent.mkdir(parents=True, exist_ok=True)
-    with MANIFEST.open("w", encoding="utf-8", newline="") as stream:
+    manifest = candidate_root / "data" / "PUBLICATION_MANIFEST.csv"
+    manifest.parent.mkdir(parents=True, exist_ok=True)
+    with manifest.open("w", encoding="utf-8", newline="") as stream:
         writer = csv.DictWriter(
             stream,
             fieldnames=[
@@ -249,13 +199,21 @@ def main() -> None:
             ],
         )
         writer.writeheader()
-        writer.writerows(sorted(entries, key=lambda row: str(row["published_path"])))
+        writer.writerows(sorted(rows, key=lambda row: str(row["published_path"])))
 
-    total_bytes = sum(int(row["published_bytes"]) for row in entries)
-    print(f"release: {RELEASE}")
-    print(f"files: {len(entries)}")
-    print(f"bytes: {total_bytes}")
-    print(f"manifest: {MANIFEST}")
+    published = {
+        path.relative_to(candidate_root).as_posix()
+        for path in candidate_root.rglob("*")
+        if path.is_file()
+    }
+    expected = {str(row["published_path"]) for row in rows} | {"data/PUBLICATION_MANIFEST.csv"}
+    if published != expected:
+        raise SystemExit(
+            "Reverse coverage mismatch: "
+            f"missing={sorted(expected - published)}, extra={sorted(published - expected)}"
+        )
+    print(f"candidate: {candidate_root}")
+    print(f"files: {len(rows) + 1}")
 
 
 if __name__ == "__main__":

@@ -1,16 +1,16 @@
 {
-  "protocol": "E:\\diyipian\\analysis\\RQ4_decision_value_frozen_protocol_2026-11-14.md",
+  "protocol": "<ABSOLUTE_PATH_REDACTED>",
   "protocol_sha256": "ab35dfe08ca76d45d2c12827ad1480366124d369f9aff401274d4d1273247832",
   "v3_sha256_at_run": "ad919014b5d540967fe2c819aefad9ebeccdf9f5cff7533265313c03a50aaaf5",
   "expected_input_hashes": {
-    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
-    "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
-    "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_u_pair_predictions.csv": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
+    "<ABSOLUTE_PATH_REDACTED>": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "<ABSOLUTE_PATH_REDACTED>": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+    "<ABSOLUTE_PATH_REDACTED>": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
   },
   "actual_input_hashes": {
-    "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
-    "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
-    "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_u_pair_predictions.csv": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
+    "<ABSOLUTE_PATH_REDACTED>": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
+    "<ABSOLUTE_PATH_REDACTED>": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
+    "<ABSOLUTE_PATH_REDACTED>": "cadfbf4fc6ee79b8a72085ae839ceb5c2785b3ca3d40aaeb21d0a010770af622"
   },
   "fractions": [
     0.05,

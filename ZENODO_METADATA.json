@@ -1,0 +1,30 @@
+{
+  "title": "Context-dependent calibration and experimental decision value of Boltz-2 ipTM in binder design",
+  "description": "Reproducibility source, derived numerical summaries, publication figures, manuscript materials, and release assets for the accompanying Protein Science submission. Code is licensed under MIT. Derived data, documentation, figures, and manuscript outputs are licensed under CC BY 4.0. Upstream Proteinbase and Anthropic data retain their original terms and required attribution. The official IPSAE and Pinc source repositories and raw structure inputs are not redistributed.",
+  "creators": [
+    {
+      "name": "Chen, KangMing",
+      "orcid": "0009-0006-9634-5397",
+      "affiliation": "College of Biological Science and Medical Engineering, Donghua University, Shanghai, China"
+    }
+  ],
+  "license": "other-open",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "1.1.0",
+  "publication_date": "2026-11-21",
+  "keywords": [
+    "protein binder design",
+    "Boltz-2",
+    "ipTM",
+    "probability calibration",
+    "experimental decision analysis"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/kami518/boltz2-iptm-binder-calibration",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

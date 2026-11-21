@@ -1,6 +1,6 @@
 {
   "handoff_id": "RQ3_EXECUTION_2026-11-13",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
   "overall_status": "complete",
   "created_at": "2026-11-13T18:23:15+08:00",
   "config_frozen_before_any_rq3_result": true,
@@ -48,8 +48,8 @@
   "current_stage": "stage_4_figures_tables_qc_and_handoff",
   "started_at": "2026-11-13T18:23:15+08:00",
   "updated_at": "2026-11-13T18:24:53+08:00",
-  "config_source_path": "E:\\diyipian\\analysis\\codex_tasks\\RQ3_EXECUTION_CODEX_HANDOFF_2026-11-13\\rq3_execution_config.json",
+  "config_source_path": "<ABSOLUTE_PATH_REDACTED>",
   "config_source_sha256": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51",
-  "config_snapshot_path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\run_config.snapshot.json",
+  "config_snapshot_path": "<ABSOLUTE_PATH_REDACTED>",
   "config_snapshot_sha256": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51"
 }

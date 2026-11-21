@@ -2,7 +2,7 @@
   "handoff_id": "RQ5_EXECUTION_2026-11-15",
   "status": "complete",
   "analysis_scope": "exploratory_incremental_only",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
   "input_acceptance": {
     "complete_case": 2074,
     "primary_positives": 740,

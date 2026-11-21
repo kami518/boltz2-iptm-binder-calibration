@@ -1,0 +1,199 @@
+{
+  "status": "complete",
+  "figures": {
+    "Figure 1": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_1_study_design_postreview.png",
+        "bytes": 333088,
+        "sha256": "667b84f639e7190beba6b7506e6a32affb1cfd7794a020611d75ec8d43be50ac"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_1_study_design_postreview.pdf",
+        "bytes": 29638,
+        "sha256": "d230113053dbf3e9631fac3e5bf463012e1e3af8a9a3f7cb9656e34a3933926d"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_1_study_design_postreview.svg",
+        "bytes": 112369,
+        "sha256": "1d1e42fca0bf7ae7ea7a9993e947ed576b40e9aefd655ab346bb13dd4e4194f6"
+      }
+    },
+    "Figure 2": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_2_ipTM_discrimination_postreview.png",
+        "bytes": 213722,
+        "sha256": "926b27bb85f408e9025094282961df2794b518c46d493028de4b4f8bdb10904a"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_2_ipTM_discrimination_postreview.pdf",
+        "bytes": 30458,
+        "sha256": "723bbf7d383d170bf7314655f741fd41c55671fa24f4dff1f19e33a18c85d4d3"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_2_ipTM_discrimination_postreview.svg",
+        "bytes": 96831,
+        "sha256": "dc38a7c38f3e81072f66a38bf25a6dbcc808e401ac093140f8574b998e93c56f"
+      }
+    },
+    "Figure 3": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_3_raw_calibration_postreview.png",
+        "bytes": 419147,
+        "sha256": "2e36fe14a2e59557fd2c7aa69b4bc5751bd20c2257721005b37878aa1807b38a"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_3_raw_calibration_postreview.pdf",
+        "bytes": 35956,
+        "sha256": "c5cc130bb830ffe3f67f8870e66656416bcd0ed8178980dacfaea58f78990073"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_3_raw_calibration_postreview.svg",
+        "bytes": 106129,
+        "sha256": "0b8232f5673ce408c1ba66049e8da19f7f1cd3cc01697d8988c0d62efab47767"
+      }
+    },
+    "Figure 4": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_4_transport_adaptation_postreview.png",
+        "bytes": 270643,
+        "sha256": "e768d44ea49825817c43264826d69ff4884620284947b084243adbdc5a6f7769"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_4_transport_adaptation_postreview.pdf",
+        "bytes": 33513,
+        "sha256": "5a66682647f03dbafd610d97a9110eb6034126a236a1212fe545d01d93d32af0"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_4_transport_adaptation_postreview.svg",
+        "bytes": 102833,
+        "sha256": "428a1c84f53e0aacae386f922e29bce0cf7e628c31ad0f5b822cf1c4bd20eea1"
+      }
+    },
+    "Figure 5": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_5_experimental_selection_postreview.png",
+        "bytes": 338609,
+        "sha256": "6da4cdcc0fe0a1675a183b5e1ab2fd8789d7980cd4adc39fda3ea841a0bad315"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_5_experimental_selection_postreview.pdf",
+        "bytes": 34756,
+        "sha256": "0f25eb3f9c7a0e3ce9aaf263fa04ad095f01af399279744128bec00f340f70be"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_5_experimental_selection_postreview.svg",
+        "bytes": 109676,
+        "sha256": "d33de3eacbd250821933c2ebbe4d25c9d7e8c565e055b4db70fa5897106a737e"
+      }
+    },
+    "Figure 6": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_6_Pinc_increment_postreview.png",
+        "bytes": 141675,
+        "sha256": "ef8d72e4e157895798795f009703835b882a410c839c49c5bcf49f4ff2efb029"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_6_Pinc_increment_postreview.pdf",
+        "bytes": 26476,
+        "sha256": "6c1c6137a0bfa0dfd2a8dfa459b9cdd20f22527ad8ffa2835ada08284e4ada9f"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_6_Pinc_increment_postreview.svg",
+        "bytes": 67873,
+        "sha256": "5c12e764a17ad3985e74f5cb39bcf774dd37087a05f94f5942057ed8b59d56b6"
+      }
+    },
+    "Figure 7": {
+      ".png": {
+        "path": "publication\\figures\\main\\Figure_7_predictor_pipelines_postreview.png",
+        "bytes": 121480,
+        "sha256": "3316133d132e193c4c44470c133c4d3abed6d8b0bc37a21114f2c1bbfc923e1d"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\main\\Figure_7_predictor_pipelines_postreview.pdf",
+        "bytes": 28554,
+        "sha256": "0570fb78df5ed720eb8ecb57f4c1819d544dd4cc6d58f93fd7cd6ea1ab23bd18"
+      },
+      ".svg": {
+        "path": "publication\\figures\\main\\Figure_7_predictor_pipelines_postreview.svg",
+        "bytes": 66277,
+        "sha256": "2f3405a00e8d732920d4d8436e4487553684bd7bf5ca5985272b9780296a928b"
+      }
+    },
+    "Supplementary Figure S11": {
+      ".png": {
+        "path": "publication\\figures\\supplementary\\Supplementary_Figure_S11_ipSAE_postreview.png",
+        "bytes": 271207,
+        "sha256": "64249b76313d120bbc4d2ecad9efa66b17174a66f6da439d1f8db342c35dd640"
+      },
+      ".pdf": {
+        "path": "publication\\figures\\supplementary\\Supplementary_Figure_S11_ipSAE_postreview.pdf",
+        "bytes": 30746,
+        "sha256": "f0cb7c397b69f55f7ef7e24dce021b9a3462b450f373d87e652847e7a10e5b8a"
+      },
+      ".svg": {
+        "path": "publication\\figures\\supplementary\\Supplementary_Figure_S11_ipSAE_postreview.svg",
+        "bytes": 101246,
+        "sha256": "433f5b08907ac9912c02645ec3215388d4da8975eb5010fd703659da2da3895f"
+      }
+    }
+  },
+  "source_inputs": {
+    "pair_master_v3": {
+      "path": "analysis\\v3_outputs\\pair_master_v3.csv",
+      "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91"
+    },
+    "rq12_target_metrics": {
+      "path": "analysis\\rq12_outputs\\rq12_target_metrics.csv",
+      "sha256": "b92bca7a9ace336be59c2a14a6ecefce4f673b969915ccd526b8023816115d34"
+    },
+    "rq12_reliability_bins": {
+      "path": "analysis\\rq12_outputs\\rq2_reliability_bins.csv",
+      "sha256": "4c2daa026c4bd01dfbb960cc1bd9c065caf17a3ba2ef29c08ac28fa993b065d9"
+    },
+    "rq12_hierarchical_targets": {
+      "path": "analysis\\rq12_outputs\\rq2_hierarchical_targets.csv",
+      "sha256": "5880a78a1273ca684eaadd745c51ef94ab5d841c7aadc71a9835f75f69545c7a"
+    },
+    "rq3_target_adaptation_metrics": {
+      "path": "analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_target_adaptation_metrics.csv",
+      "sha256": "9624e31b5d08f04558314ef6235c3688653169857daceb8a3494a01b4fe1f81f"
+    },
+    "rq3e_target_metrics": {
+      "path": "analysis\\rq3e_if_outputs\\run_20261114_174403\\target_metrics.csv",
+      "sha256": "6f0e2d4983d5201f706f39c8c6b4a6900e744f4990a93ba271ef5367dbc2d2cb"
+    },
+    "rq4_target_metrics": {
+      "path": "analysis\\rq4_outputs\\run_20261114_231925\\rq4ab_target_metrics.csv",
+      "sha256": "0ec31ea89a5218780a4f5cb6b6d5aecb0867f5bfc24c1393e558df3ba7c32d01"
+    },
+    "rq4_comparisons": {
+      "path": "analysis\\rq4_outputs\\run_20261114_231925\\rq4c_comparisons.csv",
+      "sha256": "6e36ae9b8a8f86d679ca029ed475c7dbc632a02003ec0404cb437bb293d999ef"
+    },
+    "rq5_score_macro": {
+      "path": "analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720\\rq5_score_macro_summary.csv",
+      "sha256": "6a114416d1c94d5bf8e4f2274dd3fd427a0d06083bcdddb61b8b1fe2dd34e164"
+    },
+    "rq5_pairwise": {
+      "path": "analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720\\rq5_pairwise_comparisons.csv",
+      "sha256": "ca5e8a5e299d903bf2a934d77009b826c2e81ed160cbb9d3e13a5bb2e6242008"
+    },
+    "rq6_target_equal": {
+      "path": "analysis\\codex_outputs\\RQ6_execution_2026-11-15\\run_20261115_151147\\rq6_target_equal_summary.csv",
+      "sha256": "0cfa1d4dc780ed9554a4f68005afe7faedbc4ddf85ea43ac4661f9d92233ada5"
+    },
+    "ipSAE_macro": {
+      "path": "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_macro_metrics.csv",
+      "sha256": "779c01e6736a00ed17cc03e348af799c2e9c50f6fac5a4a23a41d2d778822ca2"
+    },
+    "ipSAE_combo": {
+      "path": "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_paired_comparisons.csv",
+      "sha256": "63d1a47c26974006154c62e6102b1b6355eb861c3cbc01093657096c902dbc3b"
+    },
+    "bootstrap_macro": {
+      "path": "analysis\\postreview_revision_2026-11-21\\bootstrap\\bootstrap_macro_intervals.csv",
+      "sha256": "505e02db86533a1ba4a970f1eccc9c9a5c50369f1e8c729ca08235a8651ca02f"
+    }
+  }
+}

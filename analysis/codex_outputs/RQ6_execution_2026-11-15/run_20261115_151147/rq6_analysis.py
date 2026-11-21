@@ -1109,7 +1109,7 @@ def main() -> None:
     command_lines = [
         "# RQ6 正式执行命令",
         "",
-        "工作目录：`E:\\diyipian`",
+        "工作目录：`<ABSOLUTE_PATH_REDACTED>",
         "",
         "```powershell",
         "python \"analysis/codex_outputs/RQ6_execution_2026-11-15/"

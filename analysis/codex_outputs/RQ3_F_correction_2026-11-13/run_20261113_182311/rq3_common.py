@@ -64,6 +64,11 @@ def sha256_file(path: Path) -> str:
     return digest.hexdigest()
 
 
+def resolve_path(value: str | Path) -> Path:
+    path = Path(value)
+    return path if path.is_absolute() else ROOT / path
+
+
 def _jsonable(value: Any) -> Any:
     if isinstance(value, np.generic):
         return value.item()
@@ -194,7 +199,7 @@ def verify_input_hashes(config: dict) -> tuple[pd.DataFrame, list[str]]:
     mismatches = []
     specs = {"protocol": config["protocol"], **config["inputs"]}
     for key, spec in specs.items():
-        path = Path(spec["path"])
+        path = resolve_path(spec["path"])
         if not path.is_file():
             actual = ""
             rows.append(
@@ -241,8 +246,8 @@ def require_hash_gate(config: dict) -> pd.DataFrame:
 
 
 def load_joined_data(config: dict) -> pd.DataFrame:
-    pair_path = Path(config["inputs"]["pair_master"]["path"])
-    cluster_path = Path(config["inputs"]["sequence_clusters"]["path"])
+    pair_path = resolve_path(config["inputs"]["pair_master"]["path"])
+    cluster_path = resolve_path(config["inputs"]["sequence_clusters"]["path"])
     pairs = pd.read_csv(pair_path, low_memory=False)
     clusters = pd.read_csv(cluster_path, low_memory=False)
     if len(pairs) != int(config["inputs"]["pair_master"]["expected_rows"]):
@@ -291,14 +296,14 @@ def validate_fold_structure(
     config: dict, joined: pd.DataFrame
 ) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame, dict]:
     input_paths = config["inputs"]
-    loto = pd.read_csv(input_paths["loto_assignments"]["path"], low_memory=False)
-    loto_manifest = pd.read_csv(input_paths["loto_manifest"]["path"], low_memory=False)
-    cv5 = pd.read_csv(input_paths["target_cv5_assignments"]["path"], low_memory=False)
+    loto = pd.read_csv(resolve_path(input_paths["loto_assignments"]["path"]), low_memory=False)
+    loto_manifest = pd.read_csv(resolve_path(input_paths["loto_manifest"]["path"]), low_memory=False)
+    cv5 = pd.read_csv(resolve_path(input_paths["target_cv5_assignments"]["path"]), low_memory=False)
     cv5_manifest = pd.read_csv(
-        input_paths["target_cv5_manifest"]["path"], low_memory=False
+        resolve_path(input_paths["target_cv5_manifest"]["path"]), low_memory=False
     )
     exclusions = pd.read_csv(
-        input_paths["cross_target_exclusions"]["path"], low_memory=False
+        resolve_path(input_paths["cross_target_exclusions"]["path"]), low_memory=False
     )
 
     pair_ids = set(joined["pair_id"].astype(str))

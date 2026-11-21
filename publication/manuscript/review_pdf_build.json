@@ -1,0 +1,9 @@
+{
+  "output": "publication/manuscript/PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf",
+  "pages": 57,
+  "bytes": 5708787,
+  "main_source": "publication/manuscript/main_article.md",
+  "supplement_source": "publication/manuscript/supplementary_materials.md",
+  "scope": "Complete post-review main article plus supplementary guide and all 18 figures; the original 75 detailed Excel tables in S1-S16 remain in the companion workbook, and S17 is documented in the guide.",
+  "unresolved_placeholders_retained": false
+}

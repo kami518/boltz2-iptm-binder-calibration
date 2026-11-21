@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-21T13:46:25+08:00",
+  "analysis": "C02",
+  "replicates": 2000,
+  "seed": 20261121,
+  "interval": "percentile 2.5-97.5",
+  "cluster_rule": "within-target sequence_cluster90",
+  "same_rows_for_U_I_F": true,
+  "model_refit": false,
+  "caveat": "Conditional precision within observed targets; not a future-target prediction interval.",
+  "inputs": {
+    "analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_adaptation_pair_predictions.csv": "d6cd2ddaa71f4424d41172663f051d44a340f03bfee084a6e562bbbfcda21456",
+    "analysis\\rq3e_if_outputs\\run_20261114_174403\\oof_predictions.csv": "030c5ced908bea93e7eb9cebd4d94f230891dad8597abb060fb659ce502b79bf"
+  },
+  "qc": [
+    {
+      "dataset": "main_primary_six",
+      "n_pairs": 2084,
+      "n_targets": 6,
+      "targets": [
+        "aah-i",
+        "human-vegf110",
+        "nipah-glycoprotein-g",
+        "pd-l1",
+        "sars-cov-2-rbd",
+        "trem2"
+      ],
+      "n_clusters_by_target": {
+        "aah-i": 79,
+        "human-vegf110": 251,
+        "nipah-glycoprotein-g": 816,
+        "pd-l1": 263,
+        "sars-cov-2-rbd": 215,
+        "trem2": 104
+      },
+      "requested_replicates": 2000,
+      "valid_replicates": 2000,
+      "failed_attempts": 0,
+      "all_core_estimates_finite": true
+    },
+    {
+      "dataset": "main_primary_five",
+      "n_pairs": 1951,
+      "n_targets": 5,
+      "targets": [
+        "human-vegf110",
+        "nipah-glycoprotein-g",
+        "pd-l1",
+        "sars-cov-2-rbd",
+        "trem2"
+      ],
+      "n_clusters_by_target": {
+        "human-vegf110": 251,
+        "nipah-glycoprotein-g": 816,
+        "pd-l1": 263,
+        "sars-cov-2-rbd": 215,
+        "trem2": 104
+      },
+      "requested_replicates": 2000,
+      "valid_replicates": 2000,
+      "failed_attempts": 0,
+      "all_core_estimates_finite": true
+    },
+    {
+      "dataset": "external_primary_weak_plus",
+      "n_pairs": 720,
+      "n_targets": 8,
+      "targets": [
+        "BHRF1",
+        "IL-7Ra",
+        "Nipah-G",
+        "PD-L1",
+        "RBX1",
+        "TREM2",
+        "TrkA",
+        "VEGF-A"
+      ],
+      "n_clusters_by_target": {
+        "BHRF1": 79,
+        "IL-7Ra": 87,
+        "Nipah-G": 87,
+        "PD-L1": 89,
+        "RBX1": 89,
+        "TREM2": 90,
+        "TrkA": 89,
+        "VEGF-A": 88
+      },
+      "requested_replicates": 2000,
+      "valid_replicates": 2000,
+      "failed_attempts": 0,
+      "all_core_estimates_finite": true
+    }
+  ],
+  "outputs": {
+    "analysis\\postreview_revision_2026-11-21\\bootstrap\\bootstrap_target_intervals.csv": "ef641a443363d68580935975f767aa1ed5470e8ccc2d6125b06c619dbd6aec1f",
+    "analysis\\postreview_revision_2026-11-21\\bootstrap\\bootstrap_macro_intervals.csv": "505e02db86533a1ba4a970f1eccc9c9a5c50369f1e8c729ca08235a8651ca02f",
+    "analysis\\postreview_revision_2026-11-21\\bootstrap\\bootstrap_method_and_qc.md": "11a9ba5e1aa9bcc6b8c8483ee10bea3bede2358b226b9d89d370ecd688c7a86a"
+  },
+  "software": {
+    "python": "3.12.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "script_sha256": "e6ead36b6df4bce9d13b4aa6e0924e66960dde58bd6383ec64ecdd4362f23a3b"
+}

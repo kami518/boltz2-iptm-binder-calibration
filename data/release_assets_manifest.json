@@ -1,185 +1,151 @@
 {
-  "release": "v1.0.0",
+  "release": "v1.1.0",
+  "piece_bytes": 1000000,
   "assets": [
     {
-      "archive": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip",
-      "archive_bytes": 11347059,
-      "archive_sha256": "c755c74051e86ddb307f1aa57450fbbc24e5fcd10b7cc19d477ef5be324952b8",
+      "archive": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip",
+      "archive_bytes": 4116613,
+      "archive_sha256": "fc0000b8663d63671f9d1d43a03ccd35d39a71789d8d1423d1d14261d5742662",
       "pieces": [
         {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece001",
+          "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip.piece001",
           "bytes": 1000000,
-          "sha256": "3db4acf2310c83e1d183ec6a1e77e7696191345bba8fb026eafb4b85387a7dad"
+          "sha256": "b886354921cd30db01809aef6cd546793ce90cd91899df9a3a4f205174837ba6"
         },
         {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece002",
+          "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip.piece002",
           "bytes": 1000000,
-          "sha256": "427ab5b5b699fc6672cc2dccdb967f52faeab09a56c7926f35cea47ee02f04d0"
+          "sha256": "109248bff769b953fe91a4618299eeba03760982eb84ff4e15b7f9a08c3837d1"
         },
         {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece003",
+          "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip.piece003",
           "bytes": 1000000,
-          "sha256": "49411c234c3d9f4f6f184f2f9dde29e673567f4c991151fab88600e57d27ad9e"
+          "sha256": "63dcf16386e3ceb88d1cfc35896667fd7cc568a53c92d70227e8ef54f5c53c18"
         },
         {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece004",
+          "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip.piece004",
           "bytes": 1000000,
-          "sha256": "2ab314188fe41c95c4aed55dd59a2004beb9916e6cabd22cbd2836256190a814"
+          "sha256": "51ccdf63aa5bc020af178190c433fba4e7619b839a2904356193404bc83c59d9"
         },
         {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece005",
-          "bytes": 1000000,
-          "sha256": "1440505ee93b0eabcc5107cc66996b9bf9ad085c86443125f6db57ac15dfc6bc"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece006",
-          "bytes": 1000000,
-          "sha256": "5748f2b839d9390c4dd459c37caaef0507e5838e3f56c2d84164a3ecc7079138"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece007",
-          "bytes": 1000000,
-          "sha256": "f310b12eb9117cdcdf9e120fb1375a18365c6754209f8c3d271d1b0e0c23a9bf"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece008",
-          "bytes": 1000000,
-          "sha256": "392648a55cd6c89e19224ffe0def3b91fe2b35546e0f7e68bde956fde23cd2be"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece009",
-          "bytes": 1000000,
-          "sha256": "3d9c4685fccfb4eb0423a4798a3f218166ba55339bcae8ecd420fd9ac0791f7b"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece010",
-          "bytes": 1000000,
-          "sha256": "36739783bcdd60d36ddb64702aa24afa154be8ef1b06cf0e0610ec4f9ad884aa"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece011",
-          "bytes": 1000000,
-          "sha256": "98ee594cc68f46d3ebae6e6d5213eac23cfbcf0c57d54c93548c6e39bcd0b5c9"
-        },
-        {
-          "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf.zip.piece012",
-          "bytes": 347059,
-          "sha256": "fe290558c81f0b232d7578258b94b91e9104ffaaf2b63b48221b056b29ed9dbc"
+          "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf.zip.piece005",
+          "bytes": 116613,
+          "sha256": "e7b7b01e4fc5269d6761971dcb2334f729f3a1ca7c48368e3447d6a4bd36eed5"
         }
       ],
       "output": {
-        "name": "PEDS_Main_and_Supplement_Review_Draft_v2_2026-11-18.pdf",
-        "bytes": 15069049,
-        "sha256": "797f5b1d71ef9c6c6d0f9a07663b18c88f7a2df90b7977ba6416f1e84dc0c886"
+        "name": "PEDS_Main_and_Supplement_Review_Draft_v1.1.0.pdf",
+        "bytes": 5708787,
+        "sha256": "aaf638d0c1c162ee005351bf0bc8540de4698f62a6c79f281f963fa9574eae6c"
       }
     },
     {
-      "archive": "rq4c_pilot_parameters.csv.zip",
-      "archive_bytes": 3421006,
-      "archive_sha256": "fc2d7526ed38a2a29e7db52eea8fcac33499d4aef2790fd92afcd2277f0544f2",
+      "archive": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip",
+      "archive_bytes": 12190270,
+      "archive_sha256": "492d6f7ba844b126cc6e88e755e7ca5dc35c4fc6afb442bde16280798849f8a5",
       "pieces": [
         {
-          "name": "rq4c_pilot_parameters.csv.zip.piece001",
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece001",
           "bytes": 1000000,
-          "sha256": "b147fc6f7e01a54eef306fb23ad8ef9b06ea5670d3ac2124397fe62adc7668e9"
+          "sha256": "78692d25bdb927a64da0b9b147c794ec1c05939553fdbb26e8cb01db87987805"
         },
         {
-          "name": "rq4c_pilot_parameters.csv.zip.piece002",
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece002",
           "bytes": 1000000,
-          "sha256": "ba9034ba3326ab0d80820353ac02a8b629a59bbec48c26ac33e8701dd1e1cfd2"
+          "sha256": "c7efabf11eb317b52aaa28fdfbe14f1ec0cf019fd1e27e77bf3ce2974ae5b865"
         },
         {
-          "name": "rq4c_pilot_parameters.csv.zip.piece003",
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece003",
           "bytes": 1000000,
-          "sha256": "7325ec94d1ed928a37ec865b2291c8148210854dcb492a22a9ce57883eaede08"
+          "sha256": "2e6ace5ba388fa1dd6af8668f89de281773f2e2aacbfdf8063e067902785414f"
         },
         {
-          "name": "rq4c_pilot_parameters.csv.zip.piece004",
-          "bytes": 421006,
-          "sha256": "60a1e3e83cae4f5795e0b9fda644a5b7661872ec2611aedfce916ff1d9492054"
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece004",
+          "bytes": 1000000,
+          "sha256": "2ae5a9c52340ca6fea9dfa248fa97c079ce013fb07d9ea762b9ebfc6ae07c1b2"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece005",
+          "bytes": 1000000,
+          "sha256": "f9db5aa6bf9cb8d3699afd3a8a648d5ea0b259b00f26a5cbac50f30d2e11cd5e"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece006",
+          "bytes": 1000000,
+          "sha256": "4fbb1c3e14002cbe8f523a82c6590622189cc5c851f14ee35193badd8d27233c"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece007",
+          "bytes": 1000000,
+          "sha256": "fe3292d848917231458aa1a0c7bf20879475b23478fb415aa2a08604a47760bd"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece008",
+          "bytes": 1000000,
+          "sha256": "56ff6744ea51082cbc31f84958dd7296c96687d11c67ca1e6f5ddd5a0edd5fb2"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece009",
+          "bytes": 1000000,
+          "sha256": "e90a3842b9f69be0772cf5422fc240652fcc775ecc31a12438c43f98157e0a19"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece010",
+          "bytes": 1000000,
+          "sha256": "6f6b7558928c6e06181640d0635ad3dc11128464b15e0e84d6a9e3549504b6b4"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece011",
+          "bytes": 1000000,
+          "sha256": "6dce9d3f4fe4af51c897b7d2ebbc7a53907e29f126cd3acd9bd6674132ce4ed0"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece012",
+          "bytes": 1000000,
+          "sha256": "13e9a3d7e9368db2215d8efded7aa86b6336cba6fbd35d76b2a3878461790dd9"
+        },
+        {
+          "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx.zip.piece013",
+          "bytes": 190270,
+          "sha256": "8c012803872b6b77f824bc451b81fbcddba3a1ece57bc9567f1931e180bf23b4"
         }
       ],
       "output": {
-        "name": "rq4c_pilot_parameters.csv",
+        "name": "Supplementary_Tables_S1_S16_v1.1.0.xlsx",
+        "bytes": 12769500,
+        "sha256": "59a2d4d260527e1c9b3a0c73aa41f18799afa9802a3cf5a8a55f7e28b433f301"
+      }
+    },
+    {
+      "archive": "rq4c_pilot_parameters_v1.1.0.csv.zip",
+      "archive_bytes": 3474289,
+      "archive_sha256": "291b0b70a005e300c724fbe1f3f82adb1b6f1083c8544b8d0f16e560b6720d6b",
+      "pieces": [
+        {
+          "name": "rq4c_pilot_parameters_v1.1.0.csv.zip.piece001",
+          "bytes": 1000000,
+          "sha256": "141fe1a2a2c70a3c1719e8da296b6908fd2436b9f85fc08ce79bdc4178b56379"
+        },
+        {
+          "name": "rq4c_pilot_parameters_v1.1.0.csv.zip.piece002",
+          "bytes": 1000000,
+          "sha256": "70206294ce1b1975ad5edd13820c366aa8a22fda15d68a43bef0fd82c7c34a57"
+        },
+        {
+          "name": "rq4c_pilot_parameters_v1.1.0.csv.zip.piece003",
+          "bytes": 1000000,
+          "sha256": "b4457a093ba1c8fdd58f879879ca90064947d430930a87f59783dbfa6984b939"
+        },
+        {
+          "name": "rq4c_pilot_parameters_v1.1.0.csv.zip.piece004",
+          "bytes": 474289,
+          "sha256": "b43d9d05cd5e88be9c743c3af8b48eaba21ac2d754e06aae93e237ca881460a1"
+        }
+      ],
+      "output": {
+        "name": "rq4c_pilot_parameters_v1.1.0.csv",
         "bytes": 11523237,
         "sha256": "e8f0981d3c2ecaa26e8c3b63ee2c1562d05dac023431b0ad501d0920f268c516"
-      }
-    },
-    {
-      "archive": "Supplementary_Tables_S1_S16.xlsx.zip",
-      "archive_bytes": 12191231,
-      "archive_sha256": "7720e8c95673f9e0b8a6724d475646e5baea2dceba42a72bcfd90845e2cb00ce",
-      "pieces": [
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece001",
-          "bytes": 1000000,
-          "sha256": "aa50ea98d5c3542b489519d59b17c02b6eab5eb0b5d9f23ed20f96c0f522b8eb"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece002",
-          "bytes": 1000000,
-          "sha256": "9fa242f21431dbc98a5dd3cd8b524ac2ee07a144709f018549ec28b77558f6ab"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece003",
-          "bytes": 1000000,
-          "sha256": "afe6d14ad191291d2fffb284052da1e8ef0ea7248fd6b827703fe5b6bdf7bb28"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece004",
-          "bytes": 1000000,
-          "sha256": "b491a9f32685c3946bad0c2679f1a098c71a47e1fd7ed3f448c91d59a67e5bb5"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece005",
-          "bytes": 1000000,
-          "sha256": "a8c6848549bddbd1aee1e8733e837c8913910c451cf8c856fbd9a8fea438614f"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece006",
-          "bytes": 1000000,
-          "sha256": "a12cc9d1bdc475f2ded3bde301a7918ad6a554db95ea78b1fc88eceed7c5a927"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece007",
-          "bytes": 1000000,
-          "sha256": "ff41ef9f314584f8a526e2ead6d15b997941ef3f8c0e2a4a4d96c406f914b1f0"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece008",
-          "bytes": 1000000,
-          "sha256": "ac03d80e32264641b447dff85663ce870edc1bca1bf3b67f1c8366ba1a54d1fe"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece009",
-          "bytes": 1000000,
-          "sha256": "90c37dbe580abe3bad9d719d792423bb7ce727ecc10016251538c8c5d2506882"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece010",
-          "bytes": 1000000,
-          "sha256": "c085b3b854d3f7ad2b689d0a14d776d82c22ff44a15e748ddc0389a8377eb452"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece011",
-          "bytes": 1000000,
-          "sha256": "861e275c374f8a3308ae223f9d2a39f2ee5e045f26a7c90f72f0a681a9a86bf7"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece012",
-          "bytes": 1000000,
-          "sha256": "adf2c887ac77862f4f3cc195147e1bc313180f39af712d01146d9482fbe7bd5d"
-        },
-        {
-          "name": "Supplementary_Tables_S1_S16.xlsx.zip.piece013",
-          "bytes": 191231,
-          "sha256": "b5b12f5c053601809cd77eddaa65a317311bc9392cb90a508a12d25a4f1ed84f"
-        }
-      ],
-      "output": {
-        "name": "Supplementary_Tables_S1_S16.xlsx",
-        "bytes": 12772439,
-        "sha256": "449dc6760c62120872392bc4c0e2bd7aa86192f6e2848b45df8e4d852958deda"
       }
     }
   ]

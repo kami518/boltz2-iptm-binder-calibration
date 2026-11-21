@@ -1,0 +1,53 @@
+{
+  "status": "complete",
+  "created_at": "2026-11-21T15:54:55+08:00",
+  "analysis": "C01B",
+  "analysis_role": "post_hoc_sensitivity_extension",
+  "complete_cases": 2074,
+  "positives": 740,
+  "models": [
+    "ipTM_only",
+    "ipSAE_only",
+    "ipTM_plus_ipSAE"
+  ],
+  "combination_model": {
+    "U": "target-specific intercept + unpenalized ipTM slope + unpenalized ipSAE slope",
+    "I": "overall intercept update on the fixed combination linear predictor",
+    "F": "overall intercept plus one ridge-shrunk scalar slope update; relative feature weights fixed",
+    "lambda_grid": [
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ]
+  },
+  "random_forest_run": false,
+  "other_features_added": false,
+  "outputs": {
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_UIF_pair_predictions.csv": "47f60f26c7ad2a4c80872b5f021b703055bfa1a464aceb45316e986ba27ddeb2",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_source_parameters.csv": "dc423c0b90c90648864f08f3fb56e4a66f2622e516ba585f5de1d905f4b3be11",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_adaptation_parameters.csv": "7a94881b242cd5965c6b411df6c411ac3622a383467d8ad8b25a189f60591f2c",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_lambda_selection.csv": "7e139e79198f80711d0a9517f7050288091b7f81801bba13aac0bd3dc34396f1",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_target_metrics.csv": "8a9145ae9710d15db7645965f3d7946b116e7cc4960eb72d85e7de5f885ee5f2",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_macro_metrics.csv": "b2f9966dd7329f6fd10cb8a9d798ef65ac530b8c6de3b4a8f5dad86c75fb5bd1",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\combo_paired_comparisons.csv": "63d1a47c26974006154c62e6102b1b6355eb861c3cbc01093657096c902dbc3b",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE_combo\\C01B_RESULTS.md": "5ac69792155b65a669f3cf95f9ed3b88648d0a3673c0874432bed18dae0cd63e"
+  },
+  "inputs": {
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_pair_extension.csv": "8fe6dbe5af786c6e4a8275bf9f54fa8e285a5e84f9e29c7d67f54bda66afd972",
+    "analysis\\postreview_revision_2026-11-21\\ipSAE\\ipSAE_target_metrics.csv": "84cf972f48fa34ea6f84c0e48c95db6158519aeccc9f262e1099c22bd67db7ff",
+    "analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_pair_assignments.csv": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
+    "analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_pair_assignments.csv": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796"
+  },
+  "software": {
+    "python": "3.12.16",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.18.1",
+    "scikit_learn": "1.9.0"
+  },
+  "script_sha256": "8d8b9f3ba645275ac27a9d7faf7b32116ccfe113a69e0e388f641c837aea8329",
+  "base_script_sha256": "e6ead36b6df4bce9d13b4aa6e0924e66960dde58bd6383ec64ecdd4362f23a3b"
+}

@@ -3,24 +3,24 @@
   "protocol_version": "RQ5RF_v1_frozen",
   "analysis_scope": "post_hoc_exploratory_model_complexity_sensitivity",
   "created_at": "2026-11-17T22:08:55+08:00",
-  "workspace": "E:\\diyipian",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855",
+  "workspace": "<ABSOLUTE_PATH_REDACTED>",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
   "protocol": {
-    "path": "E:\\diyipian\\analysis\\RQ5RF_model_complexity_frozen_protocol_2026-11-17.md",
+    "path": "<ABSOLUTE_PATH_REDACTED>",
     "sha256": "d9db1c3a09d1264580ca56b797922d55fce0e563c04ecb9dab76ac4744a25e28"
   },
   "inputs": {
     "rq5_config": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720\\run_config.snapshot.json",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "2fa4648940d3ce8aadde1c8c361f9ec3d69a10e9a58bd867ed008663330596e8"
     },
     "pair_master": {
-      "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
       "expected_rows": 2084
     },
     "pinc_extension": {
-      "path": "E:\\diyipian\\analysis\\pinc_batch\\run_20261110_181500\\pinc_pair_extension.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
       "expected_rows": 2084,
       "expected_success": 2074,
@@ -28,36 +28,36 @@
       "missing_target": "pd-l1"
     },
     "sequence_clusters": {
-      "path": "E:\\diyipian\\analysis\\rq12_outputs\\sequence_clusters_rq12.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "45283741709016fb5db3a114d2a108a236c73b73750f01c959ec2753d3ff9efb",
       "expected_rows": 2084
     },
     "loto_assignments": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_pair_assignments.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "6ab011035bd0314d6fbaffe9cbe0548c52668ec2fc1695ccf262cbda984194ea",
       "expected_folds": 44
     },
     "loto_manifest": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\loto_fold_manifest.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "281a1775edb6d45af635c273e83591c60fa5aa75467afa07d8d2b4cc6869bfd9",
       "expected_rows": 44
     },
     "target_cv5_assignments": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_pair_assignments.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "ac837a1b7e3710ab51ce20cf01c451675092fe06f9ebd86c830e7fd50bf61796",
       "expected_fold_rows": 220
     },
     "target_cv5_manifest": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\target_cv5_fold_manifest.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "964e65aa8e05c73e4f8b070f5d8bba887d593f366c6ed1781dd5f351a795f0ed",
       "expected_rows": 220
     },
     "cross_target_exclusions": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_prep_2026-11-13\\run_20261113_105301\\cross_target_cluster_exclusions.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
     },
     "rq3_implementation": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_common.py",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "282a039571a6a1498949f1affa92fe174727608f9ab758c9f64549b8552e6221"
     }
   },

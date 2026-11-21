@@ -2,20 +2,20 @@
   "handoff_id": "RQ5_EXECUTION_2026-11-15",
   "analysis_scope": "exploratory_incremental_only",
   "created_at": "2026-11-15T11:17:29+08:00",
-  "workspace": "E:\\diyipian",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5_execution_2026-11-15\\run_20261115_111720",
-  "handoff_path": "E:\\diyipian\\analysis\\codex_tasks\\RQ5_EXECUTION_CODEX_HANDOFF_2026-11-15\\START_HERE_CODEX.md",
+  "workspace": "<ABSOLUTE_PATH_REDACTED>",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
+  "handoff_path": "<ABSOLUTE_PATH_REDACTED>",
   "handoff_sha256": "de1bbc9bf73b3444decf491df02fc2840a287e24dd5f670678cb330bcb5376e9",
-  "rq3_config_path": "E:\\diyipian\\analysis\\codex_tasks\\RQ3_EXECUTION_CODEX_HANDOFF_2026-11-13\\rq3_execution_config.json",
+  "rq3_config_path": "<ABSOLUTE_PATH_REDACTED>",
   "rq3_config_sha256": "a416ecd357eabb4c4d95701136c412cf23651b730bf39feab7524fbc07eeef51",
   "inputs": {
     "pair_master": {
-      "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
       "expected_rows": 2084
     },
     "pinc_extension": {
-      "path": "E:\\diyipian\\analysis\\pinc_batch\\run_20261110_181500\\pinc_pair_extension.csv",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "0a549cb890f42948ced456c4a128d480ea06514d4d431d069bcc0f7dc10acaab",
       "expected_rows": 2084,
       "expected_success": 2074,
@@ -52,7 +52,7 @@
       "sha256": "618b056a794c6fb269b20fd0870975dc95e477870f36080e4b99132c5d664be3"
     },
     "rq3_implementation": {
-      "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311\\rq3_common.py",
+      "path": "<ABSOLUTE_PATH_REDACTED>",
       "sha256": "282a039571a6a1498949f1affa92fe174727608f9ab758c9f64549b8552e6221"
     }
   },

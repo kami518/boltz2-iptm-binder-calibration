@@ -6,14 +6,14 @@
   "c04_started": false,
   "c_crosscheck": {
     "status": "passed",
-    "official_source": "E:\\diyipian\\external\\Pinc_official\\src\\pinc.c",
+    "official_source": "<ABSOLUTE_PATH_REDACTED>",
     "official_commit": "57afb08e29fe97379db5b155da5fb78c4c8715d1",
     "source_sha256": "8d618e74cdd4d2fa3b2221145594dda51512e53ebfb6847c72bd3b4e45bba1be",
     "compiler": "TinyCC 0.9.27 (x86_64 Windows)",
     "compiler_download": "https://download.savannah.gnu.org/releases/tinycc/tcc-0.9.27-win64-bin.zip",
     "compiler_zip_sha256": "34a721949a2583fdff725312da092fa0f5f1f284b702e6f811c6954714faabb2",
     "tcc_exe_sha256": "e9cb3e89e20a9efead83cc9e6b100314275634c2f705056da71f424ea9b0cdf0",
-    "compiled_exe": "E:\\diyipian\\analysis\\codex_outputs\\C03_official_pinc_handoff_2026-11-09\\run_20261109_220449\\closure\\pinc_c_crosscheck\\Pinc_tcc.exe",
+    "compiled_exe": "<ABSOLUTE_PATH_REDACTED>",
     "compiled_exe_sha256": "3cbdc8f15127f4197667e3a61af3c2ce65c3af1bc2373078ada7b1eb917cd36f",
     "outputs": {
       "pinc_csv": {
@@ -60,7 +60,7 @@
       "original": {"Pinc1": 0.9359, "Pinc2": 0.9352, "Pinc": 0.9356},
       "transposed": {"Pinc1": 0.9352, "Pinc2": 0.9359, "Pinc": 0.9356},
       "conclusion": "Pinc is invariant to PAE transpose; Pinc1 and Pinc2 swap.",
-      "evidence_file": "E:\\diyipian\\analysis\\codex_outputs\\C03_official_pinc_handoff_2026-11-09\\run_20261109_220449\\closure\\PAE_TRANSPOSE_TEST.md"
+      "evidence_file": "<ABSOLUTE_PATH_REDACTED>"
     },
     "closed": [
       "Headline symmetrised Pinc is unaffected by PAE orientation for this sample.",
@@ -73,7 +73,7 @@
     ]
   },
   "frozen_master": {
-    "path": "E:\\diyipian\\analysis\\v3_outputs\\pair_master_v3.csv",
+    "path": "<ABSOLUTE_PATH_REDACTED>",
     "sha256": "581c90e80e3cec3a6a974254c4ee0b151ce74387ea5b5298087860b02fbe5c91",
     "unchanged": true
   },

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "boltz2-iptm-binder-calibration"
-version = "0.1.0"
+version = "1.1.0"
 description = "Reproducibility materials for Boltz-2 ipTM binder-calibration analyses"
 requires-python = ">=3.12"
 license = { file = "LICENSE" }

@@ -1,6 +1,6 @@
 {
   "status": "complete",
-  "run_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855",
+  "run_directory": "<ABSOLUTE_PATH_REDACTED>",
   "scope": "post hoc exploratory model-complexity sensitivity",
   "computation": {
     "inner": 2880,
@@ -268,13 +268,13 @@
     ]
   },
   "failure_ledger": {
-    "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855\\failed_item_ledger.csv",
+    "path": "<ABSOLUTE_PATH_REDACTED>",
     "unresolved": 0,
     "resolved": 1,
     "recorded_non_evaluable_diagnostic": 60
   },
   "independent_verification": {
     "all_passed": true,
-    "path": "E:\\diyipian\\analysis\\codex_outputs\\RQ5RF_model_complexity_2026-11-17\\run_20261117_220855\\independent_verification.json"
+    "path": "<ABSOLUTE_PATH_REDACTED>"
   }
 }

@@ -1,11 +1,11 @@
 {
   "analysis": "RQ4E_intercept_addressable_post_hoc_diagnostic",
   "generated_at": "2026-11-17T16:29:29.503278+08:00",
-  "protocol": "E:\\diyipian\\analysis\\RQ4E_intercept_addressable_frozen_protocol_2026-11-17.md",
+  "protocol": "<ABSOLUTE_PATH_REDACTED>",
   "protocol_sha256": "5398a7d013c4294ffbca36a0262d73f4f2ca2695140e4f658fff33cb37050ab5",
-  "script": "E:\\diyipian\\analysis\\run_rq4e_intercept_addressable_2026-11-17.py",
+  "script": "<ABSOLUTE_PATH_REDACTED>",
   "script_sha256": "5b037e09e2f1b7bf88c74f3f95ee6e328852186143d6f2d3aeeb2be7f6216f87",
-  "source_directory": "E:\\diyipian\\analysis\\codex_outputs\\RQ3_F_correction_2026-11-13\\run_20261113_182311",
+  "source_directory": "<ABSOLUTE_PATH_REDACTED>",
   "selection": {
     "outcome_name": "primary_outcome",
     "cluster_rule": "sequence_cluster90",
