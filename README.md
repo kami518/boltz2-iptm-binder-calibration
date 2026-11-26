@@ -1,55 +1,27 @@
-# Boltz-2 ipTM binder-calibration reproducibility release
+# Boltz-2 ipTM calibration and conditional experimental value
 
-Release-candidate repository for the manuscript:
+This is the `v1.2.0` reproducibility release prepared for the CSBJ Research
+Article *Target-held-out calibration and conditional experimental value of
+Boltz-2 ipTM in binder design*.
 
-> Evaluating Boltz-2 ipTM as an experimental-success probability across binder-design targets
+The release contains:
 
-This repository contains the analysis code, accepted numerical summaries, publication figures, and manuscript-facing outputs needed to audit the reported results. It is prepared for a public GitHub release and a later archival DOI, but no public remote or DOI has been created yet.
+- final figure-free manuscript, landscape table document, and Supporting
+  Information in DOCX and PDF;
+- Figures 1-8 and Supplementary Figures S1-S13 as vector PDF and SVG files with
+  600-dpi PNG previews;
+- all panel-level figure traceability records;
+- the target-as-new run configuration, outputs, logs, QC, and hash manifest;
+- run metadata and the exact source CSV used by each traced figure panel;
+- figure generation and manuscript verification scripts.
 
-## What is included
+Core code is licensed under MIT. Derived data, documentation, figures, and
+manuscript outputs are released under CC BY 4.0. Upstream Proteinbase and
+Claude protein binder-design data retain their original terms. Raw third-party
+data, model weights, structure files, and vendor-only material are not
+redistributed.
 
-- analyses for within-target discrimination and raw probability error;
-- target-held-out transport and local intercept/slope adaptation;
-- frozen external evaluation and post-hoc external adaptation;
-- experimental-selection and shared-budget analyses;
-- Pinc complete-case comparisons and random-forest sensitivity summaries;
-- paired predictor-pipeline descriptions;
-- accepted run scripts, commands, QC records, and hash manifests;
-- main and supplementary figures and manuscript source text.
-
-Three generated files are distributed as GitHub Release assets rather than Git blobs:
-
-- the complete review PDF;
-- the supplementary Excel workbook;
-- the full pilot-parameter table.
-
-Their reassembly instructions are in `publication/RELEASE_ASSETS.md`; all piece and output hashes are recorded in `data/release_assets_manifest.json`.
-
-## What is not included
-
-- the raw Proteinbase CSV;
-- the Anthropic release's raw per-design data, structure files, vendor reports, or PAE matrices;
-- the Overath mirror or Overath-derived row-level tables;
-- third-party model weights or bundled third-party software;
-- the official Pinc implementation;
-- local execution-environment paths or credentials.
-
-See `docs/DATA_SOURCES.md` for the official pinned releases and `docs/REPRODUCE.md` for acquisition and verification steps.
-
-## Quick integrity check
-
-```bash
-python scripts/verify_publication.py
-```
-
-The command checks every published file against `data/PUBLICATION_MANIFEST.csv`, compiles all included Python files, and scans text files for local home paths and credential-like content.
-
-## Licenses
-
-- Analysis code written for this study: MIT, see `LICENSE`.
-- Derived data, documentation, figures, and manuscript outputs: CC BY 4.0, see `DATA_LICENSE.md`.
-- Upstream data retain their own attribution and third-party terms; see `THIRD_PARTY_NOTICES.md`.
-
-## Citation
-
-The author list, repository URL, and DOI are intentionally pending. Do not cite this candidate release as a final archived record. Fill `CITATION.cff.template` and `ZENODO_METADATA.template.json` only after author approval and repository publication.
+The `v1.1.0` Zenodo DOI `10.5281/zenodo.24400262` remains an immutable earlier
+record. This `v1.2.0` package is archived at
+`10.5281/zenodo.24561385`; it is a new version and does not overwrite the prior
+DOI.

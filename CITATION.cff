@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite this repository using the metadata below."
+title: "Target-held-out calibration and conditional experimental value of Boltz-2 ipTM in binder design: reproducibility release"
+type: software
+authors:
+  - family-names: Chen
+    given-names: KangMing
+    orcid: "https://orcid.org/0009-0006-9634-5397"
+    affiliation: "College of Biological Science and Medical Engineering, Donghua University, Shanghai, China"
+version: "1.2.0"
+date-released: "2026-11-26"
+url: "https://github.com/kami518/boltz2-iptm-binder-calibration"
+repository-code: "https://github.com/kami518/boltz2-iptm-binder-calibration"
+license: MIT
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24561385"
+keywords:
+  - protein binder design
+  - Boltz-2
+  - ipTM
+  - probability calibration
+  - target-held-out validation
+  - experimental decision analysis
