@@ -7,14 +7,14 @@ authors:
     given-names: KangMing
     orcid: "https://orcid.org/0009-0006-9634-5397"
     affiliation: "College of Biological Science and Medical Engineering, Donghua University, Shanghai, China"
-version: "1.2.0"
+version: "1.2.1"
 date-released: "2026-11-26"
 url: "https://github.com/kami518/boltz2-iptm-binder-calibration"
 repository-code: "https://github.com/kami518/boltz2-iptm-binder-calibration"
 license: MIT
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.24561385"
+    value: "10.5281/zenodo.24562820"
 keywords:
   - protein binder design
   - Boltz-2

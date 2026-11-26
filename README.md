@@ -1,6 +1,6 @@
 # Boltz-2 ipTM calibration and conditional experimental value
 
-This is the `v1.2.0` reproducibility release prepared for the CSBJ Research
+This is the `v1.2.1` reproducibility release prepared for the CSBJ Research
 Article *Target-held-out calibration and conditional experimental value of
 Boltz-2 ipTM in binder design*.
 
@@ -22,6 +22,6 @@ data, model weights, structure files, and vendor-only material are not
 redistributed.
 
 The `v1.1.0` Zenodo DOI `10.5281/zenodo.24400262` remains an immutable earlier
-record. This `v1.2.0` package is archived at
-`10.5281/zenodo.24561385`; it is a new version and does not overwrite the prior
-DOI.
+record. The first `v1.2.0` upload, DOI `10.5281/zenodo.24561385`, remains
+immutable as well. This corrected `v1.2.1` package is archived at
+`10.5281/zenodo.24562820` and does not overwrite either prior DOI.

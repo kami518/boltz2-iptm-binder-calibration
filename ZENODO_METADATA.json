@@ -1,6 +1,6 @@
 {
   "title": "Target-held-out calibration and conditional experimental value of Boltz-2 ipTM in binder design",
-  "description": "Reproducibility source, final CSBJ manuscript and Supporting Information, derived numerical summaries, vector figures, figure traceability records, accepted target-as-new outputs, and quality control records. Code is MIT licensed. Derived data, documentation, figures, and manuscript outputs are CC BY 4.0. Upstream Proteinbase and Anthropic data retain their original terms.",
+  "description": "Reproducibility source, final CSBJ manuscript and Supporting Information, derived numerical summaries, vector figures, figure traceability records, accepted target-as-new outputs, and quality control records. Version 1.2.1 corrects the final palette and vector-rendering audit for Figures 1-8 and Supplementary Figures S1-S10 without changing numerical results. Code is MIT licensed. Derived data, documentation, figures, and manuscript outputs are CC BY 4.0. Upstream Proteinbase and Anthropic data retain their original terms.",
   "creators": [
     {
       "name": "Chen, KangMing",
@@ -11,7 +11,7 @@
   "license": "other-open",
   "upload_type": "software",
   "access_right": "open",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "publication_date": "2026-11-26",
   "keywords": [
     "protein binder design",
@@ -28,7 +28,7 @@
       "scheme": "url"
     },
     {
-      "identifier": "10.5281/zenodo.24400262",
+      "identifier": "10.5281/zenodo.24561385",
       "relation": "isVersionOf",
       "scheme": "doi"
     }
